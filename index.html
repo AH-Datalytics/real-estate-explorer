@@ -340,9 +340,23 @@ const FIPS_TO_STATE = {
   '54':'WV','55':'WI','56':'WY','60':'AS','66':'GU','69':'MP','72':'PR','78':'VI'
 };
 
+function titleCase(str) {
+  const small = new Set(['a','an','the','and','but','or','for','nor','on','at','to','by','in','of','up','as','is']);
+  return str.toLowerCase().split(/\s+/).map((word, i) => {
+    if (i === 0 || !small.has(word)) return word.charAt(0).toUpperCase() + word.slice(1);
+    return word;
+  }).join(' ');
+}
+
 function formatCountyName(rawName, fips) {
-  // Strip common suffixes like " County", " Parish", " Borough", " Census Area", etc.
-  let name = rawName
+  const stateFips = String(fips).padStart(5, '0').slice(0, 2);
+  const stateAbbr = FIPS_TO_STATE[stateFips] || '';
+
+  // Strip trailing ", xx" or " xx" state abbreviation already embedded in raw name (e.g. "orleans, la")
+  let name = rawName.replace(/,?\s+[a-zA-Z]{2}$/, '').trim();
+
+  // Strip common geographic suffixes
+  name = name
     .replace(/\s+County$/i, '')
     .replace(/\s+Parish$/i, '')
     .replace(/\s+Borough$/i, '')
@@ -351,8 +365,8 @@ function formatCountyName(rawName, fips) {
     .replace(/\s+City and Borough$/i, '')
     .replace(/\s+Municipio$/i, '')
     .trim();
-  const stateFips = String(fips).padStart(5, '0').slice(0, 2);
-  const stateAbbr = FIPS_TO_STATE[stateFips] || '';
+
+  name = titleCase(name);
   return stateAbbr ? `${name}, ${stateAbbr}` : name;
 }
 
@@ -426,7 +440,82 @@ function startApp() {
       }, 200);
     },
     error: function(err) {
-      label.textContent = 'Error loading data: ' + err.message;
+      label.textContent = 'Error loading data.';
+      bar.style.background = '#f87171';
+      document.getElementById('loading-updated').innerHTML = `
+        <div style="color:var(--danger);margin-bottom:12px;">
+          ${err.message || 'Could not fetch data/RDC_Inventory_Core_Metrics_County_History.csv'}
+        </div>
+        <div style="color:var(--subtle);margin-bottom:16px;font-size:11px;">
+          If running locally, browsers block local file fetches.<br>
+          Upload the CSV manually instead:
+        </div>
+        <label style="
+          display:inline-block;
+          background:var(--surface2);
+          border:1px solid var(--border);
+          border-radius:6px;
+          padding:8px 16px;
+          cursor:pointer;
+          font-size:12px;
+          color:var(--accent);
+          letter-spacing:0.06em;
+          transition:border-color 0.15s;
+        ">
+          📂 Choose CSV file
+          <input type="file" accept=".csv" style="display:none" onchange="handleFallbackFile(this.files[0])">
+        </label>
+      `;
+    }
+  });
+}
+
+function handleFallbackFile(file) {
+  if (!file) return;
+  document.getElementById('loading-updated').innerHTML = '';
+  const label = document.getElementById('loading-label');
+  const bar = document.getElementById('progress-bar');
+  bar.style.background = 'linear-gradient(90deg, var(--accent), var(--accent2))';
+  bar.style.width = '0%';
+  countyMap = new Map();
+  countyDataMap = new Map();
+  let rowCount = 0;
+
+  Papa.parse(file, {
+    header: true,
+    dynamicTyping: true,
+    skipEmptyLines: true,
+    chunk: function(results) {
+      rowCount += results.data.length;
+      label.textContent = `Parsed ${rowCount.toLocaleString()} rows...`;
+      const pct = Math.min(90, (rowCount / 800000) * 100);
+      bar.style.width = pct + '%';
+      results.data.forEach(row => {
+        if (!row.county_fips || !row.county_name) return;
+        const fips = String(row.county_fips);
+        if (!countyMap.has(fips)) {
+          countyMap.set(fips, formatCountyName(row.county_name, row.county_fips));
+        }
+        if (!countyDataMap.has(fips)) countyDataMap.set(fips, []);
+        countyDataMap.get(fips).push(row);
+      });
+    },
+    complete: function() {
+      bar.style.width = '100%';
+      label.textContent = 'Building index...';
+      countyDataMap.forEach((rows) => {
+        rows.sort((a, b) => +a.month_date_yyyymm - +b.month_date_yyyymm);
+      });
+      setTimeout(() => {
+        document.getElementById('loading-screen').style.display = 'none';
+        document.getElementById('app-content').style.display = 'block';
+        const updated = document.getElementById('last-updated');
+        if (updated) updated.textContent = `DATA LOADED ${new Date().toUTCString()}`;
+        buildUI();
+      }, 200);
+    },
+    error: function(err) {
+      label.textContent = 'Error parsing file: ' + err.message;
       bar.style.background = '#f87171';
     }
   });
