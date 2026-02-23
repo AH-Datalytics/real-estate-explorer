@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real Estate Market Explorer</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #080b12;
+    --surface: #0f1117;
+    --surface2: #1a1e2e;
+    --border: #2a2d3a;
+    --muted: #334155;
+    --subtle: #475569;
+    --text: #e2e8f0;
+    --text-dim: #94a3b8;
+    --accent: #38bdf8;
+    --accent2: #818cf8;
+    --danger: #f87171;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    min-height: 100vh;
+    padding: 32px 24px;
+  }
+
+  ::-webkit-scrollbar { width: 5px; background: var(--surface); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  /* Header */
+  .header { margin-bottom: 36px; }
+  .header h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(22px, 4vw, 34px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 6px;
+  }
+  .header p { color: var(--subtle); font-size: 11px; letter-spacing: 0.12em; }
+
+  /* Upload zone */
+  .upload-zone {
+    border: 2px dashed var(--border);
+    border-radius: 12px;
+    padding: 60px 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    position: relative;
+  }
+  .upload-zone:hover, .upload-zone.dragover {
+    border-color: var(--accent);
+    background: rgba(56,189,248,0.04);
+  }
+  .upload-zone input[type=file] {
+    position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%;
+  }
+  .upload-icon { font-size: 36px; margin-bottom: 14px; opacity: 0.5; }
+  .upload-zone h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .upload-zone p { font-size: 12px; color: var(--subtle); }
+  .upload-zone .hint { font-size: 11px; color: var(--muted); margin-top: 12px; }
+
+  /* Loading bar */
+  .progress-wrap {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+  }
+  .progress-label { font-size: 13px; color: var(--text-dim); margin-bottom: 16px; }
+  .progress-bar-bg {
+    height: 4px; background: var(--border); border-radius: 2px; overflow: hidden;
+  }
+  .progress-bar-fill {
+    height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2));
+    border-radius: 2px;
+    transition: width 0.2s;
+    width: 0%;
+  }
+
+  /* Controls */
+  .controls {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+    align-items: flex-start;
+  }
+  .control-group { flex: 1 1 260px; max-width: 380px; }
+  .control-label { font-size: 10px; color: var(--subtle); letter-spacing: 0.12em; margin-bottom: 6px; }
+
+  .select-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    transition: border-color 0.15s;
+  }
+  .select-box:hover { border-color: var(--accent); }
+  .select-box.placeholder { color: var(--subtle); }
+  .select-arrow { color: var(--subtle); font-size: 10px; }
+
+  .dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0; right: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    z-index: 200;
+    max-height: 320px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  }
+  .dropdown-search {
+    background: var(--surface2);
+    border: none;
+    border-bottom: 1px solid var(--border);
+    padding: 10px 14px;
+    color: var(--text);
+    font-size: 12px;
+    font-family: inherit;
+    outline: none;
+  }
+  .dropdown-list { overflow-y: auto; flex: 1; }
+  .dropdown-item {
+    padding: 9px 14px;
+    cursor: pointer;
+    font-size: 12px;
+    color: var(--text-dim);
+    transition: background 0.1s, color 0.1s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dropdown-item:hover { background: var(--surface2); color: var(--accent); }
+  .dropdown-item.active { background: var(--surface2); color: var(--accent); }
+  .dropdown-item .fips { color: var(--muted); font-size: 10px; }
+  .dropdown-empty { padding: 14px; color: var(--muted); font-size: 12px; text-align: center; }
+
+  .select-wrapper { position: relative; }
+
+  /* Chart card */
+  .chart-card {
+    background: #0a0d16;
+    border: 1px solid var(--surface2);
+    border-radius: 12px;
+    padding: 24px 20px 20px;
+  }
+  .chart-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .chart-subtitle { font-size: 11px; color: var(--subtle); margin-bottom: 20px; }
+  .chart-wrap { position: relative; height: 380px; }
+
+  /* Stats row */
+  .stats-row {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--surface2);
+  }
+  .stat-item {}
+  .stat-label { font-size: 9px; color: var(--muted); letter-spacing: 0.12em; margin-bottom: 3px; }
+  .stat-value { font-size: 15px; color: var(--accent); font-weight: 500; }
+
+  /* Empty state */
+  .empty-state {
+    border: 1px dashed var(--surface2);
+    border-radius: 12px;
+    padding: 80px 24px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  /* Reset button */
+  .reset-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--subtle);
+    font-family: inherit;
+    font-size: 11px;
+    padding: 6px 12px;
+    cursor: pointer;
+    letter-spacing: 0.08em;
+    transition: all 0.15s;
+    margin-top: 20px;
+  }
+  .reset-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  #app-content { display: none; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Real Estate Market Explorer</h1>
+  <p>REALTOR.COM COUNTY-LEVEL INVENTORY DATA</p>
+</div>
+
+<!-- Upload screen -->
+<div id="upload-screen">
+  <div class="upload-zone" id="upload-zone">
+    <input type="file" id="file-input" accept=".csv">
+    <div class="upload-icon">📂</div>
+    <h2>Drop your CSV file here</h2>
+    <p>or click to browse</p>
+    <p class="hint">RDC_Inventory_Core_Metrics_County_History.csv</p>
+  </div>
+</div>
+
+<!-- Loading screen -->
+<div id="loading-screen" style="display:none">
+  <div class="progress-wrap">
+    <div class="progress-label" id="loading-label">Parsing CSV...</div>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="progress-bar"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Main app -->
+<div id="app-content">
+  <div class="controls">
+    <div class="control-group">
+      <div class="control-label">COUNTY</div>
+      <div class="select-wrapper" id="county-wrapper">
+        <div class="select-box placeholder" id="county-box" onclick="toggleDropdown('county')">
+          <span id="county-label">Select a county...</span>
+          <span class="select-arrow">▼</span>
+        </div>
+        <div class="dropdown" id="county-dropdown" style="display:none">
+          <input class="dropdown-search" id="county-search" placeholder="Search counties..." oninput="filterCounties()" autocomplete="off">
+          <div class="dropdown-list" id="county-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="control-label">METRIC</div>
+      <div class="select-wrapper" id="metric-wrapper">
+        <div class="select-box" id="metric-box" onclick="toggleDropdown('metric')">
+          <span id="metric-label">Median Listing Price</span>
+          <span class="select-arrow">▼</span>
+        </div>
+        <div class="dropdown" id="metric-dropdown" style="display:none">
+          <div class="dropdown-list" id="metric-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="chart-area">
+    <div class="empty-state">Select a county to begin exploring</div>
+  </div>
+
+  <button class="reset-btn" onclick="resetApp()">↩ Load a different file</button>
+</div>
+
+<script>
+const METRICS = [
+  { key: "median_listing_price", label: "Median Listing Price", format: "currency" },
+  { key: "median_listing_price_mm", label: "Median Listing Price (M/M %)", format: "percent" },
+  { key: "median_listing_price_yy", label: "Median Listing Price (Y/Y %)", format: "percent" },
+  { key: "active_listing_count", label: "Active Listing Count", format: "number" },
+  { key: "active_listing_count_mm", label: "Active Listings (M/M %)", format: "percent" },
+  { key: "active_listing_count_yy", label: "Active Listings (Y/Y %)", format: "percent" },
+  { key: "median_days_on_market", label: "Median Days on Market", format: "number" },
+  { key: "median_days_on_market_mm", label: "Days on Market (M/M %)", format: "percent" },
+  { key: "median_days_on_market_yy", label: "Days on Market (Y/Y %)", format: "percent" },
+  { key: "new_listing_count", label: "New Listing Count", format: "number" },
+  { key: "new_listing_count_mm", label: "New Listings (M/M %)", format: "percent" },
+  { key: "new_listing_count_yy", label: "New Listings (Y/Y %)", format: "percent" },
+  { key: "price_increased_count", label: "Price Increased Count", format: "number" },
+  { key: "price_increased_count_mm", label: "Price Increased Count (M/M %)", format: "percent" },
+  { key: "price_increased_count_yy", label: "Price Increased Count (Y/Y %)", format: "percent" },
+  { key: "price_increased_share", label: "Price Increased Share", format: "percent" },
+  { key: "price_increased_share_mm", label: "Price Increased Share (M/M %)", format: "percent" },
+  { key: "price_increased_share_yy", label: "Price Increased Share (Y/Y %)", format: "percent" },
+  { key: "price_reduced_count", label: "Price Reduced Count", format: "number" },
+  { key: "price_reduced_count_mm", label: "Price Reduced Count (M/M %)", format: "percent" },
+  { key: "price_reduced_count_yy", label: "Price Reduced Count (Y/Y %)", format: "percent" },
+  { key: "price_reduced_share", label: "Price Reduced Share", format: "percent" },
+  { key: "price_reduced_share_mm", label: "Price Reduced Share (M/M %)", format: "percent" },
+  { key: "price_reduced_share_yy", label: "Price Reduced Share (Y/Y %)", format: "percent" },
+  { key: "pending_listing_count", label: "Pending Listing Count", format: "number" },
+  { key: "pending_listing_count_mm", label: "Pending Listings (M/M %)", format: "percent" },
+  { key: "pending_listing_count_yy", label: "Pending Listings (Y/Y %)", format: "percent" },
+  { key: "median_listing_price_per_square_foot", label: "Median Price Per Sq Ft", format: "currency" },
+  { key: "median_listing_price_per_square_foot_mm", label: "Median Price/Sq Ft (M/M %)", format: "percent" },
+  { key: "median_listing_price_per_square_foot_yy", label: "Median Price/Sq Ft (Y/Y %)", format: "percent" },
+  { key: "median_square_feet", label: "Median Square Feet", format: "number" },
+  { key: "median_square_feet_mm", label: "Median Sq Ft (M/M %)", format: "percent" },
+  { key: "median_square_feet_yy", label: "Median Sq Ft (Y/Y %)", format: "percent" },
+  { key: "average_listing_price", label: "Average Listing Price", format: "currency" },
+  { key: "average_listing_price_mm", label: "Average Listing Price (M/M %)", format: "percent" },
+  { key: "average_listing_price_yy", label: "Average Listing Price (Y/Y %)", format: "percent" },
+  { key: "total_listing_count", label: "Total Listing Count", format: "number" },
+  { key: "total_listing_count_mm", label: "Total Listings (M/M %)", format: "percent" },
+  { key: "total_listing_count_yy", label: "Total Listings (Y/Y %)", format: "percent" },
+  { key: "pending_ratio", label: "Pending Ratio", format: "decimal" },
+  { key: "pending_ratio_mm", label: "Pending Ratio (M/M %)", format: "percent" },
+  { key: "pending_ratio_yy", label: "Pending Ratio (Y/Y %)", format: "percent" },
+];
+
+let allData = [];
+let countyMap = new Map(); // fips -> name
+let countyDataMap = new Map(); // fips -> sorted rows
+let selectedCountyFips = null;
+let selectedMetric = METRICS[0];
+let chartInstance = null;
+let filteredCountyList = [];
+
+function formatValue(val, fmt) {
+  if (val === null || val === undefined || val === '' || isNaN(+val)) return 'N/A';
+  const n = +val;
+  if (fmt === 'currency') return '$' + n.toLocaleString(undefined, { maximumFractionDigits: 0 });
+  if (fmt === 'percent') return (n * 100).toFixed(1) + '%';
+  if (fmt === 'decimal') return n.toFixed(3);
+  return n.toLocaleString(undefined, { maximumFractionDigits: 1 });
+}
+
+function formatDate(d) {
+  const s = String(d).trim();
+  return s.slice(0, 4) + '-' + s.slice(4, 6);
+}
+
+// File input
+const fileInput = document.getElementById('file-input');
+const uploadZone = document.getElementById('upload-zone');
+
+fileInput.addEventListener('change', e => {
+  if (e.target.files[0]) handleFile(e.target.files[0]);
+});
+uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('dragover'); });
+uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('dragover'));
+uploadZone.addEventListener('drop', e => {
+  e.preventDefault();
+  uploadZone.classList.remove('dragover');
+  if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
+});
+
+function handleFile(file) {
+  document.getElementById('upload-screen').style.display = 'none';
+  document.getElementById('loading-screen').style.display = 'block';
+
+  let rowCount = 0;
+  const label = document.getElementById('loading-label');
+  const bar = document.getElementById('progress-bar');
+
+  Papa.parse(file, {
+    header: true,
+    dynamicTyping: true,
+    skipEmptyLines: true,
+    chunk: function(results) {
+      rowCount += results.data.length;
+      label.textContent = `Parsed ${rowCount.toLocaleString()} rows...`;
+      // Animate bar loosely (file size unknown)
+      const pct = Math.min(90, (rowCount / 800000) * 100);
+      bar.style.width = pct + '%';
+      results.data.forEach(row => {
+        if (!row.county_fips || !row.county_name) return;
+        const fips = String(row.county_fips);
+        countyMap.set(fips, row.county_name);
+        if (!countyDataMap.has(fips)) countyDataMap.set(fips, []);
+        countyDataMap.get(fips).push(row);
+      });
+    },
+    complete: function() {
+      bar.style.width = '100%';
+      label.textContent = 'Building index...';
+      // Sort each county's data by date
+      countyDataMap.forEach((rows, fips) => {
+        rows.sort((a, b) => +a.month_date_yyyymm - +b.month_date_yyyymm);
+      });
+      setTimeout(() => {
+        document.getElementById('loading-screen').style.display = 'none';
+        document.getElementById('app-content').style.display = 'block';
+        buildUI();
+      }, 200);
+    },
+    error: function(err) {
+      label.textContent = 'Error: ' + err.message;
+      bar.style.background = '#f87171';
+    }
+  });
+}
+
+function buildUI() {
+  // Build metric list
+  const metricList = document.getElementById('metric-list');
+  METRICS.forEach(m => {
+    const div = document.createElement('div');
+    div.className = 'dropdown-item' + (m.key === selectedMetric.key ? ' active' : '');
+    div.textContent = m.label;
+    div.onclick = () => selectMetric(m);
+    metricList.appendChild(div);
+  });
+
+  // Build county list
+  filteredCountyList = Array.from(countyMap.entries())
+    .map(([fips, name]) => ({ fips, name }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  renderCountyList(filteredCountyList);
+
+  // Close dropdowns on outside click
+  document.addEventListener('click', e => {
+    if (!document.getElementById('county-wrapper').contains(e.target)) {
+      document.getElementById('county-dropdown').style.display = 'none';
+    }
+    if (!document.getElementById('metric-wrapper').contains(e.target)) {
+      document.getElementById('metric-dropdown').style.display = 'none';
+    }
+  });
+}
+
+function renderCountyList(list) {
+  const container = document.getElementById('county-list');
+  container.innerHTML = '';
+  const shown = list.slice(0, 100);
+  if (shown.length === 0) {
+    container.innerHTML = '<div class="dropdown-empty">No results</div>';
+    return;
+  }
+  shown.forEach(c => {
+    const div = document.createElement('div');
+    div.className = 'dropdown-item' + (c.fips === selectedCountyFips ? ' active' : '');
+    div.innerHTML = `<span>${c.name}</span><span class="fips">${c.fips}</span>`;
+    div.onclick = () => selectCounty(c.fips, c.name);
+    container.appendChild(div);
+  });
+  if (list.length > 100) {
+    container.innerHTML += `<div class="dropdown-empty">+${list.length - 100} more — type to filter</div>`;
+  }
+}
+
+function filterCounties() {
+  const q = document.getElementById('county-search').value.toLowerCase();
+  const allCounties = Array.from(countyMap.entries())
+    .map(([fips, name]) => ({ fips, name }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  filteredCountyList = q ? allCounties.filter(c => c.name.toLowerCase().includes(q) || c.fips.includes(q)) : allCounties;
+  renderCountyList(filteredCountyList);
+}
+
+function toggleDropdown(which) {
+  const dd = document.getElementById(which + '-dropdown');
+  const other = which === 'county' ? 'metric' : 'county';
+  document.getElementById(other + '-dropdown').style.display = 'none';
+  const isOpen = dd.style.display !== 'none';
+  dd.style.display = isOpen ? 'none' : 'flex';
+  if (!isOpen && which === 'county') {
+    document.getElementById('county-search').value = '';
+    filterCounties();
+    setTimeout(() => document.getElementById('county-search').focus(), 50);
+  }
+}
+
+function selectCounty(fips, name) {
+  selectedCountyFips = fips;
+  const box = document.getElementById('county-box');
+  box.classList.remove('placeholder');
+  document.getElementById('county-label').textContent = name;
+  document.getElementById('county-dropdown').style.display = 'none';
+  renderCountyList(filteredCountyList);
+  renderChart();
+}
+
+function selectMetric(m) {
+  selectedMetric = m;
+  document.getElementById('metric-label').textContent = m.label;
+  document.getElementById('metric-dropdown').style.display = 'none';
+  // Update active state
+  document.querySelectorAll('#metric-list .dropdown-item').forEach(el => {
+    el.classList.toggle('active', el.textContent === m.label);
+  });
+  if (selectedCountyFips) renderChart();
+}
+
+function renderChart() {
+  const rows = countyDataMap.get(selectedCountyFips) || [];
+  const chartData = rows
+    .filter(r => r[selectedMetric.key] !== null && r[selectedMetric.key] !== undefined && r[selectedMetric.key] !== '')
+    .map(r => ({ date: formatDate(r.month_date_yyyymm), value: +r[selectedMetric.key] }));
+
+  if (chartData.length === 0) {
+    document.getElementById('chart-area').innerHTML = `
+      <div class="empty-state">No data available for <strong style="color:var(--text)">${selectedMetric.label}</strong> in this county</div>
+    `;
+    return;
+  }
+
+  const values = chartData.map(d => d.value);
+  const minVal = Math.min(...values);
+  const maxVal = Math.max(...values);
+  const avgVal = values.reduce((a, b) => a + b, 0) / values.length;
+  const latest = values[values.length - 1];
+
+  // Color gradient per bar
+  const colors = values.map(v => {
+    if (maxVal === minVal) return '#38bdf8';
+    const t = (v - minVal) / (maxVal - minVal);
+    const r = Math.round(30 + t * (56 - 30));
+    const g = Math.round(77 + t * (189 - 77));
+    const b = Math.round(107 + t * (248 - 107));
+    return `rgb(${r},${g},${b})`;
+  });
+
+  const countyName = countyMap.get(selectedCountyFips);
+
+  document.getElementById('chart-area').innerHTML = `
+    <div class="chart-card">
+      <div class="chart-title">${selectedMetric.label}</div>
+      <div class="chart-subtitle">${countyName} &middot; ${chartData.length} months of data</div>
+      <div class="chart-wrap">
+        <canvas id="main-chart"></canvas>
+      </div>
+      <div class="stats-row">
+        <div class="stat-item"><div class="stat-label">LATEST</div><div class="stat-value">${formatValue(latest, selectedMetric.format)}</div></div>
+        <div class="stat-item"><div class="stat-label">MIN</div><div class="stat-value">${formatValue(minVal, selectedMetric.format)}</div></div>
+        <div class="stat-item"><div class="stat-label">MAX</div><div class="stat-value">${formatValue(maxVal, selectedMetric.format)}</div></div>
+        <div class="stat-item"><div class="stat-label">AVG</div><div class="stat-value">${formatValue(avgVal, selectedMetric.format)}</div></div>
+      </div>
+    </div>
+  `;
+
+  if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
+
+  const ctx = document.getElementById('main-chart').getContext('2d');
+
+  // Thin labels if many data points
+  const n = chartData.length;
+  const tickStep = n > 60 ? Math.floor(n / 18) : n > 24 ? 4 : 2;
+  const labels = chartData.map((d, i) => (i % tickStep === 0 ? d.date : ''));
+
+  chartInstance = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: chartData.map(d => d.date),
+      datasets: [{
+        data: values,
+        backgroundColor: colors,
+        borderRadius: 3,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 400 },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#0f1117',
+          borderColor: '#2a2d3a',
+          borderWidth: 1,
+          titleColor: '#94a3b8',
+          bodyColor: '#38bdf8',
+          titleFont: { family: "'DM Mono', monospace", size: 11 },
+          bodyFont: { family: "'DM Mono', monospace", size: 13, weight: '500' },
+          padding: 10,
+          callbacks: {
+            title: items => items[0].label,
+            label: item => formatValue(item.raw, selectedMetric.format)
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          border: { color: '#2a2d3a' },
+          ticks: {
+            color: '#475569',
+            font: { family: "'DM Mono', monospace", size: 10 },
+            maxRotation: 45,
+            callback: function(val, i) {
+              return i % tickStep === 0 ? this.getLabelForValue(val) : '';
+            }
+          }
+        },
+        y: {
+          grid: { color: '#1a1e2e', drawBorder: false },
+          border: { display: false },
+          ticks: {
+            color: '#475569',
+            font: { family: "'DM Mono', monospace", size: 10 },
+            callback: v => formatValue(v, selectedMetric.format)
+          }
+        }
+      }
+    }
+  });
+}
+
+function resetApp() {
+  allData = [];
+  countyMap = new Map();
+  countyDataMap = new Map();
+  selectedCountyFips = null;
+  selectedMetric = METRICS[0];
+  if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
+  document.getElementById('app-content').style.display = 'none';
+  document.getElementById('upload-screen').style.display = 'block';
+  document.getElementById('file-input').value = '';
+}
+</script>
+</body>
+</html>
