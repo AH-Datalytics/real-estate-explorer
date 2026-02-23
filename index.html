@@ -234,24 +234,14 @@
   <p>REALTOR.COM COUNTY-LEVEL INVENTORY DATA</p>
 </div>
 
-<!-- Upload screen -->
-<div id="upload-screen">
-  <div class="upload-zone" id="upload-zone">
-    <input type="file" id="file-input" accept=".csv">
-    <div class="upload-icon">📂</div>
-    <h2>Drop your CSV file here</h2>
-    <p>or click to browse</p>
-    <p class="hint">RDC_Inventory_Core_Metrics_County_History.csv</p>
-  </div>
-</div>
-
 <!-- Loading screen -->
-<div id="loading-screen" style="display:none">
+<div id="loading-screen">
   <div class="progress-wrap">
-    <div class="progress-label" id="loading-label">Parsing CSV...</div>
+    <div class="progress-label" id="loading-label">Fetching latest data...</div>
     <div class="progress-bar-bg">
       <div class="progress-bar-fill" id="progress-bar"></div>
     </div>
+    <div id="loading-updated" style="font-size:11px;color:var(--muted);margin-top:12px;text-align:center;"></div>
   </div>
 </div>
 
@@ -276,7 +266,7 @@
       <div class="control-label">METRIC</div>
       <div class="select-wrapper" id="metric-wrapper">
         <div class="select-box" id="metric-box" onclick="toggleDropdown('metric')">
-          <span id="metric-label">Median Listing Price</span>
+          <span id="metric-label">Active Listing Count</span>
           <span class="select-arrow">▼</span>
         </div>
         <div class="dropdown" id="metric-dropdown" style="display:none">
@@ -290,23 +280,38 @@
     <div class="empty-state">Select a county to begin exploring</div>
   </div>
 
-  <button class="reset-btn" onclick="resetApp()">↩ Load a different file</button>
+  <div id="last-updated" style="font-size:10px;color:var(--muted);margin-top:20px;letter-spacing:0.08em;"></div>
 </div>
 
 <script>
 const METRICS = [
-  { key: "median_listing_price", label: "Median Listing Price", format: "currency" },
-  { key: "median_listing_price_mm", label: "Median Listing Price (M/M %)", format: "percent" },
-  { key: "median_listing_price_yy", label: "Median Listing Price (Y/Y %)", format: "percent" },
   { key: "active_listing_count", label: "Active Listing Count", format: "number" },
   { key: "active_listing_count_mm", label: "Active Listings (M/M %)", format: "percent" },
   { key: "active_listing_count_yy", label: "Active Listings (Y/Y %)", format: "percent" },
-  { key: "median_days_on_market", label: "Median Days on Market", format: "number" },
+  { key: "average_listing_price", label: "Average Listing Price", format: "currency" },
+  { key: "average_listing_price_mm", label: "Average Listing Price (M/M %)", format: "percent" },
+  { key: "average_listing_price_yy", label: "Average Listing Price (Y/Y %)", format: "percent" },
+  { key: "median_days_on_market", label: "Days on Market (Median)", format: "number" },
   { key: "median_days_on_market_mm", label: "Days on Market (M/M %)", format: "percent" },
   { key: "median_days_on_market_yy", label: "Days on Market (Y/Y %)", format: "percent" },
+  { key: "median_listing_price", label: "Median Listing Price", format: "currency" },
+  { key: "median_listing_price_mm", label: "Median Listing Price (M/M %)", format: "percent" },
+  { key: "median_listing_price_yy", label: "Median Listing Price (Y/Y %)", format: "percent" },
+  { key: "median_listing_price_per_square_foot", label: "Median Price Per Sq Ft", format: "currency" },
+  { key: "median_listing_price_per_square_foot_mm", label: "Median Price Per Sq Ft (M/M %)", format: "percent" },
+  { key: "median_listing_price_per_square_foot_yy", label: "Median Price Per Sq Ft (Y/Y %)", format: "percent" },
+  { key: "median_square_feet", label: "Median Square Feet", format: "number" },
+  { key: "median_square_feet_mm", label: "Median Square Feet (M/M %)", format: "percent" },
+  { key: "median_square_feet_yy", label: "Median Square Feet (Y/Y %)", format: "percent" },
   { key: "new_listing_count", label: "New Listing Count", format: "number" },
   { key: "new_listing_count_mm", label: "New Listings (M/M %)", format: "percent" },
   { key: "new_listing_count_yy", label: "New Listings (Y/Y %)", format: "percent" },
+  { key: "pending_listing_count", label: "Pending Listing Count", format: "number" },
+  { key: "pending_listing_count_mm", label: "Pending Listings (M/M %)", format: "percent" },
+  { key: "pending_listing_count_yy", label: "Pending Listings (Y/Y %)", format: "percent" },
+  { key: "pending_ratio", label: "Pending Ratio", format: "decimal" },
+  { key: "pending_ratio_mm", label: "Pending Ratio (M/M %)", format: "percent" },
+  { key: "pending_ratio_yy", label: "Pending Ratio (Y/Y %)", format: "percent" },
   { key: "price_increased_count", label: "Price Increased Count", format: "number" },
   { key: "price_increased_count_mm", label: "Price Increased Count (M/M %)", format: "percent" },
   { key: "price_increased_count_yy", label: "Price Increased Count (Y/Y %)", format: "percent" },
@@ -319,28 +324,39 @@ const METRICS = [
   { key: "price_reduced_share", label: "Price Reduced Share", format: "percent" },
   { key: "price_reduced_share_mm", label: "Price Reduced Share (M/M %)", format: "percent" },
   { key: "price_reduced_share_yy", label: "Price Reduced Share (Y/Y %)", format: "percent" },
-  { key: "pending_listing_count", label: "Pending Listing Count", format: "number" },
-  { key: "pending_listing_count_mm", label: "Pending Listings (M/M %)", format: "percent" },
-  { key: "pending_listing_count_yy", label: "Pending Listings (Y/Y %)", format: "percent" },
-  { key: "median_listing_price_per_square_foot", label: "Median Price Per Sq Ft", format: "currency" },
-  { key: "median_listing_price_per_square_foot_mm", label: "Median Price/Sq Ft (M/M %)", format: "percent" },
-  { key: "median_listing_price_per_square_foot_yy", label: "Median Price/Sq Ft (Y/Y %)", format: "percent" },
-  { key: "median_square_feet", label: "Median Square Feet", format: "number" },
-  { key: "median_square_feet_mm", label: "Median Sq Ft (M/M %)", format: "percent" },
-  { key: "median_square_feet_yy", label: "Median Sq Ft (Y/Y %)", format: "percent" },
-  { key: "average_listing_price", label: "Average Listing Price", format: "currency" },
-  { key: "average_listing_price_mm", label: "Average Listing Price (M/M %)", format: "percent" },
-  { key: "average_listing_price_yy", label: "Average Listing Price (Y/Y %)", format: "percent" },
   { key: "total_listing_count", label: "Total Listing Count", format: "number" },
   { key: "total_listing_count_mm", label: "Total Listings (M/M %)", format: "percent" },
   { key: "total_listing_count_yy", label: "Total Listings (Y/Y %)", format: "percent" },
-  { key: "pending_ratio", label: "Pending Ratio", format: "decimal" },
-  { key: "pending_ratio_mm", label: "Pending Ratio (M/M %)", format: "percent" },
-  { key: "pending_ratio_yy", label: "Pending Ratio (Y/Y %)", format: "percent" },
 ];
 
-let allData = [];
-let countyMap = new Map(); // fips -> name
+// FIPS state code -> abbreviation
+const FIPS_TO_STATE = {
+  '01':'AL','02':'AK','04':'AZ','05':'AR','06':'CA','08':'CO','09':'CT','10':'DE',
+  '11':'DC','12':'FL','13':'GA','15':'HI','16':'ID','17':'IL','18':'IN','19':'IA',
+  '20':'KS','21':'KY','22':'LA','23':'ME','24':'MD','25':'MA','26':'MI','27':'MN',
+  '28':'MS','29':'MO','30':'MT','31':'NE','32':'NV','33':'NH','34':'NJ','35':'NM',
+  '36':'NY','37':'NC','38':'ND','39':'OH','40':'OK','41':'OR','42':'PA','44':'RI',
+  '45':'SC','46':'SD','47':'TN','48':'TX','49':'UT','50':'VT','51':'VA','53':'WA',
+  '54':'WV','55':'WI','56':'WY','60':'AS','66':'GU','69':'MP','72':'PR','78':'VI'
+};
+
+function formatCountyName(rawName, fips) {
+  // Strip common suffixes like " County", " Parish", " Borough", " Census Area", etc.
+  let name = rawName
+    .replace(/\s+County$/i, '')
+    .replace(/\s+Parish$/i, '')
+    .replace(/\s+Borough$/i, '')
+    .replace(/\s+Census Area$/i, '')
+    .replace(/\s+Municipality$/i, '')
+    .replace(/\s+City and Borough$/i, '')
+    .replace(/\s+Municipio$/i, '')
+    .trim();
+  const stateFips = String(fips).padStart(5, '0').slice(0, 2);
+  const stateAbbr = FIPS_TO_STATE[stateFips] || '';
+  return stateAbbr ? `${name}, ${stateAbbr}` : name;
+}
+
+let countyMap = new Map(); // fips -> formatted display name
 let countyDataMap = new Map(); // fips -> sorted rows
 let selectedCountyFips = null;
 let selectedMetric = METRICS[0];
@@ -361,43 +377,36 @@ function formatDate(d) {
   return s.slice(0, 4) + '-' + s.slice(4, 6);
 }
 
-// File input
-const fileInput = document.getElementById('file-input');
-const uploadZone = document.getElementById('upload-zone');
+const DATA_PATH = 'data/RDC_Inventory_Core_Metrics_County_History.csv';
 
-fileInput.addEventListener('change', e => {
-  if (e.target.files[0]) handleFile(e.target.files[0]);
-});
-uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('dragover'); });
-uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('dragover'));
-uploadZone.addEventListener('drop', e => {
-  e.preventDefault();
-  uploadZone.classList.remove('dragover');
-  if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
-});
-
-function handleFile(file) {
-  document.getElementById('upload-screen').style.display = 'none';
+function startApp() {
   document.getElementById('loading-screen').style.display = 'block';
+  document.getElementById('app-content').style.display = 'none';
 
-  let rowCount = 0;
   const label = document.getElementById('loading-label');
   const bar = document.getElementById('progress-bar');
 
-  Papa.parse(file, {
+  let rowCount = 0;
+  // Reset state
+  countyMap = new Map();
+  countyDataMap = new Map();
+
+  Papa.parse(DATA_PATH, {
+    download: true,
     header: true,
     dynamicTyping: true,
     skipEmptyLines: true,
     chunk: function(results) {
       rowCount += results.data.length;
       label.textContent = `Parsed ${rowCount.toLocaleString()} rows...`;
-      // Animate bar loosely (file size unknown)
       const pct = Math.min(90, (rowCount / 800000) * 100);
       bar.style.width = pct + '%';
       results.data.forEach(row => {
         if (!row.county_fips || !row.county_name) return;
         const fips = String(row.county_fips);
-        countyMap.set(fips, row.county_name);
+        if (!countyMap.has(fips)) {
+          countyMap.set(fips, formatCountyName(row.county_name, row.county_fips));
+        }
         if (!countyDataMap.has(fips)) countyDataMap.set(fips, []);
         countyDataMap.get(fips).push(row);
       });
@@ -405,26 +414,31 @@ function handleFile(file) {
     complete: function() {
       bar.style.width = '100%';
       label.textContent = 'Building index...';
-      // Sort each county's data by date
-      countyDataMap.forEach((rows, fips) => {
+      countyDataMap.forEach((rows) => {
         rows.sort((a, b) => +a.month_date_yyyymm - +b.month_date_yyyymm);
       });
       setTimeout(() => {
         document.getElementById('loading-screen').style.display = 'none';
         document.getElementById('app-content').style.display = 'block';
+        const updated = document.getElementById('last-updated');
+        if (updated) updated.textContent = `DATA REFRESHED ${new Date().toUTCString()}`;
         buildUI();
       }, 200);
     },
     error: function(err) {
-      label.textContent = 'Error: ' + err.message;
+      label.textContent = 'Error loading data: ' + err.message;
       bar.style.background = '#f87171';
     }
   });
 }
 
+// Auto-start on page load
+window.addEventListener('DOMContentLoaded', startApp);
+
 function buildUI() {
-  // Build metric list
+  // Build metric list (clear first to avoid duplicates)
   const metricList = document.getElementById('metric-list');
+  metricList.innerHTML = '';
   METRICS.forEach(m => {
     const div = document.createElement('div');
     div.className = 'dropdown-item' + (m.key === selectedMetric.key ? ' active' : '');
@@ -630,15 +644,12 @@ function renderChart() {
 }
 
 function resetApp() {
-  allData = [];
-  countyMap = new Map();
-  countyDataMap = new Map();
   selectedCountyFips = null;
   selectedMetric = METRICS[0];
   if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
-  document.getElementById('app-content').style.display = 'none';
-  document.getElementById('upload-screen').style.display = 'block';
-  document.getElementById('file-input').value = '';
+  document.getElementById('county-label').textContent = 'Select a county...';
+  document.getElementById('county-box').classList.add('placeholder');
+  document.getElementById('chart-area').innerHTML = '<div class="empty-state">Select a county to begin exploring</div>';
 }
 </script>
 </body>
