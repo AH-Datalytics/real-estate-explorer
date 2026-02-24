@@ -586,7 +586,9 @@ function refreshGeoList() {
 
 function renderGeoList(list) {
   const c = document.getElementById('geo-list'); c.innerHTML = '';
-  const shown = list.slice(0,150);
+  // For zip codes, show all items; for counties, limit to 150 for performance
+  const limit = (mode === 'zip' || mode === 'rent-zip') ? list.length : 150;
+  const shown = list.slice(0, limit);
   if (!shown.length) { c.innerHTML = '<div class="dropdown-empty">No results</div>'; return; }
   shown.forEach(item => {
     const div = document.createElement('div');
@@ -595,7 +597,7 @@ function renderGeoList(list) {
     div.onclick = () => selectGeo(item.key, item.name);
     c.appendChild(div);
   });
-  if (list.length>150) c.innerHTML += '<div class="dropdown-empty">+'+(list.length-150)+' more — type to filter</div>';
+  if (list.length > limit) c.innerHTML += '<div class="dropdown-empty">+'+(list.length-limit)+' more — type to filter</div>';
 }
 
 function filterGeoList() {
