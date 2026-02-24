@@ -509,8 +509,9 @@ function ingestRow(row, which) {
   } else if (which==='rent-zip') {
     if (!row.RegionName || !row.RegionID) return;
     const key = String(row.RegionID);
-    const zip = String(row.RegionName).padStart(5,'0');
-    const city = row.City ? titleCase(row.City) : '';
+    // RegionID IS the zip code for rent-zip data; RegionName is the city
+    const zip = String(row.RegionID).padStart(5,'0');
+    const city = row.RegionName ? titleCase(row.RegionName) : '';
     const label = city ? city + ', ' + row.State + ' (' + zip + ')' : zip;
     if (!rentZipMap.has(key)) rentZipMap.set(key, label);
     if (!rentZipDataMap.has(key)) rentZipDataMap.set(key,[]);
@@ -724,7 +725,8 @@ function renderContent() {
         x: { grid:{display:false}, border:{color:'#dde1ea'},
           ticks:{color:'#6b7a99',font:{family:"'DM Mono',monospace",size:10},maxRotation:0,
             callback:function(val,i){
-              const label = this.getLabelForValue(val);
+              const labels = this.chart.data.labels;
+              const label = labels ? labels[i] : null;
               // Show year label only on January (month 01) of each year
               if (label && label.slice(5,7) === '01') return label.slice(0,4);
               return '';
@@ -778,7 +780,7 @@ function buildSummarySentence() {
     if (val === null || val === undefined || val === '') return '';
     const pct = (val * 100).toFixed(1);
     const dir = val >= 0 ? 'up' : 'down';
-    const color = val >= 0 ? '#4ade80' : '#f87171';
+    const color = val >= 0 ? '#f87171' : '#60a5fa';
     return dir + ' <strong style="color:'+color+'">'+Math.abs(pct)+'%</strong>';
   }
 
@@ -889,7 +891,7 @@ function exportJPEG() {
     const yval = (row && row[m.yy] !== null && row[m.yy] !== undefined && row[m.yy] !== '') ? row[m.yy] : null;
     const formatted = val !== null ? formatValue(val, m.format) : 'N/A';
     const yyFormatted = yval !== null ? formatValue(yval, 'percent') : 'N/A';
-    const yyColor = yval !== null ? (yval >= 0 ? '#4ade80' : '#f87171') : '#475569';
+    const yyColor = yval !== null ? (yval >= 0 ? '#f87171' : '#60a5fa') : '#475569';
     return '<div class="sc-cell">' +
       '<div class="sc-cell-label">'+m.label+' (YY%)</div>' +
       '<div class="sc-cell-value">'+formatted+' <span style="font-size:13px;color:'+yyColor+';">('+yyFormatted+')</span></div>' +
