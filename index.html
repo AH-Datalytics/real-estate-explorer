@@ -521,17 +521,27 @@ function ingestRow(row, which) {
 
 // ── Mode switch ────────────────────────────────────────────────────────────
 function switchMode(newMode) {
-  if (newMode===mode && (newMode==='county'?countyLoaded:zipLoaded)) return;
+  const loaded = {
+    'county': countyLoaded, 'zip': zipLoaded,
+    'rent-county': rentCountyLoaded, 'rent-zip': rentZipLoaded
+  };
+  if (newMode===mode && loaded[newMode]) return;
   mode = newMode;
   selectedGeoKey = null;
-  document.getElementById('btn-county').classList.toggle('active', mode==='county');
-  document.getElementById('btn-zip').classList.toggle('active', mode==='zip');
-  document.getElementById('geo-label').textContent = mode==='county' ? 'COUNTY' : 'ZIP CODE';
-  document.getElementById('geo-selected-label').textContent = mode==='county' ? 'Select a county...' : 'Select a zip code...';
+  ['county','zip','rent-county','rent-zip'].forEach(m => {
+    const el = document.getElementById('btn-'+m);
+    if (el) el.classList.toggle('active', mode===m);
+  });
+  const isZipType = mode==='zip' || mode==='rent-zip';
+  document.getElementById('geo-label').textContent = isZipType ? 'ZIP CODE' : 'COUNTY';
+  document.getElementById('geo-selected-label').textContent = isZipType ? 'Select a zip code...' : 'Select a county...';
   document.getElementById('geo-box').classList.add('placeholder');
   document.getElementById('main-layout').style.display = 'none';
   document.getElementById('empty-state-msg').style.display = '';
-  if (mode==='zip' && !zipLoaded) loadDataset('zip');
+  document.getElementById('export-bar').style.display = 'none';
+  document.getElementById('summary-sentence').style.display = 'none';
+  buildMetricList();
+  if (!loaded[mode]) loadDataset(mode);
   else refreshGeoList();
 }
 
