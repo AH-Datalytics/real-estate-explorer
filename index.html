@@ -6,8 +6,6 @@
 <title>Real Estate Market Explorer</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -96,16 +94,6 @@
   .dropdown-empty { padding: 14px; color: var(--muted); font-size: 12px; text-align: center; }
 
   /* Content */
-  .content-grid { display: grid; grid-template-columns: 340px 1fr; gap: 16px; align-items: start; }
-  @media (max-width: 860px) { .content-grid { grid-template-columns: 1fr; } }
-
-  .map-card { background: #0a0d16; border: 1px solid var(--surface2); border-radius: 12px; overflow: hidden; }
-  .map-label { padding: 12px 16px; font-size: 10px; color: var(--subtle); letter-spacing: 0.12em; border-bottom: 1px solid var(--surface2); }
-  #map { height: 300px; width: 100%; background: #0a0d16; }
-  .leaflet-container { background: #0a0d16 !important; }
-  .leaflet-control-attribution { display: none !important; }
-  .leaflet-control-zoom a { background: var(--surface2) !important; color: var(--text-dim) !important; border-color: var(--border) !important; }
-
   .chart-card { background: #0a0d16; border: 1px solid var(--surface2); border-radius: 12px; padding: 24px 20px 20px; }
   .chart-title { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
   .chart-subtitle { font-size: 11px; color: var(--subtle); margin-bottom: 20px; }
@@ -189,14 +177,8 @@
   </div>
 
   <div id="main-layout" style="display:none">
-    <div class="content-grid">
-      <div class="map-card">
-        <div class="map-label" id="map-label">LOCATION</div>
-        <div id="map"></div>
-      </div>
-      <div id="chart-panel">
-        <div class="empty-state" style="height:300px;display:flex;align-items:center;justify-content:center;">Select a location to begin exploring</div>
-      </div>
+    <div id="chart-panel">
+      <div class="empty-state" style="height:300px;display:flex;align-items:center;justify-content:center;">Select a location to begin exploring</div>
     </div>
   </div>
   <div id="empty-state-msg">
@@ -280,7 +262,7 @@ let zipMap = new Map(), zipDataMap = new Map();
 let countyLoaded = false, zipLoaded = false;
 let selectedGeoKey = null;
 let selectedMetric = METRICS[0];
-let chartInstance = null, mapInstance = null, mapLayer = null;
+let chartInstance = null;
 let filteredGeoList = [];
 
 // ── Helpers ────────────────────────────────────────────────────────────────
@@ -342,7 +324,6 @@ function selectState(st) {
   countyLoaded = false; zipLoaded = false;
   selectedGeoKey = null;
   mode = 'county';
-  clearMap();
   // Update badge
   document.getElementById('state-badge').textContent = st + ' — ' + (STATE_NAMES[st]||st);
   document.getElementById('btn-county').classList.add('active');
@@ -455,7 +436,6 @@ function switchMode(newMode) {
   document.getElementById('geo-box').classList.add('placeholder');
   document.getElementById('main-layout').style.display = 'none';
   document.getElementById('empty-state-msg').style.display = '';
-  clearMap();
   if (mode==='zip' && !zipLoaded) loadDataset('zip');
   else refreshGeoList();
 }
@@ -576,10 +556,7 @@ function renderContent() {
   document.getElementById('main-layout').style.display = '';
   document.getElementById('empty-state-msg').style.display = 'none';
 
-  // Update map label
-  document.getElementById('map-label').textContent = 'LOCATION · ' + displayName.toUpperCase();
-
-  // Update chart panel only
+  // Update chart panel
   document.getElementById('chart-panel').innerHTML =
     '<div class="chart-card">' +
       '<div class="chart-title">'+selectedMetric.label+'</div>' +
@@ -620,86 +597,6 @@ function renderContent() {
       }
     }
   });
-  initMap();
-}
-
-// ── Map ────────────────────────────────────────────────────────────────────
-function clearMap() {
-  if (mapLayer) { try { mapLayer.remove(); } catch(e) {} mapLayer = null; }
-}
-
-function initMap() {
-  if (!mapInstance) {
-    mapInstance = L.map('map', { zoomControl:false, attributionControl:false });
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {maxZoom:19}).addTo(mapInstance);
-  }
-  mapInstance.invalidateSize();
-  clearMap();
-  if (mode==='county') loadCountyBoundary(selectedGeoKey);
-  else loadZipBoundary(selectedGeoKey);
-}
-
-function applyBoundary(feature) {
-  mapLayer = L.geoJSON(feature, {
-    style: { color:'#38bdf8', weight:2, opacity:1, fillColor:'#38bdf8', fillOpacity:0.18 }
-  }).addTo(mapInstance);
-  mapInstance.fitBounds(mapLayer.getBounds(), { padding:[24,24] });
-}
-
-function loadCountyBoundary(fips) {
-  const pad = String(fips).padStart(5,'0');
-  fetch('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json')
-    .then(r=>r.json())
-    .then(gj => {
-      const feat = gj.features.find(f =>
-        f.id===pad || String(f.id).padStart(5,'0')===pad ||
-        String(f.properties&&(f.properties.FIPS||f.properties.fips||'')).includes(pad)
-      );
-      if (feat) applyBoundary(feat);
-      else geocodeFallback(curMap().get(fips)||fips, 9);
-    })
-    .catch(() => geocodeFallback(curMap().get(fips)||fips, 9));
-}
-
-function loadZipBoundary(zip) {
-  const pad = String(zip).padStart(5,'0');
-  // Nominatim with polygon_geojson=1 and polygon_threshold=0 for full detail
-  const url = 'https://nominatim.openstreetmap.org/search' +
-    '?postalcode=' + pad +
-    '&country=US&format=json&limit=5&polygon_geojson=1&polygon_threshold=0';
-  fetch(url, { headers: {'Accept-Language': 'en'} })
-    .then(r => r.json())
-    .then(data => {
-      if (!data || !data.length) { geocodeFallback(curMap().get(zip)||zip, 11); return; }
-      // Prefer result with a real polygon (not just a point or bbox rectangle)
-      const poly = data.find(d =>
-        d.geojson && (d.geojson.type === 'Polygon' || d.geojson.type === 'MultiPolygon') &&
-        d.geojson.coordinates && d.geojson.coordinates[0] && d.geojson.coordinates[0].length > 5
-      );
-      const item = poly || data[0];
-      if (item.geojson && item.geojson.coordinates && item.geojson.coordinates[0] && item.geojson.coordinates[0].length > 5) {
-        applyBoundary(item.geojson);
-      } else {
-        // Fall back to a circle marker at the centroid
-        mapInstance.setView([+item.lat, +item.lon], 12);
-        mapLayer = L.circleMarker([+item.lat, +item.lon],
-          {radius: 18, color:'#38bdf8', fillColor:'#38bdf8', fillOpacity:0.25, weight:2}).addTo(mapInstance);
-      }
-    })
-    .catch(() => geocodeFallback(curMap().get(zip)||zip, 11));
-}
-
-function geocodeFallback(name, zoom) {
-  fetch('https://nominatim.openstreetmap.org/search?q='+encodeURIComponent(name+', USA')+'&format=json&limit=1')
-    .then(r=>r.json())
-    .then(data => {
-      if (data&&data[0]) {
-        mapInstance.setView([+data[0].lat,+data[0].lon], zoom);
-        mapLayer = L.circleMarker([+data[0].lat,+data[0].lon],
-          {radius:14,color:'#38bdf8',fillColor:'#38bdf8',fillOpacity:0.25,weight:2}).addTo(mapInstance);
-      }
-    })
-    .catch(()=>{});
 }
 
 // ── Boot ───────────────────────────────────────────────────────────────────
