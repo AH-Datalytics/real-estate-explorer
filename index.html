@@ -460,7 +460,13 @@ function loadDataset(which) {
           else if (which==='zip') zipLoaded=true;
           else if (which==='rent-county') rentCountyLoaded=true;
           else rentZipLoaded=true;
-          console.log('Loaded ' + (which==='county'?countyMap.size:zipMap.size) + ' ' + which + ' entries for ' + selectedState);
+          const mapObj = (which==='county'?countyMap:which==='zip'?zipMap:which==='rent-county'?rentCountyMap:rentZipMap);
+          console.log(`✓ Loaded ${mapObj.size} ${which} entries for ${selectedState}`);
+          if (which === 'zip') {
+            console.log('ZIP KEYS SAMPLE (first 10):', Array.from(zipMap.keys()).slice(0, 10));
+            console.log('ZIP FULL COUNT:', zipMap.size);
+            console.log('ZIP DATA MAP KEYS:', zipDataMap.size);
+          }
           setTimeout(showApp, 150);
         },
         error(err) { showError(err.message); }
@@ -495,9 +501,22 @@ function ingestRow(row, which) {
     if (!countyDataMap.has(fips)) countyDataMap.set(fips,[]);
     countyDataMap.get(fips).push(row);
   } else if (which==='zip') {
-    if (!row.postal_code) return;
+    if (!row.postal_code) {
+      console.log('DEBUG: Skipping row - no postal_code', row);
+      return;
+    }
     const zip = String(row.postal_code).padStart(5,'0');
-    if (!zipMap.has(zip)) zipMap.set(zip, formatZipName(row.zip_name, zip));
+    const displayName = formatZipName(row.zip_name, zip);
+    if (zipMap.size < 3) {
+      console.log(`DEBUG ZIP ROW ${zipMap.size}:`, {
+        postal_code: row.postal_code,
+        postal_code_type: typeof row.postal_code,
+        zip_padded: zip,
+        zip_name: row.zip_name,
+        displayName: displayName
+      });
+    }
+    if (!zipMap.has(zip)) zipMap.set(zip, displayName);
     if (!zipDataMap.has(zip)) zipDataMap.set(zip,[]);
     zipDataMap.get(zip).push(row);
   } else if (which==='rent-county') {
@@ -509,7 +528,6 @@ function ingestRow(row, which) {
   } else if (which==='rent-zip') {
     if (!row.RegionName || !row.RegionID) return;
     const key = String(row.RegionID);
-    // RegionID IS the zip code for rent-zip data; RegionName is the city
     const zip = String(row.RegionID).padStart(5,'0');
     const city = row.RegionName ? titleCase(row.RegionName) : '';
     const label = city ? city + ', ' + row.State + ' (' + zip + ')' : zip;
