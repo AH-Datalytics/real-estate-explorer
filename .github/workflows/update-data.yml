@@ -2,8 +2,8 @@ name: Update Real Estate Data
 
 on:
   schedule:
-    - cron: '0 */4 * * *'   # every 4 hours
-  workflow_dispatch:          # also allows manual trigger
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
 
 jobs:
   update:
@@ -11,10 +11,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download latest CSV
+      - name: Download county CSV
         run: |
           curl -L "https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_County_History.csv" \
             -o data/RDC_Inventory_Core_Metrics_County_History.csv
+
+      - name: Download zip CSV
+        run: |
+          curl -L "https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_Zip_History.csv" \
+            -o data/RDC_Inventory_Core_Metrics_Zip_History.csv
 
       - name: Commit and push if changed
         run: |
