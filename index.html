@@ -220,6 +220,8 @@
     </div>
   </div>
 
+  <div id="summary-sentence" style="display:none;margin-bottom:18px;padding:14px 18px;background:var(--surface);border:1px solid var(--border);border-radius:10px;font-size:13px;line-height:1.7;color:var(--text-dim);"></div>
+
   <div id="main-layout" style="display:none">
     <div id="chart-panel">
       <div class="empty-state" style="height:300px;display:flex;align-items:center;justify-content:center;">Select a location to begin exploring</div>
@@ -381,6 +383,7 @@ function selectState(st) {
   document.getElementById('main-layout').style.display = 'none';
   document.getElementById('empty-state-msg').style.display = '';
   document.getElementById('export-bar').style.display = 'none';
+  document.getElementById('summary-sentence').style.display = 'none';
   loadDataset('county');
 }
 
@@ -607,6 +610,7 @@ function renderContent() {
   // Show layout, hide empty state
   document.getElementById('main-layout').style.display = '';
   document.getElementById('empty-state-msg').style.display = 'none';
+  buildSummarySentence();
 
   // Update chart panel
   document.getElementById('chart-panel').innerHTML =
@@ -651,6 +655,55 @@ function renderContent() {
   });
 }
 
+
+
+function buildSummarySentence() {
+  if (!selectedGeoKey) return;
+  const data = curData().get(selectedGeoKey) || [];
+  if (!data.length) return;
+  const row = data[data.length - 1];
+  const displayName = curMap().get(selectedGeoKey) || selectedGeoKey;
+
+  function monthLabel(yyyymm) {
+    const s = String(yyyymm);
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(s.slice(4,6),10)-1] + ' ' + s.slice(0,4);
+  }
+
+  function dirSpan(val) {
+    if (val === null || val === undefined || val === '') return '';
+    const pct = (val * 100).toFixed(1);
+    const dir = val >= 0 ? 'up' : 'down';
+    const color = val >= 0 ? '#4ade80' : '#f87171';
+    return dir + ' <strong style="color:'+color+'">'+Math.abs(pct)+'%</strong>';
+  }
+
+  const date = row.month_date_yyyymm;
+  const curMonth = monthLabel(date);
+  // Last year same month
+  const lyYYYYMM = (parseInt(String(date).slice(0,4)) - 1) + String(date).slice(4);
+  const lyMonth = monthLabel(lyYYYYMM);
+
+  const avgYY  = row.average_listing_price_yy;
+  const domYY  = row.median_days_on_market_yy;
+  const totYY  = row.total_listing_count_yy;
+
+  const avgStr = avgYY  !== null && avgYY  !== undefined && avgYY  !== '' ? dirSpan(avgYY)  : '<span style="color:var(--muted)">N/A</span>';
+  const domStr = domYY  !== null && domYY  !== undefined && domYY  !== '' ? dirSpan(domYY)  : '<span style="color:var(--muted)">N/A</span>';
+  const totStr = totYY  !== null && totYY  !== undefined && totYY  !== '' ? dirSpan(totYY)  : '<span style="color:var(--muted)">N/A</span>';
+
+  const sentence =
+    '<span style="color:var(--accent);font-weight:500;">Real Estate Summary — '+displayName+'</span>: ' +
+    'As of <strong style="color:var(--text)">'+curMonth+'</strong>, ' +
+    'the average listing price is '+avgStr+', ' +
+    'median days on market is '+domStr+', ' +
+    'and total listings are '+totStr+' ' +
+    'relative to <strong style="color:var(--text)">'+lyMonth+'</strong>.';
+
+  const el = document.getElementById('summary-sentence');
+  el.innerHTML = sentence;
+  el.style.display = 'block';
+}
 
 // ── Export ─────────────────────────────────────────────────────────────────
 function getLatestRow() {
