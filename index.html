@@ -96,7 +96,8 @@
   .dropdown-empty { padding: 14px; color: var(--muted); font-size: 12px; text-align: center; }
 
   /* Content */
-  .content-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  .content-grid { display: grid; grid-template-columns: 340px 1fr; gap: 16px; align-items: start; }
+  @media (max-width: 860px) { .content-grid { grid-template-columns: 1fr; } }
 
   .map-card { background: #0a0d16; border: 1px solid var(--surface2); border-radius: 12px; overflow: hidden; }
   .map-label { padding: 12px 16px; font-size: 10px; color: var(--subtle); letter-spacing: 0.12em; border-bottom: 1px solid var(--surface2); }
@@ -629,7 +630,7 @@ function clearMap() {
 
 function initMap() {
   if (!mapInstance) {
-    mapInstance = L.map('map', { zoomControl:true, attributionControl:false });
+    mapInstance = L.map('map', { zoomControl:false, attributionControl:false });
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {maxZoom:19}).addTo(mapInstance);
   }
   mapInstance.invalidateSize();
@@ -662,17 +663,27 @@ function loadCountyBoundary(fips) {
 
 function loadZipBoundary(zip) {
   const pad = String(zip).padStart(5,'0');
-  // Use Census Bureau TIGER ZCTA boundary via public ArcGIS REST API
-  const url = 'https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/2/query' +
-    '?where=ZCTA5CE%3D%27' + pad + '%27' +
-    '&outFields=ZCTA5CE&outSR=4326&f=geojson';
-  fetch(url)
+  // Nominatim with polygon_geojson=1 and polygon_threshold=0 for full detail
+  const url = 'https://nominatim.openstreetmap.org/search' +
+    '?postalcode=' + pad +
+    '&country=US&format=json&limit=5&polygon_geojson=1&polygon_threshold=0';
+  fetch(url, { headers: {'Accept-Language': 'en'} })
     .then(r => r.json())
     .then(data => {
-      if (data.features && data.features.length > 0) {
-        applyBoundary(data.features[0].geometry);
+      if (!data || !data.length) { geocodeFallback(curMap().get(zip)||zip, 11); return; }
+      // Prefer result with a real polygon (not just a point or bbox rectangle)
+      const poly = data.find(d =>
+        d.geojson && (d.geojson.type === 'Polygon' || d.geojson.type === 'MultiPolygon') &&
+        d.geojson.coordinates && d.geojson.coordinates[0] && d.geojson.coordinates[0].length > 5
+      );
+      const item = poly || data[0];
+      if (item.geojson && item.geojson.coordinates && item.geojson.coordinates[0] && item.geojson.coordinates[0].length > 5) {
+        applyBoundary(item.geojson);
       } else {
-        geocodeFallback(curMap().get(zip)||zip, 11);
+        // Fall back to a circle marker at the centroid
+        mapInstance.setView([+item.lat, +item.lon], 12);
+        mapLayer = L.circleMarker([+item.lat, +item.lon],
+          {radius: 18, color:'#38bdf8', fillColor:'#38bdf8', fillOpacity:0.25, weight:2}).addTo(mapInstance);
       }
     })
     .catch(() => geocodeFallback(curMap().get(zip)||zip, 11));
