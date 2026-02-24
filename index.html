@@ -232,8 +232,9 @@ let selectedGeoKey = null, selectedMetric = METRICS[0];
 let chartInstance = null, mapInstance = null, mapLayer = null;
 let filteredGeoList = [];
 
-const COUNTY_PATH = 'data/RDC_Inventory_Core_Metrics_County_History.csv';
-const ZIP_PATH    = 'data/RDC_Inventory_Core_Metrics_Zip_History.csv';
+// Fetch directly from S3 (public, CORS-enabled) — no need to store in GitHub
+const COUNTY_PATH = 'https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_County_History.csv';
+const ZIP_PATH    = 'https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_Zip_History.csv';
 
 // ── Loading ────────────────────────────────────────────────────────────────
 function startApp() { loadDataset('county'); }
