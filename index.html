@@ -683,7 +683,6 @@ function renderContent() {
     return 'rgb('+Math.round(30+t*26)+','+Math.round(77+t*112)+','+Math.round(107+t*141)+')';
   });
   const n = chartData.length;
-  const tickStep = n>60 ? Math.floor(n/18) : n>24 ? 4 : 2;
 
   // Show layout, hide empty state
   document.getElementById('main-layout').style.display = '';
@@ -723,8 +722,13 @@ function renderContent() {
       },
       scales: {
         x: { grid:{display:false}, border:{color:'#dde1ea'},
-          ticks:{color:'#6b7a99',font:{family:"'DM Mono',monospace",size:10},maxRotation:45,
-            callback:function(val,i){return i%tickStep===0?this.getLabelForValue(val):'';}} },
+          ticks:{color:'#6b7a99',font:{family:"'DM Mono',monospace",size:10},maxRotation:0,
+            callback:function(val,i){
+              const label = this.getLabelForValue(val);
+              // Show year label only on January (month 01) of each year
+              if (label && label.slice(5,7) === '01') return label.slice(0,4);
+              return '';
+            }} },
         y: { grid:{color:'#eef0f5'}, border:{display:false},
           ticks:{color:'#6b7a99',font:{family:"'DM Mono',monospace",size:10},
             callback:v=>formatValue(v,selectedMetric.format)} }
