@@ -520,16 +520,17 @@ function ingestRow(row, which) {
     if (!zipDataMap.has(zip)) zipDataMap.set(zip,[]);
     zipDataMap.get(zip).push(row);
   } else if (which==='rent-county') {
-    if (!row.RegionName || !row.RegionID) return;
+    if (!row.RegionID) return;
     const key = String(row.RegionID);
-    if (!rentCountyMap.has(key)) rentCountyMap.set(key, titleCase(row.RegionName) + ', ' + row.State);
+    const name = row.RegionName ? titleCase(String(row.RegionName)) : '';
+    if (!rentCountyMap.has(key)) rentCountyMap.set(key, name + (row.State ? ', ' + row.State : ''));
     if (!rentCountyDataMap.has(key)) rentCountyDataMap.set(key,[]);
     rentCountyDataMap.get(key).push(row);
   } else if (which==='rent-zip') {
-    if (!row.RegionName || !row.RegionID) return;
+    if (!row.RegionID) return;
     const key = String(row.RegionID);
     const zip = String(row.RegionID).padStart(5,'0');
-    const city = row.RegionName ? titleCase(row.RegionName) : '';
+    const city = row.RegionName ? titleCase(String(row.RegionName)) : '';
     const label = city ? city + ', ' + row.State + ' (' + zip + ')' : zip;
     if (!rentZipMap.has(key)) rentZipMap.set(key, label);
     if (!rentZipDataMap.has(key)) rentZipDataMap.set(key,[]);
