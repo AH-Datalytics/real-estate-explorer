@@ -177,6 +177,8 @@
     <div class="mode-toggle">
       <button class="mode-btn active" id="btn-county" onclick="switchMode('county')">COUNTY</button>
       <button class="mode-btn" id="btn-zip" onclick="switchMode('zip')">ZIP CODE</button>
+    <button class="mode-btn" id="btn-rent-county" onclick="switchMode('rent-county')">RENT (COUNTY)</button>
+    <button class="mode-btn" id="btn-rent-zip" onclick="switchMode('rent-zip')">RENT (ZIP)</button>
     </div>
     <div class="state-badge" id="state-badge">TX</div>
     <button class="change-state-btn" onclick="changeState()">&#8592; Change State</button>
@@ -308,12 +310,23 @@ const FIPS_TO_STATE = {
   '54':'WV','55':'WI','56':'WY','72':'PR'
 };
 
+
+const RENT_METRICS = [
+  { key:'zori',    label:'Zillow Observed Rent Index (ZORI)', format:'currency' },
+  { key:'zori_mm', label:'ZORI (M/M %)',                      format:'percent'  },
+  { key:'zori_yy', label:'ZORI (Y/Y %)',                      format:'percent'  },
+];
+
+function isRentMode() { return mode==='rent-county' || mode==='rent-zip'; }
+
 // ── App state ──────────────────────────────────────────────────────────────
 let selectedState = null;
 let mode = 'county';
 let countyMap = new Map(), countyDataMap = new Map();
 let zipMap = new Map(), zipDataMap = new Map();
-let countyLoaded = false, zipLoaded = false;
+let rentCountyMap = new Map(), rentCountyDataMap = new Map();
+let rentZipMap = new Map(), rentZipDataMap = new Map();
+let countyLoaded = false, zipLoaded = false, rentCountyLoaded = false, rentZipLoaded = false;
 let selectedGeoKey = null;
 let selectedMetric = null;
 let chartInstance = null;
@@ -375,13 +388,15 @@ function selectState(st) {
   // Reset everything
   countyMap.clear(); countyDataMap.clear();
   zipMap.clear(); zipDataMap.clear();
-  countyLoaded = false; zipLoaded = false;
+  rentCountyMap.clear(); rentCountyDataMap.clear();
+  rentZipMap.clear(); rentZipDataMap.clear();
+  countyLoaded = false; zipLoaded = false; rentCountyLoaded = false; rentZipLoaded = false;
   selectedGeoKey = null;
   mode = 'county';
   // Update badge
   document.getElementById('state-badge').textContent = st + ' — ' + (STATE_NAMES[st]||st);
   document.getElementById('btn-county').classList.add('active');
-  document.getElementById('btn-zip').classList.remove('active');
+  ['zip','rent-county','rent-zip'].forEach(m => document.getElementById('btn-'+m).classList.remove('active'));
   document.getElementById('geo-label').textContent = 'COUNTY';
   document.getElementById('geo-selected-label').textContent = 'Select a county...';
   document.getElementById('geo-box').classList.add('placeholder');
@@ -402,6 +417,8 @@ function changeState() {
 function loadDataset(which) {
   if (which==='county' && countyLoaded) { showApp(); return; }
   if (which==='zip' && zipLoaded) { showApp(); return; }
+  if (which==='rent-county' && rentCountyLoaded) { showApp(); return; }
+  if (which==='rent-zip' && rentZipLoaded) { showApp(); return; }
 
   document.getElementById('state-screen').style.display = 'none';
   document.getElementById('app-screen').style.display = 'none';
@@ -414,7 +431,13 @@ function loadDataset(which) {
   document.getElementById('loading-sub').textContent = '';
   label.textContent = 'Loading ' + selectedState + ' ' + which + ' data...';
 
-  const path = 'data/' + which + '/' + selectedState + '.csv';
+  const pathMap = {
+    'county': 'data/county/' + selectedState + '.csv',
+    'zip': 'data/zip/' + selectedState + '.csv',
+    'rent-county': 'data/rent_county/' + selectedState + '.csv',
+    'rent-zip': 'data/rent_zip/' + selectedState + '.csv'
+  };
+  const path = pathMap[which];
   let rowCount = 0;
 
   fetch(path)
@@ -434,7 +457,10 @@ function loadDataset(which) {
         complete() {
           bar.style.width = '100%';
           (which==='county'?countyDataMap:zipDataMap).forEach(rows=>rows.sort((a,b)=>+a.month_date_yyyymm - +b.month_date_yyyymm));
-          if (which==='county') countyLoaded=true; else zipLoaded=true;
+          if (which==='county') countyLoaded=true;
+          else if (which==='zip') zipLoaded=true;
+          else if (which==='rent-county') rentCountyLoaded=true;
+          else rentZipLoaded=true;
           console.log('Loaded ' + (which==='county'?countyMap.size:zipMap.size) + ' ' + which + ' entries for ' + selectedState);
           setTimeout(showApp, 150);
         },
@@ -469,14 +495,27 @@ function ingestRow(row, which) {
     if (!countyMap.has(fips)) countyMap.set(fips, formatCountyName(row.county_name, row.county_fips));
     if (!countyDataMap.has(fips)) countyDataMap.set(fips,[]);
     countyDataMap.get(fips).push(row);
-  } else {
+  } else if (which==='zip') {
     if (!row.postal_code) return;
     const zip = String(row.postal_code).padStart(5,'0');
-    if (!zipMap.has(zip)) {
-      zipMap.set(zip, formatZipName(row.zip_name, zip));
-    }
+    if (!zipMap.has(zip)) zipMap.set(zip, formatZipName(row.zip_name, zip));
     if (!zipDataMap.has(zip)) zipDataMap.set(zip,[]);
     zipDataMap.get(zip).push(row);
+  } else if (which==='rent-county') {
+    if (!row.RegionName || !row.RegionID) return;
+    const key = String(row.RegionID);
+    if (!rentCountyMap.has(key)) rentCountyMap.set(key, titleCase(row.RegionName) + ', ' + row.State);
+    if (!rentCountyDataMap.has(key)) rentCountyDataMap.set(key,[]);
+    rentCountyDataMap.get(key).push(row);
+  } else if (which==='rent-zip') {
+    if (!row.RegionName || !row.RegionID) return;
+    const key = String(row.RegionID);
+    const zip = String(row.RegionName).padStart(5,'0');
+    const city = row.City ? titleCase(row.City) : '';
+    const label = city ? city + ', ' + row.State + ' (' + zip + ')' : zip;
+    if (!rentZipMap.has(key)) rentZipMap.set(key, label);
+    if (!rentZipDataMap.has(key)) rentZipDataMap.set(key,[]);
+    rentZipDataMap.get(key).push(row);
   }
 }
 
@@ -497,8 +536,18 @@ function switchMode(newMode) {
 }
 
 // ── Geo list ───────────────────────────────────────────────────────────────
-function curMap() { return mode==='county' ? countyMap : zipMap; }
-function curData() { return mode==='county' ? countyDataMap : zipDataMap; }
+function curMap() {
+  if (mode==='county') return countyMap;
+  if (mode==='zip') return zipMap;
+  if (mode==='rent-county') return rentCountyMap;
+  return rentZipMap;
+}
+function curData() {
+  if (mode==='county') return countyDataMap;
+  if (mode==='zip') return zipDataMap;
+  if (mode==='rent-county') return rentCountyDataMap;
+  return rentZipDataMap;
+}
 
 function refreshGeoList() {
   let entries = Array.from(curMap().entries()).map(([key,name])=>({key,name}));
@@ -566,8 +615,22 @@ document.addEventListener('click', e => {
 // ── Metric list ────────────────────────────────────────────────────────────
 function buildMetricList() {
   const list = document.getElementById('metric-list');
-  if (list.children.length) return;
-  METRICS.forEach(m => {
+  list.innerHTML = ''; // always rebuild since list changes by mode
+  const metrics = isRentMode() ? RENT_METRICS : METRICS;
+  // Reset metric selection when switching to/from rent
+  if (isRentMode() && selectedMetric && !RENT_METRICS.find(m=>m.key===selectedMetric.key)) {
+    selectedMetric = null;
+    document.getElementById('metric-label').textContent = 'Select a metric...';
+    document.getElementById('metric-label').style.color = 'var(--subtle)';
+    document.getElementById('metric-box').classList.add('placeholder');
+  }
+  if (!isRentMode() && selectedMetric && !METRICS.find(m=>m.key===selectedMetric.key)) {
+    selectedMetric = null;
+    document.getElementById('metric-label').textContent = 'Select a metric...';
+    document.getElementById('metric-label').style.color = 'var(--subtle)';
+    document.getElementById('metric-box').classList.add('placeholder');
+  }
+  metrics.forEach(m => {
     const div = document.createElement('div');
     div.className = 'dropdown-item'+(selectedMetric&&m.key===selectedMetric.key?' active':'');
     div.textContent = m.label;
@@ -690,6 +753,18 @@ function buildSummarySentence() {
   const lyYYYYMM = (parseInt(String(date).slice(0,4)) - 1) + String(date).slice(4);
   const lyMonth = monthLabel(lyYYYYMM);
 
+  if (isRentMode()) {
+    const zori = row.zori !== null && row.zori !== undefined ? '$'+Number(row.zori).toLocaleString(undefined,{maximumFractionDigits:0}) : 'N/A';
+    const yyVal = row.zori_yy;
+    const yyStr = yyVal !== null && yyVal !== undefined && yyVal !== '' ? dirSpan(yyVal) : '<span style="color:var(--muted)">N/A</span>';
+    const el = document.getElementById('summary-sentence');
+    el.innerHTML = '<span style="color:var(--accent);font-weight:500;">Rent Summary — '+displayName+'</span>: ' +
+      'As of <strong style="color:var(--text)">'+curMonth+'</strong>, ' +
+      'the typical observed market rent (ZORI) is <strong style="color:var(--text)">'+zori+'</strong>, ' +
+      yyStr+' relative to <strong style="color:var(--text)">'+lyMonth+'</strong>.';
+    el.style.display = 'block';
+    return;
+  }
   const avgYY  = row.average_listing_price_yy;
   const domYY  = row.median_days_on_market_yy;
   const totYY  = row.total_listing_count_yy;
