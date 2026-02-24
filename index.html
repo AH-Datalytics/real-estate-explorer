@@ -226,18 +226,18 @@ const STATE_NAMES = {
 };
 
 const METRICS = [
-  { key:"median_listing_price", label:"Median Listing Price", format:"currency" },
-  { key:"median_listing_price_mm", label:"Median Listing Price (M/M %)", format:"percent" },
-  { key:"median_listing_price_yy", label:"Median Listing Price (Y/Y %)", format:"percent" },
   { key:"active_listing_count", label:"Active Listing Count", format:"number" },
   { key:"active_listing_count_mm", label:"Active Listings (M/M %)", format:"percent" },
   { key:"active_listing_count_yy", label:"Active Listings (Y/Y %)", format:"percent" },
   { key:"average_listing_price", label:"Average Listing Price", format:"currency" },
   { key:"average_listing_price_mm", label:"Average Listing Price (M/M %)", format:"percent" },
   { key:"average_listing_price_yy", label:"Average Listing Price (Y/Y %)", format:"percent" },
-  { key:"median_days_on_market", label:"Days on Market (Median)", format:"number" },
   { key:"median_days_on_market_mm", label:"Days on Market (M/M %)", format:"percent" },
+  { key:"median_days_on_market", label:"Days on Market (Median)", format:"number" },
   { key:"median_days_on_market_yy", label:"Days on Market (Y/Y %)", format:"percent" },
+  { key:"median_listing_price", label:"Median Listing Price", format:"currency" },
+  { key:"median_listing_price_mm", label:"Median Listing Price (M/M %)", format:"percent" },
+  { key:"median_listing_price_yy", label:"Median Listing Price (Y/Y %)", format:"percent" },
   { key:"median_listing_price_per_square_foot", label:"Median Price Per Sq Ft", format:"currency" },
   { key:"median_listing_price_per_square_foot_mm", label:"Median Price Per Sq Ft (M/M %)", format:"percent" },
   { key:"median_listing_price_per_square_foot_yy", label:"Median Price Per Sq Ft (Y/Y %)", format:"percent" },
@@ -278,7 +278,7 @@ let mode = 'county';
 let countyMap = new Map(), countyDataMap = new Map();
 let zipMap = new Map(), zipDataMap = new Map();
 let countyLoaded = false, zipLoaded = false;
-let selectedGeoKey = null, selectedLocation = null;
+let selectedGeoKey = null;
 let selectedMetric = METRICS[0];
 let chartInstance = null, mapInstance = null, mapLayer = null;
 let filteredGeoList = [];
@@ -338,7 +338,7 @@ function selectState(st) {
   document.querySelectorAll('.state-btn').forEach(b => b.classList.toggle('active', b.textContent === st));
   // Reset everything
   countyMap.clear(); countyDataMap.clear();
-  zipMap.clear(); zipDataMap.clear(); zipLocationMap.clear();
+  zipMap.clear(); zipDataMap.clear();
   countyLoaded = false; zipLoaded = false;
   selectedGeoKey = null;
   mode = 'county';
@@ -350,7 +350,6 @@ function selectState(st) {
   document.getElementById('geo-label').textContent = 'COUNTY';
   document.getElementById('geo-selected-label').textContent = 'Select a county...';
   document.getElementById('geo-box').classList.add('placeholder');
-  document.getElementById('location-group').style.display = 'none';
   document.getElementById('main-layout').style.display = 'none';
   document.getElementById('empty-state-msg').style.display = '';
   loadDataset('county');
