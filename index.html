@@ -6,268 +6,119 @@
 <title>Real Estate Market Explorer</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
-    --bg: #080b12;
-    --surface: #0f1117;
-    --surface2: #1a1e2e;
-    --border: #2a2d3a;
-    --muted: #334155;
-    --subtle: #475569;
-    --text: #e2e8f0;
-    --text-dim: #94a3b8;
-    --accent: #38bdf8;
-    --accent2: #818cf8;
-    --danger: #f87171;
+    --bg: #080b12; --surface: #0f1117; --surface2: #1a1e2e; --border: #2a2d3a;
+    --muted: #334155; --subtle: #475569; --text: #e2e8f0; --text-dim: #94a3b8;
+    --accent: #38bdf8; --accent2: #818cf8; --danger: #f87171;
   }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'DM Mono', monospace;
-    min-height: 100vh;
-    padding: 32px 24px;
-  }
-
+  body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monospace; min-height: 100vh; padding: 32px 24px; }
   ::-webkit-scrollbar { width: 5px; background: var(--surface); }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-  /* Header */
-  .header { margin-bottom: 36px; }
+  .header { margin-bottom: 24px; }
   .header h1 {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(22px, 4vw, 34px);
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    background: linear-gradient(90deg, var(--accent), var(--accent2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 6px;
+    font-family: 'Syne', sans-serif; font-size: clamp(22px,4vw,34px); font-weight: 800;
+    letter-spacing: -0.02em; background: linear-gradient(90deg,var(--accent),var(--accent2));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px;
   }
   .header p { color: var(--subtle); font-size: 11px; letter-spacing: 0.12em; }
 
-  /* Upload zone */
-  .upload-zone {
-    border: 2px dashed var(--border);
-    border-radius: 12px;
-    padding: 60px 24px;
-    text-align: center;
-    cursor: pointer;
-    transition: border-color 0.2s, background 0.2s;
-    position: relative;
-  }
-  .upload-zone:hover, .upload-zone.dragover {
-    border-color: var(--accent);
-    background: rgba(56,189,248,0.04);
-  }
-  .upload-zone input[type=file] {
-    position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%;
-  }
-  .upload-icon { font-size: 36px; margin-bottom: 14px; opacity: 0.5; }
-  .upload-zone h2 {
-    font-family: 'Syne', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 8px;
-  }
-  .upload-zone p { font-size: 12px; color: var(--subtle); }
-  .upload-zone .hint { font-size: 11px; color: var(--muted); margin-top: 12px; }
+  .mode-toggle { display: inline-flex; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 3px; margin-bottom: 24px; gap: 2px; }
+  .mode-btn { padding: 7px 20px; font-family: inherit; font-size: 11px; letter-spacing: 0.1em; border: none; border-radius: 6px; cursor: pointer; transition: all 0.15s; background: transparent; color: var(--subtle); }
+  .mode-btn.active { background: var(--accent); color: #080b12; font-weight: 500; }
 
-  /* Loading bar */
-  .progress-wrap {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 32px 24px;
-    text-align: center;
-  }
+  .progress-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 32px 24px; text-align: center; max-width: 480px; margin: 0 auto; }
   .progress-label { font-size: 13px; color: var(--text-dim); margin-bottom: 16px; }
-  .progress-bar-bg {
-    height: 4px; background: var(--border); border-radius: 2px; overflow: hidden;
-  }
-  .progress-bar-fill {
-    height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2));
-    border-radius: 2px;
-    transition: width 0.2s;
-    width: 0%;
-  }
+  .progress-bar-bg { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .progress-bar-fill { height: 100%; background: linear-gradient(90deg,var(--accent),var(--accent2)); border-radius: 2px; transition: width 0.2s; width: 0%; }
 
-  /* Controls */
-  .controls {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-bottom: 28px;
-    align-items: flex-start;
-  }
-  .control-group { flex: 1 1 260px; max-width: 380px; }
+  .controls { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; align-items: flex-start; }
+  .control-group { flex: 1 1 260px; max-width: 400px; }
   .control-label { font-size: 10px; color: var(--subtle); letter-spacing: 0.12em; margin-bottom: 6px; }
-
-  .select-box {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 10px 14px;
-    cursor: pointer;
-    font-size: 13px;
-    color: var(--text);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    user-select: none;
-    transition: border-color 0.15s;
-  }
+  .select-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; cursor: pointer; font-size: 13px; color: var(--text); display: flex; justify-content: space-between; align-items: center; user-select: none; transition: border-color 0.15s; }
   .select-box:hover { border-color: var(--accent); }
   .select-box.placeholder { color: var(--subtle); }
-  .select-arrow { color: var(--subtle); font-size: 10px; }
-
-  .dropdown {
-    position: absolute;
-    top: calc(100% + 4px);
-    left: 0; right: 0;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    z-index: 200;
-    max-height: 320px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
-  }
-  .dropdown-search {
-    background: var(--surface2);
-    border: none;
-    border-bottom: 1px solid var(--border);
-    padding: 10px 14px;
-    color: var(--text);
-    font-size: 12px;
-    font-family: inherit;
-    outline: none;
-  }
+  .select-arrow { color: var(--subtle); font-size: 10px; flex-shrink: 0; margin-left: 8px; }
+  .select-wrapper { position: relative; }
+  .dropdown { position: absolute; top: calc(100% + 4px); left: 0; right: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; z-index: 300; max-height: 320px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 12px 40px rgba(0,0,0,0.6); }
+  .dropdown-search { background: var(--surface2); border: none; border-bottom: 1px solid var(--border); padding: 10px 14px; color: var(--text); font-size: 12px; font-family: inherit; outline: none; }
   .dropdown-list { overflow-y: auto; flex: 1; }
-  .dropdown-item {
-    padding: 9px 14px;
-    cursor: pointer;
-    font-size: 12px;
-    color: var(--text-dim);
-    transition: background 0.1s, color 0.1s;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  .dropdown-item { padding: 9px 14px; cursor: pointer; font-size: 12px; color: var(--text-dim); transition: background 0.1s,color 0.1s; display: flex; justify-content: space-between; align-items: center; }
   .dropdown-item:hover { background: var(--surface2); color: var(--accent); }
   .dropdown-item.active { background: var(--surface2); color: var(--accent); }
-  .dropdown-item .fips { color: var(--muted); font-size: 10px; }
+  .dropdown-item .sub { color: var(--muted); font-size: 10px; }
   .dropdown-empty { padding: 14px; color: var(--muted); font-size: 12px; text-align: center; }
 
-  .select-wrapper { position: relative; }
+  .content-grid { display: grid; grid-template-columns: 340px 1fr; gap: 16px; align-items: start; }
+  @media (max-width: 860px) { .content-grid { grid-template-columns: 1fr; } }
 
-  /* Chart card */
-  .chart-card {
-    background: #0a0d16;
-    border: 1px solid var(--surface2);
-    border-radius: 12px;
-    padding: 24px 20px 20px;
-  }
-  .chart-title {
-    font-family: 'Syne', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 4px;
-  }
+  .map-card { background: #0a0d16; border: 1px solid var(--surface2); border-radius: 12px; overflow: hidden; }
+  .map-label { padding: 12px 16px; font-size: 10px; color: var(--subtle); letter-spacing: 0.12em; border-bottom: 1px solid var(--surface2); }
+  #map { height: 300px; width: 100%; background: #0a0d16; }
+  .leaflet-container { background: #0a0d16 !important; }
+  .leaflet-control-attribution { display: none !important; }
+  .leaflet-control-zoom a { background: var(--surface2) !important; color: var(--text-dim) !important; border-color: var(--border) !important; }
+
+  .chart-card { background: #0a0d16; border: 1px solid var(--surface2); border-radius: 12px; padding: 24px 20px 20px; }
+  .chart-title { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
   .chart-subtitle { font-size: 11px; color: var(--subtle); margin-bottom: 20px; }
-  .chart-wrap { position: relative; height: 380px; }
+  .chart-wrap { position: relative; height: 300px; }
 
-  /* Stats row */
-  .stats-row {
-    display: flex;
-    gap: 28px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    padding-top: 16px;
-    border-top: 1px solid var(--surface2);
-  }
-  .stat-item {}
+  .stats-row { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--surface2); }
   .stat-label { font-size: 9px; color: var(--muted); letter-spacing: 0.12em; margin-bottom: 3px; }
   .stat-value { font-size: 15px; color: var(--accent); font-weight: 500; }
 
-  /* Empty state */
-  .empty-state {
-    border: 1px dashed var(--surface2);
-    border-radius: 12px;
-    padding: 80px 24px;
-    text-align: center;
-    color: var(--muted);
-    font-size: 13px;
-  }
-
-  /* Reset button */
-  .reset-btn {
-    background: transparent;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    color: var(--subtle);
-    font-family: inherit;
-    font-size: 11px;
-    padding: 6px 12px;
-    cursor: pointer;
-    letter-spacing: 0.08em;
-    transition: all 0.15s;
-    margin-top: 20px;
-  }
-  .reset-btn:hover { border-color: var(--accent); color: var(--accent); }
-
+  .empty-state { border: 1px dashed var(--surface2); border-radius: 12px; padding: 80px 24px; text-align: center; color: var(--muted); font-size: 13px; }
   #app-content { display: none; }
+  #last-updated { font-size: 10px; color: var(--muted); margin-top: 20px; letter-spacing: 0.08em; }
 </style>
 </head>
 <body>
 
 <div class="header">
   <h1>Real Estate Market Explorer</h1>
-  <p>REALTOR.COM COUNTY-LEVEL INVENTORY DATA</p>
+  <p>REALTOR.COM INVENTORY DATA</p>
 </div>
 
-<!-- Loading screen -->
 <div id="loading-screen">
   <div class="progress-wrap">
     <div class="progress-label" id="loading-label">Fetching latest data...</div>
-    <div class="progress-bar-bg">
-      <div class="progress-bar-fill" id="progress-bar"></div>
-    </div>
-    <div id="loading-updated" style="font-size:11px;color:var(--muted);margin-top:12px;text-align:center;"></div>
+    <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-bar"></div></div>
+    <div id="loading-updated" style="font-size:11px;color:var(--muted);margin-top:12px;"></div>
   </div>
 </div>
 
-<!-- Main app -->
 <div id="app-content">
+  <div class="mode-toggle">
+    <button class="mode-btn active" id="btn-county" onclick="switchMode('county')">COUNTY</button>
+    <button class="mode-btn" id="btn-zip" onclick="switchMode('zip')">ZIP CODE</button>
+  </div>
+
   <div class="controls">
     <div class="control-group">
-      <div class="control-label">COUNTY</div>
-      <div class="select-wrapper" id="county-wrapper">
-        <div class="select-box placeholder" id="county-box" onclick="toggleDropdown('county')">
-          <span id="county-label">Select a county...</span>
-          <span class="select-arrow">▼</span>
+      <div class="control-label" id="geo-label">COUNTY</div>
+      <div class="select-wrapper" id="geo-wrapper">
+        <div class="select-box placeholder" id="geo-box" onclick="toggleDropdown('geo')">
+          <span id="geo-selected-label">Select a county...</span>
+          <span class="select-arrow">&#9660;</span>
         </div>
-        <div class="dropdown" id="county-dropdown" style="display:none">
-          <input class="dropdown-search" id="county-search" placeholder="Search counties..." oninput="filterCounties()" autocomplete="off">
-          <div class="dropdown-list" id="county-list"></div>
+        <div class="dropdown" id="geo-dropdown" style="display:none">
+          <input class="dropdown-search" id="geo-search" placeholder="Search..." oninput="filterGeoList()" autocomplete="off">
+          <div class="dropdown-list" id="geo-list"></div>
         </div>
       </div>
     </div>
-
     <div class="control-group">
       <div class="control-label">METRIC</div>
       <div class="select-wrapper" id="metric-wrapper">
         <div class="select-box" id="metric-box" onclick="toggleDropdown('metric')">
           <span id="metric-label">Active Listing Count</span>
-          <span class="select-arrow">▼</span>
+          <span class="select-arrow">&#9660;</span>
         </div>
         <div class="dropdown" id="metric-dropdown" style="display:none">
           <div class="dropdown-list" id="metric-list"></div>
@@ -276,60 +127,58 @@
     </div>
   </div>
 
-  <div id="chart-area">
-    <div class="empty-state">Select a county to begin exploring</div>
+  <div id="main-content">
+    <div class="empty-state">Select a location to begin exploring</div>
   </div>
-
-  <div id="last-updated" style="font-size:10px;color:var(--muted);margin-top:20px;letter-spacing:0.08em;"></div>
+  <div id="last-updated"></div>
 </div>
 
 <script>
 const METRICS = [
-  { key: "active_listing_count", label: "Active Listing Count", format: "number" },
-  { key: "active_listing_count_mm", label: "Active Listings (M/M %)", format: "percent" },
-  { key: "active_listing_count_yy", label: "Active Listings (Y/Y %)", format: "percent" },
-  { key: "average_listing_price", label: "Average Listing Price", format: "currency" },
-  { key: "average_listing_price_mm", label: "Average Listing Price (M/M %)", format: "percent" },
-  { key: "average_listing_price_yy", label: "Average Listing Price (Y/Y %)", format: "percent" },
-  { key: "median_days_on_market", label: "Days on Market (Median)", format: "number" },
-  { key: "median_days_on_market_mm", label: "Days on Market (M/M %)", format: "percent" },
-  { key: "median_days_on_market_yy", label: "Days on Market (Y/Y %)", format: "percent" },
-  { key: "median_listing_price", label: "Median Listing Price", format: "currency" },
-  { key: "median_listing_price_mm", label: "Median Listing Price (M/M %)", format: "percent" },
-  { key: "median_listing_price_yy", label: "Median Listing Price (Y/Y %)", format: "percent" },
-  { key: "median_listing_price_per_square_foot", label: "Median Price Per Sq Ft", format: "currency" },
-  { key: "median_listing_price_per_square_foot_mm", label: "Median Price Per Sq Ft (M/M %)", format: "percent" },
-  { key: "median_listing_price_per_square_foot_yy", label: "Median Price Per Sq Ft (Y/Y %)", format: "percent" },
-  { key: "median_square_feet", label: "Median Square Feet", format: "number" },
-  { key: "median_square_feet_mm", label: "Median Square Feet (M/M %)", format: "percent" },
-  { key: "median_square_feet_yy", label: "Median Square Feet (Y/Y %)", format: "percent" },
-  { key: "new_listing_count", label: "New Listing Count", format: "number" },
-  { key: "new_listing_count_mm", label: "New Listings (M/M %)", format: "percent" },
-  { key: "new_listing_count_yy", label: "New Listings (Y/Y %)", format: "percent" },
-  { key: "pending_listing_count", label: "Pending Listing Count", format: "number" },
-  { key: "pending_listing_count_mm", label: "Pending Listings (M/M %)", format: "percent" },
-  { key: "pending_listing_count_yy", label: "Pending Listings (Y/Y %)", format: "percent" },
-  { key: "pending_ratio", label: "Pending Ratio", format: "decimal" },
-  { key: "pending_ratio_mm", label: "Pending Ratio (M/M %)", format: "percent" },
-  { key: "pending_ratio_yy", label: "Pending Ratio (Y/Y %)", format: "percent" },
-  { key: "price_increased_count", label: "Price Increased Count", format: "number" },
-  { key: "price_increased_count_mm", label: "Price Increased Count (M/M %)", format: "percent" },
-  { key: "price_increased_count_yy", label: "Price Increased Count (Y/Y %)", format: "percent" },
-  { key: "price_increased_share", label: "Price Increased Share", format: "percent" },
-  { key: "price_increased_share_mm", label: "Price Increased Share (M/M %)", format: "percent" },
-  { key: "price_increased_share_yy", label: "Price Increased Share (Y/Y %)", format: "percent" },
-  { key: "price_reduced_count", label: "Price Reduced Count", format: "number" },
-  { key: "price_reduced_count_mm", label: "Price Reduced Count (M/M %)", format: "percent" },
-  { key: "price_reduced_count_yy", label: "Price Reduced Count (Y/Y %)", format: "percent" },
-  { key: "price_reduced_share", label: "Price Reduced Share", format: "percent" },
-  { key: "price_reduced_share_mm", label: "Price Reduced Share (M/M %)", format: "percent" },
-  { key: "price_reduced_share_yy", label: "Price Reduced Share (Y/Y %)", format: "percent" },
-  { key: "total_listing_count", label: "Total Listing Count", format: "number" },
-  { key: "total_listing_count_mm", label: "Total Listings (M/M %)", format: "percent" },
-  { key: "total_listing_count_yy", label: "Total Listings (Y/Y %)", format: "percent" },
+  { key:"active_listing_count", label:"Active Listing Count", format:"number" },
+  { key:"active_listing_count_mm", label:"Active Listings (M/M %)", format:"percent" },
+  { key:"active_listing_count_yy", label:"Active Listings (Y/Y %)", format:"percent" },
+  { key:"average_listing_price", label:"Average Listing Price", format:"currency" },
+  { key:"average_listing_price_mm", label:"Average Listing Price (M/M %)", format:"percent" },
+  { key:"average_listing_price_yy", label:"Average Listing Price (Y/Y %)", format:"percent" },
+  { key:"median_days_on_market", label:"Days on Market (Median)", format:"number" },
+  { key:"median_days_on_market_mm", label:"Days on Market (M/M %)", format:"percent" },
+  { key:"median_days_on_market_yy", label:"Days on Market (Y/Y %)", format:"percent" },
+  { key:"median_listing_price", label:"Median Listing Price", format:"currency" },
+  { key:"median_listing_price_mm", label:"Median Listing Price (M/M %)", format:"percent" },
+  { key:"median_listing_price_yy", label:"Median Listing Price (Y/Y %)", format:"percent" },
+  { key:"median_listing_price_per_square_foot", label:"Median Price Per Sq Ft", format:"currency" },
+  { key:"median_listing_price_per_square_foot_mm", label:"Median Price Per Sq Ft (M/M %)", format:"percent" },
+  { key:"median_listing_price_per_square_foot_yy", label:"Median Price Per Sq Ft (Y/Y %)", format:"percent" },
+  { key:"median_square_feet", label:"Median Square Feet", format:"number" },
+  { key:"median_square_feet_mm", label:"Median Square Feet (M/M %)", format:"percent" },
+  { key:"median_square_feet_yy", label:"Median Square Feet (Y/Y %)", format:"percent" },
+  { key:"new_listing_count", label:"New Listing Count", format:"number" },
+  { key:"new_listing_count_mm", label:"New Listings (M/M %)", format:"percent" },
+  { key:"new_listing_count_yy", label:"New Listings (Y/Y %)", format:"percent" },
+  { key:"pending_listing_count", label:"Pending Listing Count", format:"number" },
+  { key:"pending_listing_count_mm", label:"Pending Listings (M/M %)", format:"percent" },
+  { key:"pending_listing_count_yy", label:"Pending Listings (Y/Y %)", format:"percent" },
+  { key:"pending_ratio", label:"Pending Ratio", format:"decimal" },
+  { key:"pending_ratio_mm", label:"Pending Ratio (M/M %)", format:"percent" },
+  { key:"pending_ratio_yy", label:"Pending Ratio (Y/Y %)", format:"percent" },
+  { key:"price_increased_count", label:"Price Increased Count", format:"number" },
+  { key:"price_increased_count_mm", label:"Price Increased Count (M/M %)", format:"percent" },
+  { key:"price_increased_count_yy", label:"Price Increased Count (Y/Y %)", format:"percent" },
+  { key:"price_increased_share", label:"Price Increased Share", format:"percent" },
+  { key:"price_increased_share_mm", label:"Price Increased Share (M/M %)", format:"percent" },
+  { key:"price_increased_share_yy", label:"Price Increased Share (Y/Y %)", format:"percent" },
+  { key:"price_reduced_count", label:"Price Reduced Count", format:"number" },
+  { key:"price_reduced_count_mm", label:"Price Reduced Count (M/M %)", format:"percent" },
+  { key:"price_reduced_count_yy", label:"Price Reduced Count (Y/Y %)", format:"percent" },
+  { key:"price_reduced_share", label:"Price Reduced Share", format:"percent" },
+  { key:"price_reduced_share_mm", label:"Price Reduced Share (M/M %)", format:"percent" },
+  { key:"price_reduced_share_yy", label:"Price Reduced Share (Y/Y %)", format:"percent" },
+  { key:"total_listing_count", label:"Total Listing Count", format:"number" },
+  { key:"total_listing_count_mm", label:"Total Listings (M/M %)", format:"percent" },
+  { key:"total_listing_count_yy", label:"Total Listings (Y/Y %)", format:"percent" },
 ];
 
-// FIPS state code -> abbreviation
 const FIPS_TO_STATE = {
   '01':'AL','02':'AK','04':'AZ','05':'AR','06':'CA','08':'CO','09':'CT','10':'DE',
   '11':'DC','12':'FL','13':'GA','15':'HI','16':'ID','17':'IL','18':'IN','19':'IA',
@@ -342,404 +191,383 @@ const FIPS_TO_STATE = {
 
 function titleCase(str) {
   const small = new Set(['a','an','the','and','but','or','for','nor','on','at','to','by','in','of','up','as','is']);
-  return str.toLowerCase().split(/\s+/).map((word, i) => {
-    if (i === 0 || !small.has(word)) return word.charAt(0).toUpperCase() + word.slice(1);
-    return word;
-  }).join(' ');
+  return str.toLowerCase().split(/\s+/).map((w,i) =>
+    (i===0||!small.has(w)) ? w.charAt(0).toUpperCase()+w.slice(1) : w
+  ).join(' ');
 }
 
 function formatCountyName(rawName, fips) {
-  const stateFips = String(fips).padStart(5, '0').slice(0, 2);
+  const stateFips = String(fips).padStart(5,'0').slice(0,2);
   const stateAbbr = FIPS_TO_STATE[stateFips] || '';
-
-  // Strip trailing ", xx" or " xx" state abbreviation already embedded in raw name (e.g. "orleans, la")
-  let name = rawName.replace(/,?\s+[a-zA-Z]{2}$/, '').trim();
-
-  // Strip common geographic suffixes
-  name = name
-    .replace(/\s+County$/i, '')
-    .replace(/\s+Parish$/i, '')
-    .replace(/\s+Borough$/i, '')
-    .replace(/\s+Census Area$/i, '')
-    .replace(/\s+Municipality$/i, '')
-    .replace(/\s+City and Borough$/i, '')
-    .replace(/\s+Municipio$/i, '')
-    .trim();
-
-  name = titleCase(name);
-  return stateAbbr ? `${name}, ${stateAbbr}` : name;
+  let name = rawName.replace(/,?\s+[a-zA-Z]{2}$/,'').trim();
+  name = name.replace(/\s+County$/i,'').replace(/\s+Parish$/i,'').replace(/\s+Borough$/i,'')
+             .replace(/\s+Census Area$/i,'').replace(/\s+Municipality$/i,'')
+             .replace(/\s+City and Borough$/i,'').replace(/\s+Municipio$/i,'').trim();
+  return (stateAbbr ? titleCase(name)+', '+stateAbbr : titleCase(name));
 }
 
-let countyMap = new Map(); // fips -> formatted display name
-let countyDataMap = new Map(); // fips -> sorted rows
-let selectedCountyFips = null;
-let selectedMetric = METRICS[0];
-let chartInstance = null;
-let filteredCountyList = [];
+function formatZipName(zipName, postalCode) {
+  if (!zipName) return String(postalCode);
+  // zip_name is typically "City Name, ST" — clean it up
+  let name = String(zipName).replace(/,?\s+[a-zA-Z]{2}$/,'').trim();
+  return titleCase(name) + ' (' + postalCode + ')';
+}
 
 function formatValue(val, fmt) {
-  if (val === null || val === undefined || val === '' || isNaN(+val)) return 'N/A';
+  if (val===null||val===undefined||val===''||isNaN(+val)) return 'N/A';
   const n = +val;
-  if (fmt === 'currency') return '$' + n.toLocaleString(undefined, { maximumFractionDigits: 0 });
-  if (fmt === 'percent') return (n * 100).toFixed(1) + '%';
-  if (fmt === 'decimal') return n.toFixed(3);
-  return n.toLocaleString(undefined, { maximumFractionDigits: 1 });
+  if (fmt==='currency') return '$'+n.toLocaleString(undefined,{maximumFractionDigits:0});
+  if (fmt==='percent') return (n*100).toFixed(1)+'%';
+  if (fmt==='decimal') return n.toFixed(3);
+  return n.toLocaleString(undefined,{maximumFractionDigits:1});
 }
+function formatDate(d) { const s=String(d).trim(); return s.slice(0,4)+'-'+s.slice(4,6); }
 
-function formatDate(d) {
-  const s = String(d).trim();
-  return s.slice(0, 4) + '-' + s.slice(4, 6);
-}
+// ── State ──────────────────────────────────────────────────────────────────
+let mode = 'county';
+let countyMap = new Map(), countyDataMap = new Map();
+let zipMap = new Map(), zipDataMap = new Map();
+let countyLoaded = false, zipLoaded = false;
+let selectedGeoKey = null, selectedMetric = METRICS[0];
+let chartInstance = null, mapInstance = null, mapLayer = null;
+let filteredGeoList = [];
 
-const DATA_PATH = 'data/RDC_Inventory_Core_Metrics_County_History.csv';
+const COUNTY_PATH = 'data/RDC_Inventory_Core_Metrics_County_History.csv';
+const ZIP_PATH    = 'data/RDC_Inventory_Core_Metrics_Zip_History.csv';
 
-function startApp() {
+// ── Loading ────────────────────────────────────────────────────────────────
+function startApp() { loadDataset('county'); }
+
+function loadDataset(which) {
+  if (which==='county' && countyLoaded) { finishLoad(); return; }
+  if (which==='zip' && zipLoaded) { finishLoad(); return; }
+
   document.getElementById('loading-screen').style.display = 'block';
   document.getElementById('app-content').style.display = 'none';
-
   const label = document.getElementById('loading-label');
   const bar = document.getElementById('progress-bar');
-
+  bar.style.width='0%'; bar.style.background='linear-gradient(90deg,var(--accent),var(--accent2))';
+  document.getElementById('loading-updated').textContent='';
+  label.textContent = 'Fetching '+(which==='county'?'county':'zip code')+' data...';
   let rowCount = 0;
-  // Reset state
-  countyMap = new Map();
-  countyDataMap = new Map();
 
-  Papa.parse(DATA_PATH, {
-    download: true,
-    header: true,
-    dynamicTyping: true,
-    skipEmptyLines: true,
-    chunk: function(results) {
+  Papa.parse(which==='county' ? COUNTY_PATH : ZIP_PATH, {
+    download: true, header: true, dynamicTyping: true, skipEmptyLines: true,
+    chunk(results) {
       rowCount += results.data.length;
       label.textContent = `Parsed ${rowCount.toLocaleString()} rows...`;
-      const pct = Math.min(90, (rowCount / 800000) * 100);
-      bar.style.width = pct + '%';
-      results.data.forEach(row => {
-        if (!row.county_fips || !row.county_name) return;
-        const fips = String(row.county_fips);
-        if (!countyMap.has(fips)) {
-          countyMap.set(fips, formatCountyName(row.county_name, row.county_fips));
-        }
-        if (!countyDataMap.has(fips)) countyDataMap.set(fips, []);
-        countyDataMap.get(fips).push(row);
-      });
+      bar.style.width = Math.min(90,(rowCount/800000)*100)+'%';
+      results.data.forEach(row => ingestRow(row, which));
     },
-    complete: function() {
-      bar.style.width = '100%';
-      label.textContent = 'Building index...';
-      countyDataMap.forEach((rows) => {
-        rows.sort((a, b) => +a.month_date_yyyymm - +b.month_date_yyyymm);
-      });
-      setTimeout(() => {
-        document.getElementById('loading-screen').style.display = 'none';
-        document.getElementById('app-content').style.display = 'block';
-        const updated = document.getElementById('last-updated');
-        if (updated) updated.textContent = `DATA REFRESHED ${new Date().toUTCString()}`;
-        buildUI();
-      }, 200);
+    complete() {
+      bar.style.width='100%'; label.textContent='Building index...';
+      (which==='county'?countyDataMap:zipDataMap).forEach(rows=>rows.sort((a,b)=>+a.month_date_yyyymm - +b.month_date_yyyymm));
+      if (which==='county') countyLoaded=true; else zipLoaded=true;
+      setTimeout(finishLoad, 150);
     },
-    error: function(err) {
-      label.textContent = 'Error loading data.';
-      bar.style.background = '#f87171';
-      document.getElementById('loading-updated').innerHTML = `
-        <div style="color:var(--danger);margin-bottom:12px;">
-          ${err.message || 'Could not fetch data/RDC_Inventory_Core_Metrics_County_History.csv'}
-        </div>
-        <div style="color:var(--subtle);margin-bottom:16px;font-size:11px;">
-          If running locally, browsers block local file fetches.<br>
-          Upload the CSV manually instead:
-        </div>
-        <label style="
-          display:inline-block;
-          background:var(--surface2);
-          border:1px solid var(--border);
-          border-radius:6px;
-          padding:8px 16px;
-          cursor:pointer;
-          font-size:12px;
-          color:var(--accent);
-          letter-spacing:0.06em;
-          transition:border-color 0.15s;
-        ">
-          📂 Choose CSV file
-          <input type="file" accept=".csv" style="display:none" onchange="handleFallbackFile(this.files[0])">
-        </label>
-      `;
+    error(err) {
+      label.textContent='Error loading data.'; bar.style.background='#f87171';
+      document.getElementById('loading-updated').innerHTML=`
+        <div style="color:var(--danger);margin-bottom:10px;">${err.message||'Could not fetch CSV'}</div>
+        <div style="color:var(--subtle);font-size:11px;margin-bottom:14px;">Running locally? Upload the file manually:</div>
+        <label style="display:inline-block;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:8px 16px;cursor:pointer;font-size:12px;color:var(--accent);">
+          &#128194; Choose CSV
+          <input type="file" accept=".csv" style="display:none" onchange="handleFallback(this.files[0],'${which}')">
+        </label>`;
     }
   });
 }
 
-function handleFallbackFile(file) {
+function ingestRow(row, which) {
+  if (which==='county') {
+    if (!row.county_fips||!row.county_name) return;
+    const fips = String(row.county_fips);
+    if (!countyMap.has(fips)) countyMap.set(fips, formatCountyName(row.county_name, row.county_fips));
+    if (!countyDataMap.has(fips)) countyDataMap.set(fips,[]);
+    countyDataMap.get(fips).push(row);
+  } else {
+    if (!row.postal_code) return;
+    const zip = String(row.postal_code).padStart(5,'0');
+    if (!zipMap.has(zip)) zipMap.set(zip, formatZipName(row.zip_name, zip));
+    if (!zipDataMap.has(zip)) zipDataMap.set(zip,[]);
+    zipDataMap.get(zip).push(row);
+  }
+}
+
+function handleFallback(file, which) {
   if (!file) return;
-  document.getElementById('loading-updated').innerHTML = '';
-  const label = document.getElementById('loading-label');
-  const bar = document.getElementById('progress-bar');
-  bar.style.background = 'linear-gradient(90deg, var(--accent), var(--accent2))';
-  bar.style.width = '0%';
-  countyMap = new Map();
-  countyDataMap = new Map();
-  let rowCount = 0;
-
+  document.getElementById('loading-updated').innerHTML='';
+  const label=document.getElementById('loading-label'), bar=document.getElementById('progress-bar');
+  bar.style.background='linear-gradient(90deg,var(--accent),var(--accent2))'; bar.style.width='0%';
+  let rowCount=0;
   Papa.parse(file, {
-    header: true,
-    dynamicTyping: true,
-    skipEmptyLines: true,
-    chunk: function(results) {
-      rowCount += results.data.length;
-      label.textContent = `Parsed ${rowCount.toLocaleString()} rows...`;
-      const pct = Math.min(90, (rowCount / 800000) * 100);
-      bar.style.width = pct + '%';
-      results.data.forEach(row => {
-        if (!row.county_fips || !row.county_name) return;
-        const fips = String(row.county_fips);
-        if (!countyMap.has(fips)) {
-          countyMap.set(fips, formatCountyName(row.county_name, row.county_fips));
-        }
-        if (!countyDataMap.has(fips)) countyDataMap.set(fips, []);
-        countyDataMap.get(fips).push(row);
-      });
+    header:true, dynamicTyping:true, skipEmptyLines:true,
+    chunk(results) {
+      rowCount+=results.data.length;
+      label.textContent=`Parsed ${rowCount.toLocaleString()} rows...`;
+      bar.style.width=Math.min(90,(rowCount/800000)*100)+'%';
+      results.data.forEach(row=>ingestRow(row,which));
     },
-    complete: function() {
-      bar.style.width = '100%';
-      label.textContent = 'Building index...';
-      countyDataMap.forEach((rows) => {
-        rows.sort((a, b) => +a.month_date_yyyymm - +b.month_date_yyyymm);
-      });
-      setTimeout(() => {
-        document.getElementById('loading-screen').style.display = 'none';
-        document.getElementById('app-content').style.display = 'block';
-        const updated = document.getElementById('last-updated');
-        if (updated) updated.textContent = `DATA LOADED ${new Date().toUTCString()}`;
-        buildUI();
-      }, 200);
+    complete() {
+      bar.style.width='100%';
+      (which==='county'?countyDataMap:zipDataMap).forEach(rows=>rows.sort((a,b)=>+a.month_date_yyyymm - +b.month_date_yyyymm));
+      if(which==='county') countyLoaded=true; else zipLoaded=true;
+      setTimeout(finishLoad,150);
     },
-    error: function(err) {
-      label.textContent = 'Error parsing file: ' + err.message;
-      bar.style.background = '#f87171';
-    }
+    error(err){label.textContent='Parse error: '+err.message; bar.style.background='#f87171';}
   });
 }
 
-// Auto-start on page load
-window.addEventListener('DOMContentLoaded', startApp);
-
-function buildUI() {
-  // Build metric list (clear first to avoid duplicates)
-  const metricList = document.getElementById('metric-list');
-  metricList.innerHTML = '';
-  METRICS.forEach(m => {
-    const div = document.createElement('div');
-    div.className = 'dropdown-item' + (m.key === selectedMetric.key ? ' active' : '');
-    div.textContent = m.label;
-    div.onclick = () => selectMetric(m);
-    metricList.appendChild(div);
-  });
-
-  // Build county list
-  filteredCountyList = Array.from(countyMap.entries())
-    .map(([fips, name]) => ({ fips, name }))
-    .sort((a, b) => a.name.localeCompare(b.name));
-
-  renderCountyList(filteredCountyList);
-
-  // Close dropdowns on outside click
-  document.addEventListener('click', e => {
-    if (!document.getElementById('county-wrapper').contains(e.target)) {
-      document.getElementById('county-dropdown').style.display = 'none';
-    }
-    if (!document.getElementById('metric-wrapper').contains(e.target)) {
-      document.getElementById('metric-dropdown').style.display = 'none';
-    }
-  });
+function finishLoad() {
+  document.getElementById('loading-screen').style.display='none';
+  document.getElementById('app-content').style.display='block';
+  document.getElementById('last-updated').textContent=`DATA REFRESHED ${new Date().toUTCString()}`;
+  buildMetricList();
+  refreshGeoList();
 }
 
-function renderCountyList(list) {
-  const container = document.getElementById('county-list');
-  container.innerHTML = '';
-  const shown = list.slice(0, 100);
-  if (shown.length === 0) {
-    container.innerHTML = '<div class="dropdown-empty">No results</div>';
-    return;
-  }
-  shown.forEach(c => {
-    const div = document.createElement('div');
-    div.className = 'dropdown-item' + (c.fips === selectedCountyFips ? ' active' : '');
-    div.innerHTML = `<span>${c.name}</span><span class="fips">${c.fips}</span>`;
-    div.onclick = () => selectCounty(c.fips, c.name);
-    container.appendChild(div);
+// ── Mode ───────────────────────────────────────────────────────────────────
+function switchMode(newMode) {
+  if (newMode===mode && (newMode==='county'?countyLoaded:zipLoaded)) return;
+  mode=newMode;
+  selectedGeoKey=null;
+  document.getElementById('btn-county').classList.toggle('active',mode==='county');
+  document.getElementById('btn-zip').classList.toggle('active',mode==='zip');
+  document.getElementById('geo-label').textContent=mode==='county'?'COUNTY':'ZIP CODE';
+  document.getElementById('geo-selected-label').textContent=mode==='county'?'Select a county...':'Select a zip code...';
+  document.getElementById('geo-box').classList.add('placeholder');
+  document.getElementById('main-content').innerHTML='<div class="empty-state">Select a location to begin exploring</div>';
+  clearMap();
+  if (mode==='zip'&&!zipLoaded) loadDataset('zip'); else refreshGeoList();
+}
+
+// ── Geo list ───────────────────────────────────────────────────────────────
+function curMap() { return mode==='county'?countyMap:zipMap; }
+function curData() { return mode==='county'?countyDataMap:zipDataMap; }
+
+function refreshGeoList() {
+  filteredGeoList = Array.from(curMap().entries()).map(([key,name])=>({key,name})).sort((a,b)=>a.name.localeCompare(b.name));
+  renderGeoList(filteredGeoList);
+}
+
+function renderGeoList(list) {
+  const c=document.getElementById('geo-list'); c.innerHTML='';
+  const shown=list.slice(0,100);
+  if (!shown.length){c.innerHTML='<div class="dropdown-empty">No results</div>';return;}
+  shown.forEach(item=>{
+    const div=document.createElement('div');
+    div.className='dropdown-item'+(item.key===selectedGeoKey?' active':'');
+    div.innerHTML=`<span>${item.name}</span><span class="sub">${item.key}</span>`;
+    div.onclick=()=>selectGeo(item.key,item.name);
+    c.appendChild(div);
   });
-  if (list.length > 100) {
-    container.innerHTML += `<div class="dropdown-empty">+${list.length - 100} more — type to filter</div>`;
-  }
+  if (list.length>100) c.innerHTML+=`<div class="dropdown-empty">+${list.length-100} more — type to filter</div>`;
 }
 
-function filterCounties() {
-  const q = document.getElementById('county-search').value.toLowerCase();
-  const allCounties = Array.from(countyMap.entries())
-    .map(([fips, name]) => ({ fips, name }))
-    .sort((a, b) => a.name.localeCompare(b.name));
-  filteredCountyList = q ? allCounties.filter(c => c.name.toLowerCase().includes(q) || c.fips.includes(q)) : allCounties;
-  renderCountyList(filteredCountyList);
+function filterGeoList() {
+  const q=document.getElementById('geo-search').value.toLowerCase();
+  const all=Array.from(curMap().entries()).map(([key,name])=>({key,name})).sort((a,b)=>a.name.localeCompare(b.name));
+  filteredGeoList=q?all.filter(c=>c.name.toLowerCase().includes(q)||c.key.includes(q)):all;
+  renderGeoList(filteredGeoList);
 }
 
+function selectGeo(key,name) {
+  selectedGeoKey=key;
+  document.getElementById('geo-box').classList.remove('placeholder');
+  document.getElementById('geo-selected-label').textContent=name;
+  document.getElementById('geo-dropdown').style.display='none';
+  renderGeoList(filteredGeoList);
+  renderContent();
+}
+
+// ── Dropdowns ──────────────────────────────────────────────────────────────
 function toggleDropdown(which) {
-  const dd = document.getElementById(which + '-dropdown');
-  const other = which === 'county' ? 'metric' : 'county';
-  document.getElementById(other + '-dropdown').style.display = 'none';
-  const isOpen = dd.style.display !== 'none';
-  dd.style.display = isOpen ? 'none' : 'flex';
-  if (!isOpen && which === 'county') {
-    document.getElementById('county-search').value = '';
-    filterCounties();
-    setTimeout(() => document.getElementById('county-search').focus(), 50);
+  const dd=document.getElementById(which+'-dropdown');
+  const other=which==='geo'?'metric':'geo';
+  document.getElementById(other+'-dropdown').style.display='none';
+  const open=dd.style.display!=='none';
+  dd.style.display=open?'none':'flex';
+  if (!open&&which==='geo'){
+    document.getElementById('geo-search').value='';
+    filterGeoList();
+    setTimeout(()=>document.getElementById('geo-search').focus(),50);
   }
 }
-
-function selectCounty(fips, name) {
-  selectedCountyFips = fips;
-  const box = document.getElementById('county-box');
-  box.classList.remove('placeholder');
-  document.getElementById('county-label').textContent = name;
-  document.getElementById('county-dropdown').style.display = 'none';
-  renderCountyList(filteredCountyList);
-  renderChart();
-}
-
-function selectMetric(m) {
-  selectedMetric = m;
-  document.getElementById('metric-label').textContent = m.label;
-  document.getElementById('metric-dropdown').style.display = 'none';
-  // Update active state
-  document.querySelectorAll('#metric-list .dropdown-item').forEach(el => {
-    el.classList.toggle('active', el.textContent === m.label);
+document.addEventListener('click',e=>{
+  ['geo','metric'].forEach(w=>{
+    const wr=document.getElementById(w+'-wrapper');
+    if(wr&&!wr.contains(e.target)) document.getElementById(w+'-dropdown').style.display='none';
   });
-  if (selectedCountyFips) renderChart();
+});
+
+// ── Metric list ────────────────────────────────────────────────────────────
+function buildMetricList() {
+  const list=document.getElementById('metric-list');
+  if(list.children.length) return;
+  METRICS.forEach(m=>{
+    const div=document.createElement('div');
+    div.className='dropdown-item'+(m.key===selectedMetric.key?' active':'');
+    div.textContent=m.label;
+    div.onclick=()=>{
+      selectedMetric=m;
+      document.getElementById('metric-label').textContent=m.label;
+      document.getElementById('metric-dropdown').style.display='none';
+      document.querySelectorAll('#metric-list .dropdown-item').forEach(el=>el.classList.toggle('active',el.textContent===m.label));
+      if(selectedGeoKey) renderContent();
+    };
+    list.appendChild(div);
+  });
 }
 
-function renderChart() {
-  const rows = countyDataMap.get(selectedCountyFips) || [];
-  const chartData = rows
-    .filter(r => r[selectedMetric.key] !== null && r[selectedMetric.key] !== undefined && r[selectedMetric.key] !== '')
-    .map(r => ({ date: formatDate(r.month_date_yyyymm), value: +r[selectedMetric.key] }));
+// ── Render content ─────────────────────────────────────────────────────────
+function renderContent() {
+  const rows=(curData().get(selectedGeoKey)||[])
+    .filter(r=>r[selectedMetric.key]!==null&&r[selectedMetric.key]!==undefined&&r[selectedMetric.key]!=='');
+  const chartData=rows.map(r=>({date:formatDate(r.month_date_yyyymm),value:+r[selectedMetric.key]}));
+  const displayName=curMap().get(selectedGeoKey)||selectedGeoKey;
 
-  if (chartData.length === 0) {
-    document.getElementById('chart-area').innerHTML = `
-      <div class="empty-state">No data available for <strong style="color:var(--text)">${selectedMetric.label}</strong> in this county</div>
-    `;
+  if (!chartData.length) {
+    document.getElementById('main-content').innerHTML=`<div class="empty-state">No data for <strong style="color:var(--text)">${selectedMetric.label}</strong> in ${displayName}</div>`;
     return;
   }
 
-  const values = chartData.map(d => d.value);
-  const minVal = Math.min(...values);
-  const maxVal = Math.max(...values);
-  const avgVal = values.reduce((a, b) => a + b, 0) / values.length;
-  const latest = values[values.length - 1];
-
-  // Color gradient per bar
-  const colors = values.map(v => {
-    if (maxVal === minVal) return '#38bdf8';
-    const t = (v - minVal) / (maxVal - minVal);
-    const r = Math.round(30 + t * (56 - 30));
-    const g = Math.round(77 + t * (189 - 77));
-    const b = Math.round(107 + t * (248 - 107));
-    return `rgb(${r},${g},${b})`;
+  const values=chartData.map(d=>d.value);
+  const minVal=Math.min(...values), maxVal=Math.max(...values);
+  const avgVal=values.reduce((a,b)=>a+b,0)/values.length;
+  const latest=values[values.length-1];
+  const colors=values.map(v=>{
+    if(maxVal===minVal) return '#38bdf8';
+    const t=(v-minVal)/(maxVal-minVal);
+    return `rgb(${Math.round(30+t*26)},${Math.round(77+t*112)},${Math.round(107+t*141)})`;
   });
+  const n=chartData.length;
+  const tickStep=n>60?Math.floor(n/18):n>24?4:2;
 
-  const countyName = countyMap.get(selectedCountyFips);
-
-  document.getElementById('chart-area').innerHTML = `
-    <div class="chart-card">
-      <div class="chart-title">${selectedMetric.label}</div>
-      <div class="chart-subtitle">${countyName} &middot; ${chartData.length} months of data</div>
-      <div class="chart-wrap">
-        <canvas id="main-chart"></canvas>
+  document.getElementById('main-content').innerHTML=`
+    <div class="content-grid">
+      <div class="map-card">
+        <div class="map-label">LOCATION &middot; ${displayName.toUpperCase()}</div>
+        <div id="map"></div>
       </div>
-      <div class="stats-row">
-        <div class="stat-item"><div class="stat-label">LATEST</div><div class="stat-value">${formatValue(latest, selectedMetric.format)}</div></div>
-        <div class="stat-item"><div class="stat-label">MIN</div><div class="stat-value">${formatValue(minVal, selectedMetric.format)}</div></div>
-        <div class="stat-item"><div class="stat-label">MAX</div><div class="stat-value">${formatValue(maxVal, selectedMetric.format)}</div></div>
-        <div class="stat-item"><div class="stat-label">AVG</div><div class="stat-value">${formatValue(avgVal, selectedMetric.format)}</div></div>
+      <div class="chart-card">
+        <div class="chart-title">${selectedMetric.label}</div>
+        <div class="chart-subtitle">${displayName} &middot; ${chartData.length} months</div>
+        <div class="chart-wrap"><canvas id="main-chart"></canvas></div>
+        <div class="stats-row">
+          <div><div class="stat-label">LATEST</div><div class="stat-value">${formatValue(latest,selectedMetric.format)}</div></div>
+          <div><div class="stat-label">MIN</div><div class="stat-value">${formatValue(minVal,selectedMetric.format)}</div></div>
+          <div><div class="stat-label">MAX</div><div class="stat-value">${formatValue(maxVal,selectedMetric.format)}</div></div>
+          <div><div class="stat-label">AVG</div><div class="stat-value">${formatValue(avgVal,selectedMetric.format)}</div></div>
+        </div>
       </div>
-    </div>
-  `;
+    </div>`;
 
-  if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
-
-  const ctx = document.getElementById('main-chart').getContext('2d');
-
-  // Thin labels if many data points
-  const n = chartData.length;
-  const tickStep = n > 60 ? Math.floor(n / 18) : n > 24 ? 4 : 2;
-  const labels = chartData.map((d, i) => (i % tickStep === 0 ? d.date : ''));
-
-  chartInstance = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: chartData.map(d => d.date),
-      datasets: [{
-        data: values,
-        backgroundColor: colors,
-        borderRadius: 3,
-        borderSkipped: false,
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      animation: { duration: 400 },
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: '#0f1117',
-          borderColor: '#2a2d3a',
-          borderWidth: 1,
-          titleColor: '#94a3b8',
-          bodyColor: '#38bdf8',
-          titleFont: { family: "'DM Mono', monospace", size: 11 },
-          bodyFont: { family: "'DM Mono', monospace", size: 13, weight: '500' },
-          padding: 10,
-          callbacks: {
-            title: items => items[0].label,
-            label: item => formatValue(item.raw, selectedMetric.format)
-          }
+  // Chart
+  if(chartInstance){chartInstance.destroy();chartInstance=null;}
+  chartInstance=new Chart(document.getElementById('main-chart').getContext('2d'),{
+    type:'bar',
+    data:{labels:chartData.map(d=>d.date),datasets:[{data:values,backgroundColor:colors,borderRadius:3,borderSkipped:false}]},
+    options:{
+      responsive:true, maintainAspectRatio:false, animation:{duration:300},
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:'#0f1117',borderColor:'#2a2d3a',borderWidth:1,
+          titleColor:'#94a3b8',bodyColor:'#38bdf8',
+          titleFont:{family:"'DM Mono',monospace",size:11},
+          bodyFont:{family:"'DM Mono',monospace",size:13,weight:'500'},
+          padding:10,
+          callbacks:{title:items=>items[0].label,label:item=>formatValue(item.raw,selectedMetric.format)}
         }
       },
-      scales: {
-        x: {
-          grid: { display: false },
-          border: { color: '#2a2d3a' },
-          ticks: {
-            color: '#475569',
-            font: { family: "'DM Mono', monospace", size: 10 },
-            maxRotation: 45,
-            callback: function(val, i) {
-              return i % tickStep === 0 ? this.getLabelForValue(val) : '';
-            }
-          }
-        },
-        y: {
-          grid: { color: '#1a1e2e', drawBorder: false },
-          border: { display: false },
-          ticks: {
-            color: '#475569',
-            font: { family: "'DM Mono', monospace", size: 10 },
-            callback: v => formatValue(v, selectedMetric.format)
-          }
-        }
+      scales:{
+        x:{grid:{display:false},border:{color:'#2a2d3a'},
+          ticks:{color:'#475569',font:{family:"'DM Mono',monospace",size:10},maxRotation:45,
+            callback:function(val,i){return i%tickStep===0?this.getLabelForValue(val):'';}}},
+        y:{grid:{color:'#1a1e2e'},border:{display:false},
+          ticks:{color:'#475569',font:{family:"'DM Mono',monospace",size:10},
+            callback:v=>formatValue(v,selectedMetric.format)}}
       }
     }
   });
+
+  setTimeout(initMap, 60);
 }
 
-function resetApp() {
-  selectedCountyFips = null;
-  selectedMetric = METRICS[0];
-  if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
-  document.getElementById('county-label').textContent = 'Select a county...';
-  document.getElementById('county-box').classList.add('placeholder');
-  document.getElementById('chart-area').innerHTML = '<div class="empty-state">Select a county to begin exploring</div>';
+// ── Map ────────────────────────────────────────────────────────────────────
+function clearMap() {
+  if(mapLayer){try{mapLayer.remove();}catch(e){}mapLayer=null;}
 }
+
+function initMap() {
+  const el=document.getElementById('map');
+  if(!el) return;
+  if(!mapInstance) {
+    mapInstance=L.map('map',{zoomControl:true,attributionControl:false});
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:19}).addTo(mapInstance);
+  } else {
+    mapInstance.invalidateSize();
+  }
+  clearMap();
+  if(mode==='county') loadCountyBoundary(selectedGeoKey);
+  else loadZipBoundary(selectedGeoKey);
+}
+
+function applyBoundary(geojsonFeature) {
+  mapLayer=L.geoJSON(geojsonFeature,{
+    style:{color:'#38bdf8',weight:2,opacity:1,fillColor:'#38bdf8',fillOpacity:0.18}
+  }).addTo(mapInstance);
+  mapInstance.fitBounds(mapLayer.getBounds(),{padding:[24,24]});
+}
+
+function loadCountyBoundary(fips) {
+  const pad=String(fips).padStart(5,'0');
+  fetch('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json')
+    .then(r=>r.json())
+    .then(gj=>{
+      const feat=gj.features.find(f=>
+        f.id===pad||String(f.id).padStart(5,'0')===pad||
+        String(f.properties&&(f.properties.FIPS||f.properties.fips||f.properties.GEO_ID||'')).includes(pad)
+      );
+      if(feat) applyBoundary(feat);
+      else geocodeFallback(curMap().get(fips)||fips, 9);
+    })
+    .catch(()=>geocodeFallback(curMap().get(fips)||fips, 9));
+}
+
+function loadZipBoundary(zip) {
+  const pad=String(zip).padStart(5,'0');
+  fetch(`https://nominatim.openstreetmap.org/search?postalcode=${pad}&country=US&format=json&limit=1&polygon_geojson=1`,
+    {headers:{'Accept-Language':'en'}})
+    .then(r=>r.json())
+    .then(data=>{
+      if(!data||!data[0]) { geocodeFallback(curMap().get(zip)||zip, 11); return; }
+      const item=data[0];
+      if(item.geojson) {
+        applyBoundary(item.geojson);
+      } else {
+        mapInstance.setView([+item.lat,+item.lon],11);
+        mapLayer=L.circleMarker([+item.lat,+item.lon],
+          {radius:14,color:'#38bdf8',fillColor:'#38bdf8',fillOpacity:0.25,weight:2}).addTo(mapInstance);
+      }
+    })
+    .catch(()=>geocodeFallback(curMap().get(zip)||zip, 11));
+}
+
+function geocodeFallback(name, zoom) {
+  fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(name+', USA')}&format=json&limit=1`)
+    .then(r=>r.json())
+    .then(data=>{
+      if(data&&data[0]) {
+        mapInstance.setView([+data[0].lat,+data[0].lon],zoom);
+        mapLayer=L.circleMarker([+data[0].lat,+data[0].lon],
+          {radius:14,color:'#38bdf8',fillColor:'#38bdf8',fillOpacity:0.25,weight:2}).addTo(mapInstance);
+      }
+    })
+    .catch(()=>{});
+}
+
+window.addEventListener('DOMContentLoaded', startApp);
 </script>
 </body>
 </html>
