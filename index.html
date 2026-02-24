@@ -20,7 +20,7 @@
   ::-webkit-scrollbar { width: 5px; background: var(--surface); }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-  .header { margin-bottom: 24px; }
+  .header { margin-bottom: 28px; }
   .header h1 {
     font-family: 'Syne', sans-serif; font-size: clamp(22px,4vw,34px); font-weight: 800;
     letter-spacing: -0.02em; background: linear-gradient(90deg,var(--accent),var(--accent2));
@@ -28,17 +28,58 @@
   }
   .header p { color: var(--subtle); font-size: 11px; letter-spacing: 0.12em; }
 
-  .mode-toggle { display: inline-flex; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 3px; margin-bottom: 24px; gap: 2px; }
-  .mode-btn { padding: 7px 20px; font-family: inherit; font-size: 11px; letter-spacing: 0.1em; border: none; border-radius: 6px; cursor: pointer; transition: all 0.15s; background: transparent; color: var(--subtle); }
-  .mode-btn.active { background: var(--accent); color: #080b12; font-weight: 500; }
+  /* State picker */
+  .state-screen { max-width: 700px; margin: 0 auto; }
+  .state-screen h2 { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+  .state-screen p { font-size: 11px; color: var(--subtle); letter-spacing: 0.08em; margin-bottom: 24px; }
+  .state-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
+    gap: 8px;
+  }
+  .state-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 6px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.15s;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+  .state-btn:hover { border-color: var(--accent); color: var(--accent); background: rgba(56,189,248,0.06); }
+  .state-btn.active { border-color: var(--accent); color: #080b12; background: var(--accent); }
 
+  /* Loading */
   .progress-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 32px 24px; text-align: center; max-width: 480px; margin: 0 auto; }
   .progress-label { font-size: 13px; color: var(--text-dim); margin-bottom: 16px; }
   .progress-bar-bg { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
-  .progress-bar-fill { height: 100%; background: linear-gradient(90deg,var(--accent),var(--accent2)); border-radius: 2px; transition: width 0.2s; width: 0%; }
+  .progress-bar-fill { height: 100%; background: linear-gradient(90deg,var(--accent),var(--accent2)); border-radius: 2px; transition: width 0.3s; width: 0%; }
 
+  /* Mode toggle */
+  .top-bar { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+  .mode-toggle { display: inline-flex; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 3px; gap: 2px; }
+  .mode-btn { padding: 7px 20px; font-family: inherit; font-size: 11px; letter-spacing: 0.1em; border: none; border-radius: 6px; cursor: pointer; transition: all 0.15s; background: transparent; color: var(--subtle); }
+  .mode-btn.active { background: var(--accent); color: #080b12; font-weight: 500; }
+  .change-state-btn {
+    background: transparent; border: 1px solid var(--border); border-radius: 6px;
+    color: var(--subtle); font-family: inherit; font-size: 11px; padding: 7px 14px;
+    cursor: pointer; letter-spacing: 0.08em; transition: all 0.15s;
+  }
+  .change-state-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .state-badge {
+    font-size: 11px; color: var(--accent2); letter-spacing: 0.1em;
+    background: rgba(129,140,248,0.1); border: 1px solid rgba(129,140,248,0.2);
+    border-radius: 6px; padding: 7px 12px;
+  }
+
+  /* Controls */
   .controls { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; align-items: flex-start; }
-  .control-group { flex: 1 1 260px; max-width: 400px; }
+  .control-group { flex: 1 1 240px; max-width: 380px; }
   .control-label { font-size: 10px; color: var(--subtle); letter-spacing: 0.12em; margin-bottom: 6px; }
   .select-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; cursor: pointer; font-size: 13px; color: var(--text); display: flex; justify-content: space-between; align-items: center; user-select: none; transition: border-color 0.15s; }
   .select-box:hover { border-color: var(--accent); }
@@ -54,6 +95,7 @@
   .dropdown-item .sub { color: var(--muted); font-size: 10px; }
   .dropdown-empty { padding: 14px; color: var(--muted); font-size: 12px; text-align: center; }
 
+  /* Content */
   .content-grid { display: grid; grid-template-columns: 340px 1fr; gap: 16px; align-items: start; }
   @media (max-width: 860px) { .content-grid { grid-template-columns: 1fr; } }
 
@@ -68,14 +110,17 @@
   .chart-title { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
   .chart-subtitle { font-size: 11px; color: var(--subtle); margin-bottom: 20px; }
   .chart-wrap { position: relative; height: 300px; }
-
   .stats-row { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--surface2); }
   .stat-label { font-size: 9px; color: var(--muted); letter-spacing: 0.12em; margin-bottom: 3px; }
   .stat-value { font-size: 15px; color: var(--accent); font-weight: 500; }
 
   .empty-state { border: 1px dashed var(--surface2); border-radius: 12px; padding: 80px 24px; text-align: center; color: var(--muted); font-size: 13px; }
-  #app-content { display: none; }
   #last-updated { font-size: 10px; color: var(--muted); margin-top: 20px; letter-spacing: 0.08em; }
+
+  /* Screens */
+  #state-screen { display: block; }
+  #loading-screen { display: none; }
+  #app-screen { display: none; }
 </style>
 </head>
 <body>
@@ -85,18 +130,33 @@
   <p>REALTOR.COM INVENTORY DATA</p>
 </div>
 
-<div id="loading-screen">
-  <div class="progress-wrap">
-    <div class="progress-label" id="loading-label">Fetching latest data...</div>
-    <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-bar"></div></div>
-    <div id="loading-updated" style="font-size:11px;color:var(--muted);margin-top:12px;"></div>
+<!-- State picker -->
+<div id="state-screen">
+  <div class="state-screen">
+    <h2>Select a State</h2>
+    <p>CHOOSE A STATE TO LOAD COUNTY AND ZIP CODE DATA</p>
+    <div class="state-grid" id="state-grid"></div>
   </div>
 </div>
 
-<div id="app-content">
-  <div class="mode-toggle">
-    <button class="mode-btn active" id="btn-county" onclick="switchMode('county')">COUNTY</button>
-    <button class="mode-btn" id="btn-zip" onclick="switchMode('zip')">ZIP CODE</button>
+<!-- Loading -->
+<div id="loading-screen">
+  <div class="progress-wrap">
+    <div class="progress-label" id="loading-label">Loading...</div>
+    <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-bar"></div></div>
+    <div id="loading-sub" style="font-size:11px;color:var(--muted);margin-top:12px;"></div>
+  </div>
+</div>
+
+<!-- App -->
+<div id="app-screen">
+  <div class="top-bar">
+    <div class="mode-toggle">
+      <button class="mode-btn active" id="btn-county" onclick="switchMode('county')">COUNTY</button>
+      <button class="mode-btn" id="btn-zip" onclick="switchMode('zip')">ZIP CODE</button>
+    </div>
+    <div class="state-badge" id="state-badge">TX</div>
+    <button class="change-state-btn" onclick="changeState()">&#8592; Change State</button>
   </div>
 
   <div class="controls">
@@ -113,11 +173,12 @@
         </div>
       </div>
     </div>
+
     <div class="control-group" id="location-group" style="display:none">
       <div class="control-label">LOCATION (CITY)</div>
       <div class="select-wrapper" id="location-wrapper">
         <div class="select-box placeholder" id="location-box" onclick="toggleDropdown('location')">
-          <span id="location-selected-label">All locations</span>
+          <span id="location-selected-label">All cities</span>
           <span class="select-arrow">&#9660;</span>
         </div>
         <div class="dropdown" id="location-dropdown" style="display:none">
@@ -131,7 +192,7 @@
       <div class="control-label">METRIC</div>
       <div class="select-wrapper" id="metric-wrapper">
         <div class="select-box" id="metric-box" onclick="toggleDropdown('metric')">
-          <span id="metric-label">Active Listing Count</span>
+          <span id="metric-label">Median Listing Price</span>
           <span class="select-arrow">&#9660;</span>
         </div>
         <div class="dropdown" id="metric-dropdown" style="display:none">
@@ -148,7 +209,29 @@
 </div>
 
 <script>
+const STATES = [
+  'AL','AK','AZ','AR','CA','CO','CT','DE','DC','FL','GA','HI','ID','IL','IN',
+  'IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH',
+  'NJ','NM','NY','NC','ND','OH','OK','OR','PA','PR','RI','SC','SD','TN','TX',
+  'UT','VT','VA','WA','WV','WI','WY'
+];
+
+const STATE_NAMES = {
+  AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',
+  CT:'Connecticut',DE:'Delaware',DC:'District of Columbia',FL:'Florida',GA:'Georgia',
+  HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',
+  LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',
+  MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',
+  NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',
+  OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',PR:'Puerto Rico',RI:'Rhode Island',
+  SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',
+  VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming'
+};
+
 const METRICS = [
+  { key:"median_listing_price", label:"Median Listing Price", format:"currency" },
+  { key:"median_listing_price_mm", label:"Median Listing Price (M/M %)", format:"percent" },
+  { key:"median_listing_price_yy", label:"Median Listing Price (Y/Y %)", format:"percent" },
   { key:"active_listing_count", label:"Active Listing Count", format:"number" },
   { key:"active_listing_count_mm", label:"Active Listings (M/M %)", format:"percent" },
   { key:"active_listing_count_yy", label:"Active Listings (Y/Y %)", format:"percent" },
@@ -158,9 +241,6 @@ const METRICS = [
   { key:"median_days_on_market", label:"Days on Market (Median)", format:"number" },
   { key:"median_days_on_market_mm", label:"Days on Market (M/M %)", format:"percent" },
   { key:"median_days_on_market_yy", label:"Days on Market (Y/Y %)", format:"percent" },
-  { key:"median_listing_price", label:"Median Listing Price", format:"currency" },
-  { key:"median_listing_price_mm", label:"Median Listing Price (M/M %)", format:"percent" },
-  { key:"median_listing_price_yy", label:"Median Listing Price (Y/Y %)", format:"percent" },
   { key:"median_listing_price_per_square_foot", label:"Median Price Per Sq Ft", format:"currency" },
   { key:"median_listing_price_per_square_foot_mm", label:"Median Price Per Sq Ft (M/M %)", format:"percent" },
   { key:"median_listing_price_per_square_foot_yy", label:"Median Price Per Sq Ft (Y/Y %)", format:"percent" },
@@ -177,17 +257,9 @@ const METRICS = [
   { key:"pending_ratio_mm", label:"Pending Ratio (M/M %)", format:"percent" },
   { key:"pending_ratio_yy", label:"Pending Ratio (Y/Y %)", format:"percent" },
   { key:"price_increased_count", label:"Price Increased Count", format:"number" },
-  { key:"price_increased_count_mm", label:"Price Increased Count (M/M %)", format:"percent" },
-  { key:"price_increased_count_yy", label:"Price Increased Count (Y/Y %)", format:"percent" },
   { key:"price_increased_share", label:"Price Increased Share", format:"percent" },
-  { key:"price_increased_share_mm", label:"Price Increased Share (M/M %)", format:"percent" },
-  { key:"price_increased_share_yy", label:"Price Increased Share (Y/Y %)", format:"percent" },
   { key:"price_reduced_count", label:"Price Reduced Count", format:"number" },
-  { key:"price_reduced_count_mm", label:"Price Reduced Count (M/M %)", format:"percent" },
-  { key:"price_reduced_count_yy", label:"Price Reduced Count (Y/Y %)", format:"percent" },
   { key:"price_reduced_share", label:"Price Reduced Share", format:"percent" },
-  { key:"price_reduced_share_mm", label:"Price Reduced Share (M/M %)", format:"percent" },
-  { key:"price_reduced_share_yy", label:"Price Reduced Share (Y/Y %)", format:"percent" },
   { key:"total_listing_count", label:"Total Listing Count", format:"number" },
   { key:"total_listing_count_mm", label:"Total Listings (M/M %)", format:"percent" },
   { key:"total_listing_count_yy", label:"Total Listings (Y/Y %)", format:"percent" },
@@ -200,9 +272,21 @@ const FIPS_TO_STATE = {
   '28':'MS','29':'MO','30':'MT','31':'NE','32':'NV','33':'NH','34':'NJ','35':'NM',
   '36':'NY','37':'NC','38':'ND','39':'OH','40':'OK','41':'OR','42':'PA','44':'RI',
   '45':'SC','46':'SD','47':'TN','48':'TX','49':'UT','50':'VT','51':'VA','53':'WA',
-  '54':'WV','55':'WI','56':'WY','60':'AS','66':'GU','69':'MP','72':'PR','78':'VI'
+  '54':'WV','55':'WI','56':'WY','72':'PR'
 };
 
+// ── App state ──────────────────────────────────────────────────────────────
+let selectedState = null;
+let mode = 'county';
+let countyMap = new Map(), countyDataMap = new Map();
+let zipMap = new Map(), zipDataMap = new Map(), zipLocationMap = new Map();
+let countyLoaded = false, zipLoaded = false;
+let selectedGeoKey = null, selectedLocation = null;
+let selectedMetric = METRICS[0];
+let chartInstance = null, mapInstance = null, mapLayer = null;
+let filteredGeoList = [];
+
+// ── Helpers ────────────────────────────────────────────────────────────────
 function titleCase(str) {
   const small = new Set(['a','an','the','and','but','or','for','nor','on','at','to','by','in','of','up','as','is']);
   return str.toLowerCase().split(/\s+/).map((w,i) =>
@@ -217,25 +301,23 @@ function formatCountyName(rawName, fips) {
   name = name.replace(/\s+County$/i,'').replace(/\s+Parish$/i,'').replace(/\s+Borough$/i,'')
              .replace(/\s+Census Area$/i,'').replace(/\s+Municipality$/i,'')
              .replace(/\s+City and Borough$/i,'').replace(/\s+Municipio$/i,'').trim();
-  return (stateAbbr ? titleCase(name)+', '+stateAbbr : titleCase(name));
+  return stateAbbr ? titleCase(name)+', '+stateAbbr : titleCase(name);
 }
 
 function formatZipName(zipName, postalCode) {
   if (!zipName) return String(postalCode);
-  // Keep full "City, ST" format, just title-case the city part
   const parts = String(zipName).split(',');
   const city = titleCase(parts[0].trim());
   const state = parts[1] ? parts[1].trim().toUpperCase() : '';
-  return state ? city + ', ' + state + ' (' + postalCode + ')' : city + ' (' + postalCode + ')';
+  return state ? city+', '+state+' ('+postalCode+')' : city+' ('+postalCode+')';
 }
 
 function getZipLocation(zipName) {
-  // Extract "City, ST" from zip_name for the location filter
-  if (!zipName) return '';
+  if (!zipName) return 'Unknown';
   const parts = String(zipName).split(',');
   const city = titleCase(parts[0].trim());
   const state = parts[1] ? parts[1].trim().toUpperCase() : '';
-  return state ? city + ', ' + state : city;
+  return state ? city+', '+state : city;
 }
 
 function formatValue(val, fmt) {
@@ -248,106 +330,112 @@ function formatValue(val, fmt) {
 }
 function formatDate(d) { const s=String(d).trim(); return s.slice(0,4)+'-'+s.slice(4,6); }
 
-// ── State ──────────────────────────────────────────────────────────────────
-let mode = 'county';
-let countyMap = new Map(), countyDataMap = new Map();
-let zipMap = new Map(), zipDataMap = new Map(), zipLocationMap = new Map();
-let countyLoaded = false, zipLoaded = false;
-let selectedGeoKey = null, selectedLocation = null, selectedMetric = METRICS[0];
-let chartInstance = null, mapInstance = null, mapLayer = null;
-let filteredGeoList = [];
+// ── State grid ─────────────────────────────────────────────────────────────
+function buildStateGrid() {
+  const grid = document.getElementById('state-grid');
+  STATES.forEach(st => {
+    const btn = document.createElement('button');
+    btn.className = 'state-btn';
+    btn.title = STATE_NAMES[st] || st;
+    btn.textContent = st;
+    btn.onclick = () => selectState(st);
+    grid.appendChild(btn);
+  });
+}
 
-const COUNTY_PATH = 'https://real-estate.jasher.workers.dev/?file=county';
-const ZIP_PATH    = 'https://real-estate.jasher.workers.dev/?file=zip';
+function selectState(st) {
+  selectedState = st;
+  document.querySelectorAll('.state-btn').forEach(b => b.classList.toggle('active', b.textContent === st));
+  // Reset everything
+  countyMap.clear(); countyDataMap.clear();
+  zipMap.clear(); zipDataMap.clear(); zipLocationMap.clear();
+  countyLoaded = false; zipLoaded = false;
+  selectedGeoKey = null; selectedLocation = null;
+  mode = 'county';
+  clearMap();
+  // Update badge
+  document.getElementById('state-badge').textContent = st + ' — ' + (STATE_NAMES[st]||st);
+  document.getElementById('btn-county').classList.add('active');
+  document.getElementById('btn-zip').classList.remove('active');
+  document.getElementById('geo-label').textContent = 'COUNTY';
+  document.getElementById('geo-selected-label').textContent = 'Select a county...';
+  document.getElementById('geo-box').classList.add('placeholder');
+  document.getElementById('location-group').style.display = 'none';
+  document.getElementById('main-content').innerHTML = '<div class="empty-state">Select a location to begin exploring</div>';
+  loadDataset('county');
+}
+
+function changeState() {
+  document.getElementById('state-screen').style.display = 'block';
+  document.getElementById('app-screen').style.display = 'none';
+  document.getElementById('loading-screen').style.display = 'none';
+}
 
 // ── Loading ────────────────────────────────────────────────────────────────
-function startApp() { loadDataset('county'); }
-
-function showFallback(which, msg) {
-  const label = document.getElementById('loading-label');
-  const bar = document.getElementById('progress-bar');
-  label.textContent = 'Error loading data.';
-  bar.style.background = '#f87171';
-  document.getElementById('loading-updated').innerHTML = `
-    <div style="color:var(--danger);margin-bottom:10px;">${msg||'Could not fetch CSV'}</div>
-    <div style="color:var(--subtle);font-size:11px;margin-bottom:14px;">Upload the file manually:</div>
-    <label style="display:inline-block;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:8px 16px;cursor:pointer;font-size:12px;color:var(--accent);">
-      &#128194; Choose CSV
-      <input type="file" accept=".csv" style="display:none" onchange="handleFallback(this.files[0],'${which}')">
-    </label>`;
-}
-
 function loadDataset(which) {
-  if (which==='county' && countyLoaded) { finishLoad(); return; }
-  if (which==='zip' && zipLoaded) { finishLoad(); return; }
+  if (which==='county' && countyLoaded) { showApp(); return; }
+  if (which==='zip' && zipLoaded) { showApp(); return; }
 
+  document.getElementById('state-screen').style.display = 'none';
+  document.getElementById('app-screen').style.display = 'none';
   document.getElementById('loading-screen').style.display = 'block';
-  document.getElementById('app-content').style.display = 'none';
+
   const label = document.getElementById('loading-label');
   const bar = document.getElementById('progress-bar');
-  bar.style.width='0%'; bar.style.background='linear-gradient(90deg,var(--accent),var(--accent2))';
-  document.getElementById('loading-updated').textContent='';
+  bar.style.width = '0%';
+  bar.style.background = 'linear-gradient(90deg,var(--accent),var(--accent2))';
+  document.getElementById('loading-sub').textContent = '';
+  label.textContent = 'Loading ' + selectedState + ' ' + which + ' data...';
 
-  const url = which==='county' ? COUNTY_PATH : ZIP_PATH;
-  const sizeWarn = which==='county' ? '~92MB, may take 10-20 sec' : '~742MB, may take 1-2 min';
-  label.textContent = 'Fetching '+(which==='county'?'county':'zip code')+' data...';
-  document.getElementById('loading-updated').textContent = sizeWarn;
-
-  const estRows = which==='county' ? 400000 : 3500000;
+  const path = 'data/' + which + '/' + selectedState + '.csv';
   let rowCount = 0;
-  let buffer = '';
-  let headers = null;
 
-  fetch(url)
+  fetch(path)
     .then(res => {
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      const reader = res.body.getReader();
-      const decoder = new TextDecoder();
-
-      function processBuffer() {
-        const lines = buffer.split('\n');
-        buffer = lines.pop(); // keep incomplete last line
-        if (!headers) {
-          const headerLine = lines.shift();
-          if (!headerLine) return;
-          headers = Papa.parse(headerLine, { header: false }).data[0];
-        }
-        if (!lines.length) return;
-        const chunk = headers.join(',') + '\n' + lines.join('\n');
-        const parsed = Papa.parse(chunk, { header: true, dynamicTyping: true, skipEmptyLines: true });
-        parsed.data.forEach(row => ingestRow(row, which));
-        rowCount += parsed.data.length;
-        label.textContent = 'Parsed ' + rowCount.toLocaleString() + ' rows...';
-        bar.style.width = Math.min(88, (rowCount / estRows) * 100) + '%';
-      }
-
-      function pump() {
-        return reader.read().then(({ done, value }) => {
-          if (done) {
-            // process any remaining buffer
-            if (buffer.trim() && headers) {
-              const chunk = headers.join(',') + '\n' + buffer;
-              const parsed = Papa.parse(chunk, { header: true, dynamicTyping: true, skipEmptyLines: true });
-              parsed.data.forEach(row => ingestRow(row, which));
-            }
-            bar.style.width = '100%';
-            label.textContent = 'Building index...';
-            (which==='county'?countyDataMap:zipDataMap).forEach(rows=>rows.sort((a,b)=>+a.month_date_yyyymm - +b.month_date_yyyymm));
-            if (which==='county') countyLoaded=true; else zipLoaded=true;
-            console.log('Loaded ' + (which==='county'?countyMap.size:zipMap.size) + ' ' + which + ' entries');
-            setTimeout(finishLoad, 150);
-            return;
-          }
-          buffer += decoder.decode(value, { stream: true });
-          processBuffer();
-          return pump();
-        });
-      }
-      return pump();
+      if (!res.ok) throw new Error('HTTP ' + res.status + ' — data not available for ' + selectedState);
+      return res.text();
     })
-    .catch(err => showFallback(which, err.message));
+    .then(text => {
+      label.textContent = 'Parsing...';
+      bar.style.width = '60%';
+      Papa.parse(text, {
+        header: true, dynamicTyping: true, skipEmptyLines: true,
+        chunk(results) {
+          rowCount += results.data.length;
+          results.data.forEach(row => ingestRow(row, which));
+        },
+        complete() {
+          bar.style.width = '100%';
+          (which==='county'?countyDataMap:zipDataMap).forEach(rows=>rows.sort((a,b)=>+a.month_date_yyyymm - +b.month_date_yyyymm));
+          if (which==='county') countyLoaded=true; else zipLoaded=true;
+          console.log('Loaded ' + (which==='county'?countyMap.size:zipMap.size) + ' ' + which + ' entries for ' + selectedState);
+          setTimeout(showApp, 150);
+        },
+        error(err) { showError(err.message); }
+      });
+    })
+    .catch(err => showError(err.message));
 }
 
+function showError(msg) {
+  document.getElementById('loading-label').textContent = 'Error loading data';
+  document.getElementById('progress-bar').style.background = '#f87171';
+  document.getElementById('loading-sub').innerHTML =
+    '<div style="color:var(--danger);margin-bottom:10px;">'+msg+'</div>' +
+    '<button onclick="changeState()" style="background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:8px 16px;cursor:pointer;font-size:12px;color:var(--accent);font-family:inherit;">&#8592; Back to State Picker</button>';
+}
+
+function showApp() {
+  document.getElementById('loading-screen').style.display = 'none';
+  document.getElementById('state-screen').style.display = 'none';
+  document.getElementById('app-screen').style.display = 'block';
+  document.getElementById('last-updated').textContent = 'DATA LOADED ' + new Date().toUTCString();
+  buildMetricList();
+  refreshGeoList();
+  if (mode==='zip') buildLocationList();
+}
+
+// ── Ingest ─────────────────────────────────────────────────────────────────
 function ingestRow(row, which) {
   if (which==='county') {
     if (!row.county_fips||!row.county_name) return;
@@ -367,66 +455,31 @@ function ingestRow(row, which) {
   }
 }
 
-function handleFallback(file, which) {
-  if (!file) return;
-  document.getElementById('loading-updated').innerHTML='';
-  const label=document.getElementById('loading-label'), bar=document.getElementById('progress-bar');
-  bar.style.background='linear-gradient(90deg,var(--accent),var(--accent2))'; bar.style.width='0%';
-  let rowCount=0;
-  Papa.parse(file, {
-    header:true, dynamicTyping:true, skipEmptyLines:true,
-    chunk(results) {
-      rowCount+=results.data.length;
-      label.textContent=`Parsed ${rowCount.toLocaleString()} rows...`;
-      bar.style.width=Math.min(90,(rowCount/800000)*100)+'%';
-      results.data.forEach(row=>ingestRow(row,which));
-    },
-    complete() {
-      bar.style.width='100%';
-      (which==='county'?countyDataMap:zipDataMap).forEach(rows=>rows.sort((a,b)=>+a.month_date_yyyymm - +b.month_date_yyyymm));
-      if(which==='county') countyLoaded=true; else zipLoaded=true;
-      setTimeout(finishLoad,150);
-    },
-    error(err){label.textContent='Parse error: '+err.message; bar.style.background='#f87171';}
-  });
-}
-
-function finishLoad() {
-  document.getElementById('loading-screen').style.display='none';
-  document.getElementById('app-content').style.display='block';
-  document.getElementById('last-updated').textContent=`DATA REFRESHED ${new Date().toUTCString()}`;
-  buildMetricList();
-  refreshGeoList();
-  if (mode==='zip') buildLocationList();
-}
-
-// ── Mode ───────────────────────────────────────────────────────────────────
+// ── Mode switch ────────────────────────────────────────────────────────────
 function switchMode(newMode) {
   if (newMode===mode && (newMode==='county'?countyLoaded:zipLoaded)) return;
-  mode=newMode;
-  selectedGeoKey=null;
-  document.getElementById('btn-county').classList.toggle('active',mode==='county');
-  document.getElementById('btn-zip').classList.toggle('active',mode==='zip');
-  document.getElementById('geo-label').textContent=mode==='county'?'COUNTY':'ZIP CODE';
-  document.getElementById('geo-selected-label').textContent=mode==='county'?'Select a county...':'Select a zip code...';
+  mode = newMode;
+  selectedGeoKey = null; selectedLocation = null;
+  document.getElementById('btn-county').classList.toggle('active', mode==='county');
+  document.getElementById('btn-zip').classList.toggle('active', mode==='zip');
+  document.getElementById('geo-label').textContent = mode==='county' ? 'COUNTY' : 'ZIP CODE';
+  document.getElementById('geo-selected-label').textContent = mode==='county' ? 'Select a county...' : 'Select a zip code...';
   document.getElementById('geo-box').classList.add('placeholder');
-  document.getElementById('main-content').innerHTML='<div class="empty-state">Select a location to begin exploring</div>';
-  // Show location filter only in zip mode
   document.getElementById('location-group').style.display = mode==='zip' ? '' : 'none';
-  selectedLocation = null;
-  document.getElementById('location-selected-label').textContent = 'All locations';
+  document.getElementById('location-selected-label').textContent = 'All cities';
   document.getElementById('location-box').classList.add('placeholder');
+  document.getElementById('main-content').innerHTML = '<div class="empty-state">Select a location to begin exploring</div>';
   clearMap();
-  if (mode==='zip'&&!zipLoaded) loadDataset('zip'); else { refreshGeoList(); if(mode==='zip') buildLocationList(); }
+  if (mode==='zip' && !zipLoaded) loadDataset('zip');
+  else { refreshGeoList(); if (mode==='zip') buildLocationList(); }
 }
 
 // ── Geo list ───────────────────────────────────────────────────────────────
-function curMap() { return mode==='county'?countyMap:zipMap; }
-function curData() { return mode==='county'?countyDataMap:zipDataMap; }
+function curMap() { return mode==='county' ? countyMap : zipMap; }
+function curData() { return mode==='county' ? countyDataMap : zipDataMap; }
 
 function refreshGeoList() {
   let entries = Array.from(curMap().entries()).map(([key,name])=>({key,name}));
-  // In zip mode, filter by selected location
   if (mode==='zip' && selectedLocation) {
     entries = entries.filter(e => zipLocationMap.get(e.key) === selectedLocation);
   }
@@ -435,43 +488,57 @@ function refreshGeoList() {
 }
 
 function renderGeoList(list) {
-  const c=document.getElementById('geo-list'); c.innerHTML='';
-  const shown=list.slice(0,100);
-  if (!shown.length){c.innerHTML='<div class="dropdown-empty">No results</div>';return;}
-  shown.forEach(item=>{
-    const div=document.createElement('div');
-    div.className='dropdown-item'+(item.key===selectedGeoKey?' active':'');
-    div.innerHTML=`<span>${item.name}</span><span class="sub">${item.key}</span>`;
-    div.onclick=()=>selectGeo(item.key,item.name);
+  const c = document.getElementById('geo-list'); c.innerHTML = '';
+  const shown = list.slice(0,150);
+  if (!shown.length) { c.innerHTML = '<div class="dropdown-empty">No results</div>'; return; }
+  shown.forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'dropdown-item'+(item.key===selectedGeoKey?' active':'');
+    div.innerHTML = '<span>'+item.name+'</span><span class="sub">'+item.key+'</span>';
+    div.onclick = () => selectGeo(item.key, item.name);
     c.appendChild(div);
   });
-  if (list.length>100) c.innerHTML+=`<div class="dropdown-empty">+${list.length-100} more — type to filter</div>`;
+  if (list.length>150) c.innerHTML += '<div class="dropdown-empty">+'+(list.length-150)+' more — type to filter</div>';
 }
 
+function filterGeoList() {
+  const q = document.getElementById('geo-search').value.toLowerCase();
+  const all = Array.from(curMap().entries()).map(([key,name])=>({key,name})).sort((a,b)=>a.name.localeCompare(b.name));
+  filteredGeoList = q ? all.filter(c=>c.name.toLowerCase().includes(q)||c.key.includes(q)) : all;
+  renderGeoList(filteredGeoList);
+}
+
+function selectGeo(key, name) {
+  selectedGeoKey = key;
+  document.getElementById('geo-box').classList.remove('placeholder');
+  document.getElementById('geo-selected-label').textContent = name;
+  document.getElementById('geo-dropdown').style.display = 'none';
+  renderGeoList(filteredGeoList);
+  renderContent();
+}
+
+// ── Location filter ────────────────────────────────────────────────────────
 function buildLocationList() {
-  // Build sorted unique location list from zipLocationMap
   const locations = [...new Set(zipLocationMap.values())].filter(Boolean).sort();
   const list = document.getElementById('location-list');
   list.innerHTML = '';
-  // "All" option
   const all = document.createElement('div');
-  all.className = 'dropdown-item' + (!selectedLocation ? ' active' : '');
-  all.innerHTML = '<span>All locations</span>';
-  all.onclick = () => { selectedLocation = null; applyLocationFilter('All locations', true); };
+  all.className = 'dropdown-item'+(!selectedLocation?' active':'');
+  all.innerHTML = '<span>All cities</span>';
+  all.onclick = () => { selectedLocation=null; applyLocationFilter('All cities', true); };
   list.appendChild(all);
   locations.forEach(loc => {
     const div = document.createElement('div');
-    div.className = 'dropdown-item' + (loc === selectedLocation ? ' active' : '');
-    div.innerHTML = `<span>${loc}</span>`;
-    div.onclick = () => { selectedLocation = loc; applyLocationFilter(loc, false); };
+    div.className = 'dropdown-item'+(loc===selectedLocation?' active':'');
+    div.innerHTML = '<span>'+loc+'</span>';
+    div.onclick = () => { selectedLocation=loc; applyLocationFilter(loc, false); };
     list.appendChild(div);
   });
 }
 
 function filterLocationList() {
   const q = document.getElementById('location-search').value.toLowerCase();
-  const list = document.getElementById('location-list');
-  list.querySelectorAll('.dropdown-item').forEach(el => {
+  document.getElementById('location-list').querySelectorAll('.dropdown-item').forEach(el => {
     el.style.display = el.textContent.toLowerCase().includes(q) ? '' : 'none';
   });
 }
@@ -480,11 +547,8 @@ function applyLocationFilter(label, isAll) {
   document.getElementById('location-selected-label').textContent = label;
   document.getElementById('location-box').classList.toggle('placeholder', isAll);
   document.getElementById('location-dropdown').style.display = 'none';
-  // Update active states
-  document.querySelectorAll('#location-list .dropdown-item').forEach(el => {
-    el.classList.toggle('active', el.textContent.trim() === label);
-  });
-  // Reset zip selection and refresh list
+  document.querySelectorAll('#location-list .dropdown-item').forEach(el =>
+    el.classList.toggle('active', el.textContent.trim()===label));
   selectedGeoKey = null;
   document.getElementById('geo-selected-label').textContent = 'Select a zip code...';
   document.getElementById('geo-box').classList.add('placeholder');
@@ -493,210 +557,195 @@ function applyLocationFilter(label, isAll) {
   refreshGeoList();
 }
 
-function filterGeoList() {
-  const q=document.getElementById('geo-search').value.toLowerCase();
-  const all=Array.from(curMap().entries()).map(([key,name])=>({key,name})).sort((a,b)=>a.name.localeCompare(b.name));
-  filteredGeoList=q?all.filter(c=>c.name.toLowerCase().includes(q)||c.key.includes(q)):all;
-  renderGeoList(filteredGeoList);
-}
-
-function selectGeo(key,name) {
-  selectedGeoKey=key;
-  document.getElementById('geo-box').classList.remove('placeholder');
-  document.getElementById('geo-selected-label').textContent=name;
-  document.getElementById('geo-dropdown').style.display='none';
-  renderGeoList(filteredGeoList);
-  renderContent();
-}
-
 // ── Dropdowns ──────────────────────────────────────────────────────────────
 function toggleDropdown(which) {
-  const dd=document.getElementById(which+'-dropdown');
-  const other=which==='geo'?'metric':'geo';
-  document.getElementById(other+'-dropdown').style.display='none';
-  const open=dd.style.display!=='none';
-  dd.style.display=open?'none':'flex';
-  if (!open&&which==='geo'){
-    document.getElementById('geo-search').value='';
+  const dd = document.getElementById(which+'-dropdown');
+  ['geo','metric','location'].forEach(w => {
+    if (w!==which) document.getElementById(w+'-dropdown').style.display = 'none';
+  });
+  const open = dd.style.display !== 'none';
+  dd.style.display = open ? 'none' : 'flex';
+  if (!open && which==='geo') {
+    document.getElementById('geo-search').value = '';
     filterGeoList();
-    setTimeout(()=>document.getElementById('geo-search').focus(),50);
+    setTimeout(() => document.getElementById('geo-search').focus(), 50);
   }
 }
-document.addEventListener('click',e=>{
-  ['geo','metric'].forEach(w=>{
-    const wr=document.getElementById(w+'-wrapper');
-    if(wr&&!wr.contains(e.target)) document.getElementById(w+'-dropdown').style.display='none';
+document.addEventListener('click', e => {
+  ['geo','metric','location'].forEach(w => {
+    const wr = document.getElementById(w+'-wrapper');
+    if (wr && !wr.contains(e.target)) document.getElementById(w+'-dropdown').style.display = 'none';
   });
 });
 
 // ── Metric list ────────────────────────────────────────────────────────────
 function buildMetricList() {
-  const list=document.getElementById('metric-list');
-  if(list.children.length) return;
-  METRICS.forEach(m=>{
-    const div=document.createElement('div');
-    div.className='dropdown-item'+(m.key===selectedMetric.key?' active':'');
-    div.textContent=m.label;
-    div.onclick=()=>{
-      selectedMetric=m;
-      document.getElementById('metric-label').textContent=m.label;
-      document.getElementById('metric-dropdown').style.display='none';
-      document.querySelectorAll('#metric-list .dropdown-item').forEach(el=>el.classList.toggle('active',el.textContent===m.label));
-      if(selectedGeoKey) renderContent();
+  const list = document.getElementById('metric-list');
+  if (list.children.length) return;
+  METRICS.forEach(m => {
+    const div = document.createElement('div');
+    div.className = 'dropdown-item'+(m.key===selectedMetric.key?' active':'');
+    div.textContent = m.label;
+    div.onclick = () => {
+      selectedMetric = m;
+      document.getElementById('metric-label').textContent = m.label;
+      document.getElementById('metric-dropdown').style.display = 'none';
+      document.querySelectorAll('#metric-list .dropdown-item').forEach(el =>
+        el.classList.toggle('active', el.textContent===m.label));
+      if (selectedGeoKey) renderContent();
     };
     list.appendChild(div);
   });
 }
 
-// ── Render content ─────────────────────────────────────────────────────────
+// ── Render ─────────────────────────────────────────────────────────────────
 function renderContent() {
-  const rows=(curData().get(selectedGeoKey)||[])
-    .filter(r=>r[selectedMetric.key]!==null&&r[selectedMetric.key]!==undefined&&r[selectedMetric.key]!=='');
-  const chartData=rows.map(r=>({date:formatDate(r.month_date_yyyymm),value:+r[selectedMetric.key]}));
-  const displayName=curMap().get(selectedGeoKey)||selectedGeoKey;
+  const rows = (curData().get(selectedGeoKey)||[])
+    .filter(r => r[selectedMetric.key]!==null && r[selectedMetric.key]!==undefined && r[selectedMetric.key]!=='');
+  const chartData = rows.map(r => ({ date: formatDate(r.month_date_yyyymm), value: +r[selectedMetric.key] }));
+  const displayName = curMap().get(selectedGeoKey) || selectedGeoKey;
 
   if (!chartData.length) {
-    document.getElementById('main-content').innerHTML=`<div class="empty-state">No data for <strong style="color:var(--text)">${selectedMetric.label}</strong> in ${displayName}</div>`;
+    document.getElementById('main-content').innerHTML =
+      '<div class="empty-state">No data for <strong style="color:var(--text)">'+selectedMetric.label+'</strong> in '+displayName+'</div>';
     return;
   }
 
-  const values=chartData.map(d=>d.value);
-  const minVal=Math.min(...values), maxVal=Math.max(...values);
-  const avgVal=values.reduce((a,b)=>a+b,0)/values.length;
-  const latest=values[values.length-1];
-  const colors=values.map(v=>{
-    if(maxVal===minVal) return '#38bdf8';
-    const t=(v-minVal)/(maxVal-minVal);
-    return `rgb(${Math.round(30+t*26)},${Math.round(77+t*112)},${Math.round(107+t*141)})`;
+  const values = chartData.map(d=>d.value);
+  const minVal = Math.min(...values), maxVal = Math.max(...values);
+  const avgVal = values.reduce((a,b)=>a+b,0)/values.length;
+  const latest = values[values.length-1];
+  const colors = values.map(v => {
+    if (maxVal===minVal) return '#38bdf8';
+    const t = (v-minVal)/(maxVal-minVal);
+    return 'rgb('+Math.round(30+t*26)+','+Math.round(77+t*112)+','+Math.round(107+t*141)+')';
   });
-  const n=chartData.length;
-  const tickStep=n>60?Math.floor(n/18):n>24?4:2;
+  const n = chartData.length;
+  const tickStep = n>60 ? Math.floor(n/18) : n>24 ? 4 : 2;
 
-  document.getElementById('main-content').innerHTML=`
-    <div class="content-grid">
-      <div class="map-card">
-        <div class="map-label">LOCATION &middot; ${displayName.toUpperCase()}</div>
-        <div id="map"></div>
-      </div>
-      <div class="chart-card">
-        <div class="chart-title">${selectedMetric.label}</div>
-        <div class="chart-subtitle">${displayName} &middot; ${chartData.length} months</div>
-        <div class="chart-wrap"><canvas id="main-chart"></canvas></div>
-        <div class="stats-row">
-          <div><div class="stat-label">LATEST</div><div class="stat-value">${formatValue(latest,selectedMetric.format)}</div></div>
-          <div><div class="stat-label">MIN</div><div class="stat-value">${formatValue(minVal,selectedMetric.format)}</div></div>
-          <div><div class="stat-label">MAX</div><div class="stat-value">${formatValue(maxVal,selectedMetric.format)}</div></div>
-          <div><div class="stat-label">AVG</div><div class="stat-value">${formatValue(avgVal,selectedMetric.format)}</div></div>
-        </div>
-      </div>
-    </div>`;
+  document.getElementById('main-content').innerHTML =
+    '<div class="content-grid">' +
+      '<div class="map-card">' +
+        '<div class="map-label">LOCATION &middot; '+displayName.toUpperCase()+'</div>' +
+        '<div id="map"></div>' +
+      '</div>' +
+      '<div class="chart-card">' +
+        '<div class="chart-title">'+selectedMetric.label+'</div>' +
+        '<div class="chart-subtitle">'+displayName+' &middot; '+chartData.length+' months</div>' +
+        '<div class="chart-wrap"><canvas id="main-chart"></canvas></div>' +
+        '<div class="stats-row">' +
+          '<div><div class="stat-label">LATEST</div><div class="stat-value">'+formatValue(latest,selectedMetric.format)+'</div></div>' +
+          '<div><div class="stat-label">MIN</div><div class="stat-value">'+formatValue(minVal,selectedMetric.format)+'</div></div>' +
+          '<div><div class="stat-label">MAX</div><div class="stat-value">'+formatValue(maxVal,selectedMetric.format)+'</div></div>' +
+          '<div><div class="stat-label">AVG</div><div class="stat-value">'+formatValue(avgVal,selectedMetric.format)+'</div></div>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
 
-  // Chart
-  if(chartInstance){chartInstance.destroy();chartInstance=null;}
-  chartInstance=new Chart(document.getElementById('main-chart').getContext('2d'),{
-    type:'bar',
-    data:{labels:chartData.map(d=>d.date),datasets:[{data:values,backgroundColor:colors,borderRadius:3,borderSkipped:false}]},
-    options:{
-      responsive:true, maintainAspectRatio:false, animation:{duration:300},
-      plugins:{
-        legend:{display:false},
-        tooltip:{
-          backgroundColor:'#0f1117',borderColor:'#2a2d3a',borderWidth:1,
-          titleColor:'#94a3b8',bodyColor:'#38bdf8',
+  if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
+  chartInstance = new Chart(document.getElementById('main-chart').getContext('2d'), {
+    type: 'bar',
+    data: { labels: chartData.map(d=>d.date), datasets: [{ data: values, backgroundColor: colors, borderRadius: 3, borderSkipped: false }] },
+    options: {
+      responsive: true, maintainAspectRatio: false, animation: { duration: 300 },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor:'#0f1117', borderColor:'#2a2d3a', borderWidth:1,
+          titleColor:'#94a3b8', bodyColor:'#38bdf8',
           titleFont:{family:"'DM Mono',monospace",size:11},
           bodyFont:{family:"'DM Mono',monospace",size:13,weight:'500'},
           padding:10,
-          callbacks:{title:items=>items[0].label,label:item=>formatValue(item.raw,selectedMetric.format)}
+          callbacks:{ title:items=>items[0].label, label:item=>formatValue(item.raw,selectedMetric.format) }
         }
       },
-      scales:{
-        x:{grid:{display:false},border:{color:'#2a2d3a'},
+      scales: {
+        x: { grid:{display:false}, border:{color:'#2a2d3a'},
           ticks:{color:'#475569',font:{family:"'DM Mono',monospace",size:10},maxRotation:45,
-            callback:function(val,i){return i%tickStep===0?this.getLabelForValue(val):'';}}},
-        y:{grid:{color:'#1a1e2e'},border:{display:false},
+            callback:function(val,i){return i%tickStep===0?this.getLabelForValue(val):'';}} },
+        y: { grid:{color:'#1a1e2e'}, border:{display:false},
           ticks:{color:'#475569',font:{family:"'DM Mono',monospace",size:10},
-            callback:v=>formatValue(v,selectedMetric.format)}}
+            callback:v=>formatValue(v,selectedMetric.format)} }
       }
     }
   });
-
   setTimeout(initMap, 60);
 }
 
 // ── Map ────────────────────────────────────────────────────────────────────
 function clearMap() {
-  if(mapLayer){try{mapLayer.remove();}catch(e){}mapLayer=null;}
+  if (mapLayer) { try { mapLayer.remove(); } catch(e) {} mapLayer = null; }
 }
 
 function initMap() {
-  const el=document.getElementById('map');
-  if(!el) return;
-  if(!mapInstance) {
-    mapInstance=L.map('map',{zoomControl:true,attributionControl:false});
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:19}).addTo(mapInstance);
+  const el = document.getElementById('map');
+  if (!el) return;
+  if (!mapInstance) {
+    mapInstance = L.map('map', { zoomControl:true, attributionControl:false });
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {maxZoom:19}).addTo(mapInstance);
   } else {
     mapInstance.invalidateSize();
   }
   clearMap();
-  if(mode==='county') loadCountyBoundary(selectedGeoKey);
+  if (mode==='county') loadCountyBoundary(selectedGeoKey);
   else loadZipBoundary(selectedGeoKey);
 }
 
-function applyBoundary(geojsonFeature) {
-  mapLayer=L.geoJSON(geojsonFeature,{
-    style:{color:'#38bdf8',weight:2,opacity:1,fillColor:'#38bdf8',fillOpacity:0.18}
+function applyBoundary(feature) {
+  mapLayer = L.geoJSON(feature, {
+    style: { color:'#38bdf8', weight:2, opacity:1, fillColor:'#38bdf8', fillOpacity:0.18 }
   }).addTo(mapInstance);
-  mapInstance.fitBounds(mapLayer.getBounds(),{padding:[24,24]});
+  mapInstance.fitBounds(mapLayer.getBounds(), { padding:[24,24] });
 }
 
 function loadCountyBoundary(fips) {
-  const pad=String(fips).padStart(5,'0');
+  const pad = String(fips).padStart(5,'0');
   fetch('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json')
     .then(r=>r.json())
-    .then(gj=>{
-      const feat=gj.features.find(f=>
-        f.id===pad||String(f.id).padStart(5,'0')===pad||
-        String(f.properties&&(f.properties.FIPS||f.properties.fips||f.properties.GEO_ID||'')).includes(pad)
+    .then(gj => {
+      const feat = gj.features.find(f =>
+        f.id===pad || String(f.id).padStart(5,'0')===pad ||
+        String(f.properties&&(f.properties.FIPS||f.properties.fips||'')).includes(pad)
       );
-      if(feat) applyBoundary(feat);
+      if (feat) applyBoundary(feat);
       else geocodeFallback(curMap().get(fips)||fips, 9);
     })
-    .catch(()=>geocodeFallback(curMap().get(fips)||fips, 9));
+    .catch(() => geocodeFallback(curMap().get(fips)||fips, 9));
 }
 
 function loadZipBoundary(zip) {
-  const pad=String(zip).padStart(5,'0');
-  fetch(`https://nominatim.openstreetmap.org/search?postalcode=${pad}&country=US&format=json&limit=1&polygon_geojson=1`,
-    {headers:{'Accept-Language':'en'}})
+  const pad = String(zip).padStart(5,'0');
+  fetch('https://nominatim.openstreetmap.org/search?postalcode='+pad+'&country=US&format=json&limit=1&polygon_geojson=1',
+    { headers:{'Accept-Language':'en'} })
     .then(r=>r.json())
-    .then(data=>{
-      if(!data||!data[0]) { geocodeFallback(curMap().get(zip)||zip, 11); return; }
-      const item=data[0];
-      if(item.geojson) {
-        applyBoundary(item.geojson);
-      } else {
-        mapInstance.setView([+item.lat,+item.lon],11);
-        mapLayer=L.circleMarker([+item.lat,+item.lon],
+    .then(data => {
+      if (!data||!data[0]) { geocodeFallback(curMap().get(zip)||zip, 11); return; }
+      const item = data[0];
+      if (item.geojson) applyBoundary(item.geojson);
+      else {
+        mapInstance.setView([+item.lat,+item.lon], 11);
+        mapLayer = L.circleMarker([+item.lat,+item.lon],
           {radius:14,color:'#38bdf8',fillColor:'#38bdf8',fillOpacity:0.25,weight:2}).addTo(mapInstance);
       }
     })
-    .catch(()=>geocodeFallback(curMap().get(zip)||zip, 11));
+    .catch(() => geocodeFallback(curMap().get(zip)||zip, 11));
 }
 
 function geocodeFallback(name, zoom) {
-  fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(name+', USA')}&format=json&limit=1`)
+  fetch('https://nominatim.openstreetmap.org/search?q='+encodeURIComponent(name+', USA')+'&format=json&limit=1')
     .then(r=>r.json())
-    .then(data=>{
-      if(data&&data[0]) {
-        mapInstance.setView([+data[0].lat,+data[0].lon],zoom);
-        mapLayer=L.circleMarker([+data[0].lat,+data[0].lon],
+    .then(data => {
+      if (data&&data[0]) {
+        mapInstance.setView([+data[0].lat,+data[0].lon], zoom);
+        mapLayer = L.circleMarker([+data[0].lat,+data[0].lon],
           {radius:14,color:'#38bdf8',fillColor:'#38bdf8',fillOpacity:0.25,weight:2}).addTo(mapInstance);
       }
     })
     .catch(()=>{});
 }
 
-window.addEventListener('DOMContentLoaded', startApp);
+// ── Boot ───────────────────────────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', buildStateGrid);
 </script>
 </body>
 </html>
