@@ -19,21 +19,24 @@ jobs:
       - name: Install dependencies
         run: pip install pandas
 
-      - name: Download county CSV
-        run: |
-          curl -L "https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_County_History.csv" \
-            -o /tmp/county_full.csv
+      - name: Download RDC county CSV
+        run: curl -L "https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_County_History.csv" -o /tmp/county_full.csv
 
-      - name: Download zip CSV
-        run: |
-          curl -L "https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_Zip_History.csv" \
-            -o /tmp/zip_full.csv
+      - name: Download RDC zip CSV
+        run: curl -L "https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_Zip_History.csv" -o /tmp/zip_full.csv
 
-      - name: Split CSVs by state
+      - name: Download Zillow ZORI county CSV
+        run: curl -L "https://files.zillowstatic.com/research/public_csvs/zori/County_zori_uc_sfrcondomfr_sm_month.csv" -o /tmp/zori_county.csv
+
+      - name: Download Zillow ZORI zip CSV
+        run: curl -L "https://files.zillowstatic.com/research/public_csvs/zori/Zip_zori_uc_sfrcondomfr_sm_month.csv" -o /tmp/zori_zip.csv
+
+      - name: Process all data
         run: |
           python3 - << 'PYEOF'
           import pandas as pd
           import os
+          import numpy as np
 
           FIPS_TO_STATE = {
             1:'AL',2:'AK',4:'AZ',5:'AR',6:'CA',8:'CO',9:'CT',10:'DE',
@@ -44,11 +47,15 @@ jobs:
             45:'SC',46:'SD',47:'TN',48:'TX',49:'UT',50:'VT',51:'VA',53:'WA',
             54:'WV',55:'WI',56:'WY',72:'PR'
           }
+          VALID_STATES = set(FIPS_TO_STATE.values())
 
           os.makedirs('data/county', exist_ok=True)
           os.makedirs('data/zip', exist_ok=True)
+          os.makedirs('data/rent_county', exist_ok=True)
+          os.makedirs('data/rent_zip', exist_ok=True)
 
-          print("Processing county data...")
+          # ── RDC County ──────────────────────────────────────────────────
+          print("Processing RDC county data...")
           county_df = pd.read_csv('/tmp/county_full.csv', dtype={'county_fips': str})
           county_df['county_fips'] = county_df['county_fips'].str.zfill(5)
           county_df['state_fips'] = county_df['county_fips'].str[:2].astype(int)
@@ -56,9 +63,10 @@ jobs:
           county_df = county_df.dropna(subset=['state']).drop(columns=['state_fips'])
           for state, group in county_df.groupby('state'):
             group.drop(columns=['state']).to_csv('data/county/' + state + '.csv', index=False)
-          print("County files written: " + str(county_df['state'].nunique()))
+          print("RDC county files: " + str(county_df['state'].nunique()))
 
-          print("Processing zip data...")
+          # ── RDC Zip ─────────────────────────────────────────────────────
+          print("Processing RDC zip data...")
           zip_df = pd.read_csv('/tmp/zip_full.csv', dtype={'postal_code': str})
           zip_df['postal_code'] = zip_df['postal_code'].str.zfill(5)
           def extract_state(z):
@@ -66,18 +74,66 @@ jobs:
             parts = str(z).split(',')
             return parts[-1].strip().upper() if len(parts) >= 2 else None
           zip_df['state'] = zip_df['zip_name'].apply(extract_state)
-          valid = set(FIPS_TO_STATE.values())
           zip_df = zip_df.dropna(subset=['state'])
-          zip_df = zip_df[zip_df['state'].isin(valid)]
+          zip_df = zip_df[zip_df['state'].isin(VALID_STATES)]
           for state, group in zip_df.groupby('state'):
             group.drop(columns=['state']).to_csv('data/zip/' + state + '.csv', index=False)
-          print("Zip files written: " + str(zip_df['state'].nunique()))
+          print("RDC zip files: " + str(zip_df['state'].nunique()))
+
+          # ── ZORI helper: melt wide->long, compute MM/YY pct changes ────
+          def process_zori(path, id_col, name_col, state_col):
+            df = pd.read_csv(path)
+            date_cols = [c for c in df.columns if c.startswith('20')]
+            id_cols = [c for c in df.columns if not c.startswith('20')]
+
+            long = df.melt(id_vars=id_cols, value_vars=date_cols,
+                           var_name='date_raw', value_name='zori')
+            # Convert date to YYYYMM integer to match existing data convention
+            long['month_date_yyyymm'] = pd.to_datetime(long['date_raw']).dt.strftime('%Y%m').astype(int)
+            long = long.dropna(subset=['zori'])
+            long = long.sort_values([id_col, 'month_date_yyyymm'])
+
+            # Compute M/M and Y/Y pct changes per region
+            long['zori_mm'] = long.groupby(id_col)['zori'].pct_change(1)
+            long['zori_yy'] = long.groupby(id_col)['zori'].pct_change(12)
+
+            # Round to reasonable precision
+            long['zori'] = long['zori'].round(2)
+            long['zori_mm'] = long['zori_mm'].round(4)
+            long['zori_yy'] = long['zori_yy'].round(4)
+
+            keep = [id_col, name_col, state_col, 'month_date_yyyymm', 'zori', 'zori_mm', 'zori_yy']
+            # Add City and Metro for zip if present
+            for extra in ['City', 'Metro', 'CountyName']:
+              if extra in long.columns:
+                keep.append(extra)
+            long = long[[c for c in keep if c in long.columns]]
+            long = long[long[state_col].isin(VALID_STATES)]
+            return long
+
+          # ── ZORI County ─────────────────────────────────────────────────
+          print("Processing ZORI county data...")
+          zori_county = process_zori('/tmp/zori_county.csv', 'RegionID', 'RegionName', 'State')
+          for state, group in zori_county.groupby('State'):
+            group.to_csv('data/rent_county/' + state + '.csv', index=False)
+          print("ZORI county files: " + str(zori_county['State'].nunique()))
+
+          # ── ZORI Zip ────────────────────────────────────────────────────
+          print("Processing ZORI zip data...")
+          zori_zip = process_zori('/tmp/zori_zip.csv', 'RegionID', 'RegionName', 'State')
+          for state, group in zori_zip.groupby('State'):
+            group.to_csv('data/rent_zip/' + state + '.csv', index=False)
+          print("ZORI zip files: " + str(zori_zip['State'].nunique()))
+
+          print("All done!")
           PYEOF
 
       - name: Show file sizes
         run: |
-          echo "Largest county files:"; ls -lh data/county/ | sort -k5 -rh | head -5
-          echo "Largest zip files:"; ls -lh data/zip/ | sort -k5 -rh | head -5
+          echo "Largest county files:"; ls -lh data/county/ | sort -k5 -rh | head -3
+          echo "Largest zip files:"; ls -lh data/zip/ | sort -k5 -rh | head -3
+          echo "Largest rent_county files:"; ls -lh data/rent_county/ | sort -k5 -rh | head -3
+          echo "Largest rent_zip files:"; ls -lh data/rent_zip/ | sort -k5 -rh | head -3
 
       - name: Update timestamp
         run: echo "Last refreshed $(date -u +%Y-%m-%dT%H:%M:%SZ)" > data/last_updated.txt
@@ -87,5 +143,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "Data split by state $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git diff --staged --quiet || git commit -m "Data refresh $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
