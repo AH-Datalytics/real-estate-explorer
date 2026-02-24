@@ -296,7 +296,6 @@ function loadDataset(which) {
   let rowCount = 0;
   Papa.parse(url, {
     download: true,
-    downloadRequestHeaders: { 'Origin': window.location.origin },
     header: true, dynamicTyping: true, skipEmptyLines: true,
     chunk(results) {
       rowCount += results.data.length;
