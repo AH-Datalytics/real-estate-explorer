@@ -174,20 +174,6 @@
       </div>
     </div>
 
-    <div class="control-group" id="location-group" style="display:none">
-      <div class="control-label">LOCATION (CITY)</div>
-      <div class="select-wrapper" id="location-wrapper">
-        <div class="select-box placeholder" id="location-box" onclick="toggleDropdown('location')">
-          <span id="location-selected-label">All cities</span>
-          <span class="select-arrow">&#9660;</span>
-        </div>
-        <div class="dropdown" id="location-dropdown" style="display:none">
-          <input class="dropdown-search" id="location-search" placeholder="Search city..." oninput="filterLocationList()" autocomplete="off">
-          <div class="dropdown-list" id="location-list"></div>
-        </div>
-      </div>
-    </div>
-
     <div class="control-group">
       <div class="control-label">METRIC</div>
       <div class="select-wrapper" id="metric-wrapper">
@@ -202,7 +188,18 @@
     </div>
   </div>
 
-  <div id="main-content">
+  <div id="main-layout" style="display:none">
+    <div class="content-grid">
+      <div class="map-card">
+        <div class="map-label" id="map-label">LOCATION</div>
+        <div id="map"></div>
+      </div>
+      <div id="chart-panel">
+        <div class="empty-state" style="height:300px;display:flex;align-items:center;justify-content:center;">Select a location to begin exploring</div>
+      </div>
+    </div>
+  </div>
+  <div id="empty-state-msg">
     <div class="empty-state">Select a location to begin exploring</div>
   </div>
   <div id="last-updated"></div>
@@ -279,7 +276,7 @@ const FIPS_TO_STATE = {
 let selectedState = null;
 let mode = 'county';
 let countyMap = new Map(), countyDataMap = new Map();
-let zipMap = new Map(), zipDataMap = new Map(), zipLocationMap = new Map();
+let zipMap = new Map(), zipDataMap = new Map();
 let countyLoaded = false, zipLoaded = false;
 let selectedGeoKey = null, selectedLocation = null;
 let selectedMetric = METRICS[0];
@@ -312,13 +309,6 @@ function formatZipName(zipName, postalCode) {
   return state ? city+', '+state+' ('+postalCode+')' : city+' ('+postalCode+')';
 }
 
-function getZipLocation(zipName) {
-  if (!zipName) return 'Unknown';
-  const parts = String(zipName).split(',');
-  const city = titleCase(parts[0].trim());
-  const state = parts[1] ? parts[1].trim().toUpperCase() : '';
-  return state ? city+', '+state : city;
-}
 
 function formatValue(val, fmt) {
   if (val===null||val===undefined||val===''||isNaN(+val)) return 'N/A';
@@ -350,7 +340,7 @@ function selectState(st) {
   countyMap.clear(); countyDataMap.clear();
   zipMap.clear(); zipDataMap.clear(); zipLocationMap.clear();
   countyLoaded = false; zipLoaded = false;
-  selectedGeoKey = null; selectedLocation = null;
+  selectedGeoKey = null;
   mode = 'county';
   clearMap();
   // Update badge
@@ -361,7 +351,8 @@ function selectState(st) {
   document.getElementById('geo-selected-label').textContent = 'Select a county...';
   document.getElementById('geo-box').classList.add('placeholder');
   document.getElementById('location-group').style.display = 'none';
-  document.getElementById('main-content').innerHTML = '<div class="empty-state">Select a location to begin exploring</div>';
+  document.getElementById('main-layout').style.display = 'none';
+  document.getElementById('empty-state-msg').style.display = '';
   loadDataset('county');
 }
 
@@ -432,7 +423,6 @@ function showApp() {
   document.getElementById('last-updated').textContent = 'DATA LOADED ' + new Date().toUTCString();
   buildMetricList();
   refreshGeoList();
-  if (mode==='zip') buildLocationList();
 }
 
 // ── Ingest ─────────────────────────────────────────────────────────────────
@@ -448,7 +438,6 @@ function ingestRow(row, which) {
     const zip = String(row.postal_code).padStart(5,'0');
     if (!zipMap.has(zip)) {
       zipMap.set(zip, formatZipName(row.zip_name, zip));
-      zipLocationMap.set(zip, getZipLocation(row.zip_name));
     }
     if (!zipDataMap.has(zip)) zipDataMap.set(zip,[]);
     zipDataMap.get(zip).push(row);
@@ -459,19 +448,17 @@ function ingestRow(row, which) {
 function switchMode(newMode) {
   if (newMode===mode && (newMode==='county'?countyLoaded:zipLoaded)) return;
   mode = newMode;
-  selectedGeoKey = null; selectedLocation = null;
+  selectedGeoKey = null;
   document.getElementById('btn-county').classList.toggle('active', mode==='county');
   document.getElementById('btn-zip').classList.toggle('active', mode==='zip');
   document.getElementById('geo-label').textContent = mode==='county' ? 'COUNTY' : 'ZIP CODE';
   document.getElementById('geo-selected-label').textContent = mode==='county' ? 'Select a county...' : 'Select a zip code...';
   document.getElementById('geo-box').classList.add('placeholder');
-  document.getElementById('location-group').style.display = mode==='zip' ? '' : 'none';
-  document.getElementById('location-selected-label').textContent = 'All cities';
-  document.getElementById('location-box').classList.add('placeholder');
-  document.getElementById('main-content').innerHTML = '<div class="empty-state">Select a location to begin exploring</div>';
+  document.getElementById('main-layout').style.display = 'none';
+  document.getElementById('empty-state-msg').style.display = '';
   clearMap();
   if (mode==='zip' && !zipLoaded) loadDataset('zip');
-  else { refreshGeoList(); if (mode==='zip') buildLocationList(); }
+  else refreshGeoList();
 }
 
 // ── Geo list ───────────────────────────────────────────────────────────────
@@ -480,9 +467,6 @@ function curData() { return mode==='county' ? countyDataMap : zipDataMap; }
 
 function refreshGeoList() {
   let entries = Array.from(curMap().entries()).map(([key,name])=>({key,name}));
-  if (mode==='zip' && selectedLocation) {
-    entries = entries.filter(e => zipLocationMap.get(e.key) === selectedLocation);
-  }
   filteredGeoList = entries.sort((a,b)=>a.name.localeCompare(b.name));
   renderGeoList(filteredGeoList);
 }
@@ -518,49 +502,13 @@ function selectGeo(key, name) {
 }
 
 // ── Location filter ────────────────────────────────────────────────────────
-function buildLocationList() {
-  const locations = [...new Set(zipLocationMap.values())].filter(Boolean).sort();
-  const list = document.getElementById('location-list');
-  list.innerHTML = '';
-  const all = document.createElement('div');
-  all.className = 'dropdown-item'+(!selectedLocation?' active':'');
-  all.innerHTML = '<span>All cities</span>';
-  all.onclick = () => { selectedLocation=null; applyLocationFilter('All cities', true); };
-  list.appendChild(all);
-  locations.forEach(loc => {
-    const div = document.createElement('div');
-    div.className = 'dropdown-item'+(loc===selectedLocation?' active':'');
-    div.innerHTML = '<span>'+loc+'</span>';
-    div.onclick = () => { selectedLocation=loc; applyLocationFilter(loc, false); };
-    list.appendChild(div);
-  });
-}
 
-function filterLocationList() {
-  const q = document.getElementById('location-search').value.toLowerCase();
-  document.getElementById('location-list').querySelectorAll('.dropdown-item').forEach(el => {
-    el.style.display = el.textContent.toLowerCase().includes(q) ? '' : 'none';
-  });
-}
 
-function applyLocationFilter(label, isAll) {
-  document.getElementById('location-selected-label').textContent = label;
-  document.getElementById('location-box').classList.toggle('placeholder', isAll);
-  document.getElementById('location-dropdown').style.display = 'none';
-  document.querySelectorAll('#location-list .dropdown-item').forEach(el =>
-    el.classList.toggle('active', el.textContent.trim()===label));
-  selectedGeoKey = null;
-  document.getElementById('geo-selected-label').textContent = 'Select a zip code...';
-  document.getElementById('geo-box').classList.add('placeholder');
-  document.getElementById('main-content').innerHTML = '<div class="empty-state">Select a location to begin exploring</div>';
-  clearMap();
-  refreshGeoList();
-}
 
 // ── Dropdowns ──────────────────────────────────────────────────────────────
 function toggleDropdown(which) {
   const dd = document.getElementById(which+'-dropdown');
-  ['geo','metric','location'].forEach(w => {
+  ['geo','metric'].forEach(w => {
     if (w!==which) document.getElementById(w+'-dropdown').style.display = 'none';
   });
   const open = dd.style.display !== 'none';
@@ -572,7 +520,7 @@ function toggleDropdown(which) {
   }
 }
 document.addEventListener('click', e => {
-  ['geo','metric','location'].forEach(w => {
+  ['geo','metric'].forEach(w => {
     const wr = document.getElementById(w+'-wrapper');
     if (wr && !wr.contains(e.target)) document.getElementById(w+'-dropdown').style.display = 'none';
   });
@@ -606,8 +554,10 @@ function renderContent() {
   const displayName = curMap().get(selectedGeoKey) || selectedGeoKey;
 
   if (!chartData.length) {
-    document.getElementById('main-content').innerHTML =
-      '<div class="empty-state">No data for <strong style="color:var(--text)">'+selectedMetric.label+'</strong> in '+displayName+'</div>';
+    document.getElementById('main-layout').style.display = '';
+    document.getElementById('empty-state-msg').style.display = 'none';
+    document.getElementById('chart-panel').innerHTML =
+      '<div class="empty-state" style="height:300px;display:flex;align-items:center;justify-content:center;">No data for <strong style="color:var(--text)">'+selectedMetric.label+'</strong> in '+displayName+'</div>';
     return;
   }
 
@@ -623,22 +573,24 @@ function renderContent() {
   const n = chartData.length;
   const tickStep = n>60 ? Math.floor(n/18) : n>24 ? 4 : 2;
 
-  document.getElementById('main-content').innerHTML =
-    '<div class="content-grid">' +
-      '<div class="map-card">' +
-        '<div class="map-label">LOCATION &middot; '+displayName.toUpperCase()+'</div>' +
-        '<div id="map"></div>' +
-      '</div>' +
-      '<div class="chart-card">' +
-        '<div class="chart-title">'+selectedMetric.label+'</div>' +
-        '<div class="chart-subtitle">'+displayName+' &middot; '+chartData.length+' months</div>' +
-        '<div class="chart-wrap"><canvas id="main-chart"></canvas></div>' +
-        '<div class="stats-row">' +
-          '<div><div class="stat-label">LATEST</div><div class="stat-value">'+formatValue(latest,selectedMetric.format)+'</div></div>' +
-          '<div><div class="stat-label">MIN</div><div class="stat-value">'+formatValue(minVal,selectedMetric.format)+'</div></div>' +
-          '<div><div class="stat-label">MAX</div><div class="stat-value">'+formatValue(maxVal,selectedMetric.format)+'</div></div>' +
-          '<div><div class="stat-label">AVG</div><div class="stat-value">'+formatValue(avgVal,selectedMetric.format)+'</div></div>' +
-        '</div>' +
+  // Show layout, hide empty state
+  document.getElementById('main-layout').style.display = '';
+  document.getElementById('empty-state-msg').style.display = 'none';
+
+  // Update map label
+  document.getElementById('map-label').textContent = 'LOCATION · ' + displayName.toUpperCase();
+
+  // Update chart panel only
+  document.getElementById('chart-panel').innerHTML =
+    '<div class="chart-card">' +
+      '<div class="chart-title">'+selectedMetric.label+'</div>' +
+      '<div class="chart-subtitle">'+displayName+' · '+chartData.length+' months</div>' +
+      '<div class="chart-wrap"><canvas id="main-chart"></canvas></div>' +
+      '<div class="stats-row">' +
+        '<div><div class="stat-label">LATEST</div><div class="stat-value">'+formatValue(latest,selectedMetric.format)+'</div></div>' +
+        '<div><div class="stat-label">MIN</div><div class="stat-value">'+formatValue(minVal,selectedMetric.format)+'</div></div>' +
+        '<div><div class="stat-label">MAX</div><div class="stat-value">'+formatValue(maxVal,selectedMetric.format)+'</div></div>' +
+        '<div><div class="stat-label">AVG</div><div class="stat-value">'+formatValue(avgVal,selectedMetric.format)+'</div></div>' +
       '</div>' +
     '</div>';
 
@@ -669,7 +621,7 @@ function renderContent() {
       }
     }
   });
-  setTimeout(initMap, 60);
+  initMap();
 }
 
 // ── Map ────────────────────────────────────────────────────────────────────
@@ -678,14 +630,11 @@ function clearMap() {
 }
 
 function initMap() {
-  const el = document.getElementById('map');
-  if (!el) return;
   if (!mapInstance) {
     mapInstance = L.map('map', { zoomControl:true, attributionControl:false });
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {maxZoom:19}).addTo(mapInstance);
-  } else {
-    mapInstance.invalidateSize();
   }
+  mapInstance.invalidateSize();
   clearMap();
   if (mode==='county') loadCountyBoundary(selectedGeoKey);
   else loadZipBoundary(selectedGeoKey);
