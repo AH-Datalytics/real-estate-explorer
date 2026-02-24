@@ -232,9 +232,8 @@ let selectedGeoKey = null, selectedMetric = METRICS[0];
 let chartInstance = null, mapInstance = null, mapLayer = null;
 let filteredGeoList = [];
 
-// Fetch directly from S3 (public, CORS-enabled) — no need to store in GitHub
-const COUNTY_PATH = 'https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_County_History.csv';
-const ZIP_PATH    = 'https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_Zip_History.csv';
+const COUNTY_PATH = 'https://real-estate.jasher.workers.dev/?file=county';
+const ZIP_PATH    = 'https://real-estate.jasher.workers.dev/?file=zip';
 
 // ── Loading ────────────────────────────────────────────────────────────────
 function startApp() { loadDataset('county'); }
@@ -265,42 +264,11 @@ function loadDataset(which) {
   document.getElementById('loading-updated').textContent='';
 
   const url = which==='county' ? COUNTY_PATH : ZIP_PATH;
-  const totalEst = which==='county' ? 96000000 : 778000000; // rough byte estimates
   label.textContent = 'Fetching '+(which==='county'?'county':'zip code')+' data...';
 
   fetch(url)
     .then(response => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      // Stream response and update progress via Content-Length if available
-      const contentLength = response.headers.get('Content-Length');
-      const total = contentLength ? +contentLength : totalEst;
-      const reader = response.body.getReader();
-      const decoder = new TextDecoder();
-      let received = 0;
-      let buffer = '';
-      let rowCount = 0;
-      let headers = null;
-
-      function processChunk(chunk) {
-        buffer += chunk;
-        const lines = buffer.split('\n');
-        buffer = lines.pop(); // keep incomplete last line
-
-        if (!headers) {
-          headers = lines.shift().split(',').map(h => h.trim().replace(/^"|"$/g,''));
-        }
-
-        lines.forEach(line => {
-          if (!line.trim()) return;
-          // Use PapaParse to parse individual lines safely
-          rowCount++;
-        });
-
-        label.textContent = `Fetched ${(received/1048576).toFixed(0)} MB...`;
-        bar.style.width = Math.min(88, (received/total)*100)+'%';
-      }
-
-      // Collect full response then parse — avoids streaming CORS issues
       return response.text();
     })
     .then(text => {
