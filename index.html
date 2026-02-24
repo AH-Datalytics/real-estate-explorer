@@ -293,25 +293,59 @@ function loadDataset(which) {
   label.textContent = 'Fetching '+(which==='county'?'county':'zip code')+' data...';
   document.getElementById('loading-updated').textContent = sizeWarn;
 
+  const estRows = which==='county' ? 400000 : 3500000;
   let rowCount = 0;
-  Papa.parse(url, {
-    download: true,
-    header: true, dynamicTyping: true, skipEmptyLines: true,
-    chunk(results) {
-      rowCount += results.data.length;
-      label.textContent = `Parsed ${rowCount.toLocaleString()} rows...`;
-      bar.style.width = Math.min(88, (rowCount / (which==='county' ? 400000 : 3500000)) * 100) + '%';
-      results.data.forEach(row => ingestRow(row, which));
-    },
-    complete() {
-      bar.style.width='100%'; label.textContent='Building index...';
-      (which==='county'?countyDataMap:zipDataMap).forEach(rows=>rows.sort((a,b)=>+a.month_date_yyyymm - +b.month_date_yyyymm));
-      if (which==='county') countyLoaded=true; else zipLoaded=true;
-      console.log(`Loaded ${which==='county'?countyMap.size:zipMap.size} ${which} entries`);
-      setTimeout(finishLoad, 150);
-    },
-    error(err) { showFallback(which, err.message); }
-  });
+  let buffer = '';
+  let headers = null;
+
+  fetch(url)
+    .then(res => {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+
+      function processBuffer() {
+        const lines = buffer.split('\n');
+        buffer = lines.pop(); // keep incomplete last line
+        if (!headers) {
+          const headerLine = lines.shift();
+          if (!headerLine) return;
+          headers = Papa.parse(headerLine, { header: false }).data[0];
+        }
+        if (!lines.length) return;
+        const chunk = headers.join(',') + '\n' + lines.join('\n');
+        const parsed = Papa.parse(chunk, { header: true, dynamicTyping: true, skipEmptyLines: true });
+        parsed.data.forEach(row => ingestRow(row, which));
+        rowCount += parsed.data.length;
+        label.textContent = 'Parsed ' + rowCount.toLocaleString() + ' rows...';
+        bar.style.width = Math.min(88, (rowCount / estRows) * 100) + '%';
+      }
+
+      function pump() {
+        return reader.read().then(({ done, value }) => {
+          if (done) {
+            // process any remaining buffer
+            if (buffer.trim() && headers) {
+              const chunk = headers.join(',') + '\n' + buffer;
+              const parsed = Papa.parse(chunk, { header: true, dynamicTyping: true, skipEmptyLines: true });
+              parsed.data.forEach(row => ingestRow(row, which));
+            }
+            bar.style.width = '100%';
+            label.textContent = 'Building index...';
+            (which==='county'?countyDataMap:zipDataMap).forEach(rows=>rows.sort((a,b)=>+a.month_date_yyyymm - +b.month_date_yyyymm));
+            if (which==='county') countyLoaded=true; else zipLoaded=true;
+            console.log('Loaded ' + (which==='county'?countyMap.size:zipMap.size) + ' ' + which + ' entries');
+            setTimeout(finishLoad, 150);
+            return;
+          }
+          buffer += decoder.decode(value, { stream: true });
+          processBuffer();
+          return pump();
+        });
+      }
+      return pump();
+    })
+    .catch(err => showFallback(which, err.message));
 }
 
 function ingestRow(row, which) {
