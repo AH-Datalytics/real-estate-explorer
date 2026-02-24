@@ -293,42 +293,26 @@ function loadDataset(which) {
   label.textContent = 'Fetching '+(which==='county'?'county':'zip code')+' data...';
   document.getElementById('loading-updated').textContent = sizeWarn;
 
-  fetch(url)
-    .then(response => {
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response.text();
-    })
-    .then(text => {
-      if (!text || text.length < 100) throw new Error(`Empty response (${text.length} bytes) — worker may have timed out`);
-      return text;
-    })
-    .then(text => {
-      console.log(`Fetched ${(text.length/1048576).toFixed(1)}MB of ${which} data`);
-      label.textContent = 'Parsing...';
-      bar.style.width = '90%';
-      // Small timeout to let UI update
-      setTimeout(() => {
-        let rowCount = 0;
-        Papa.parse(text, {
-          header: true, dynamicTyping: true, skipEmptyLines: true,
-          chunk(results) {
-            rowCount += results.data.length;
-            label.textContent = `Parsed ${rowCount.toLocaleString()} rows...`;
-            results.data.forEach(row => ingestRow(row, which));
-          },
-          complete() {
-            bar.style.width='100%'; label.textContent='Building index...';
-            (which==='county'?countyDataMap:zipDataMap).forEach(rows=>rows.sort((a,b)=>+a.month_date_yyyymm - +b.month_date_yyyymm));
-            if (which==='county') countyLoaded=true; else zipLoaded=true;
-            const count = which==='county' ? countyMap.size : zipMap.size;
-            console.log(`Loaded ${count} ${which} entries`);
-            setTimeout(finishLoad, 150);
-          },
-          error(err) { showFallback(which, err.message); }
-        });
-      }, 50);
-    })
-    .catch(err => showFallback(which, err.message));
+  let rowCount = 0;
+  Papa.parse(url, {
+    download: true,
+    downloadRequestHeaders: { 'Origin': window.location.origin },
+    header: true, dynamicTyping: true, skipEmptyLines: true,
+    chunk(results) {
+      rowCount += results.data.length;
+      label.textContent = `Parsed ${rowCount.toLocaleString()} rows...`;
+      bar.style.width = Math.min(88, (rowCount / (which==='county' ? 400000 : 3500000)) * 100) + '%';
+      results.data.forEach(row => ingestRow(row, which));
+    },
+    complete() {
+      bar.style.width='100%'; label.textContent='Building index...';
+      (which==='county'?countyDataMap:zipDataMap).forEach(rows=>rows.sort((a,b)=>+a.month_date_yyyymm - +b.month_date_yyyymm));
+      if (which==='county') countyLoaded=true; else zipLoaded=true;
+      console.log(`Loaded ${which==='county'?countyMap.size:zipMap.size} ${which} entries`);
+      setTimeout(finishLoad, 150);
+    },
+    error(err) { showFallback(which, err.message); }
+  });
 }
 
 function ingestRow(row, which) {
