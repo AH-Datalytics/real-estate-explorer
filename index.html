@@ -6,6 +6,7 @@
 <title>Real Estate Market Explorer</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -103,6 +104,35 @@
   .stat-value { font-size: 15px; color: var(--accent); font-weight: 500; }
 
   .empty-state { border: 1px dashed var(--surface2); border-radius: 12px; padding: 80px 24px; text-align: center; color: var(--muted); font-size: 13px; }
+
+  .export-bar { display: flex; gap: 10px; margin-top: 16px; }
+  .export-btn {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 7px;
+    padding: 8px 16px; font-family: inherit; font-size: 11px; letter-spacing: 0.08em;
+    color: var(--text-dim); cursor: pointer; transition: all 0.15s; display: flex; align-items: center; gap: 7px;
+  }
+  .export-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .export-btn svg { flex-shrink: 0; }
+
+  /* Summary card (hidden, used for JPEG render) */
+  #summary-card {
+    position: fixed; left: -9999px; top: 0;
+    width: 900px; background: #080b12; padding: 40px;
+    font-family: 'DM Mono', monospace; color: #e2e8f0;
+  }
+  .sc-header { margin-bottom: 28px; border-bottom: 1px solid #2a2d3a; padding-bottom: 20px; }
+  .sc-title { font-family: 'Syne', sans-serif; font-size: 26px; font-weight: 800;
+    background: linear-gradient(90deg,#38bdf8,#818cf8);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 4px; }
+  .sc-sub { font-size: 11px; color: #475569; letter-spacing: 0.1em; }
+  .sc-date { font-size: 11px; color: #475569; margin-top: 4px; }
+  .sc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .sc-cell { background: #0f1117; border: 1px solid #1a1e2e; border-radius: 10px; padding: 16px 18px; }
+  .sc-cell-label { font-size: 9px; color: #475569; letter-spacing: 0.12em; margin-bottom: 6px; text-transform: uppercase; }
+  .sc-cell-value { font-size: 18px; color: #38bdf8; font-weight: 500; }
+  .sc-footer { margin-top: 24px; padding-top: 16px; border-top: 1px solid #1a1e2e;
+    font-size: 10px; color: #334155; letter-spacing: 0.08em; }
+
   #last-updated { font-size: 10px; color: var(--muted); margin-top: 20px; letter-spacing: 0.08em; }
 
   /* Screens */
@@ -184,8 +214,21 @@
   <div id="empty-state-msg">
     <div class="empty-state">Select a location to begin exploring</div>
   </div>
+  <div id="export-bar" class="export-bar" style="display:none">
+    <button class="export-btn" onclick="exportCSV()">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      EXPORT CSV
+    </button>
+    <button class="export-btn" onclick="exportJPEG()">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      EXPORT JPEG
+    </button>
+  </div>
   <div id="last-updated"></div>
 </div>
+
+<!-- Summary card for JPEG export (off-screen) -->
+<div id="summary-card"></div>
 
 <script>
 const STATES = [
@@ -333,6 +376,7 @@ function selectState(st) {
   document.getElementById('geo-box').classList.add('placeholder');
   document.getElementById('main-layout').style.display = 'none';
   document.getElementById('empty-state-msg').style.display = '';
+  document.getElementById('export-bar').style.display = 'none';
   loadDataset('county');
 }
 
@@ -476,6 +520,7 @@ function selectGeo(key, name) {
   document.getElementById('geo-box').classList.remove('placeholder');
   document.getElementById('geo-selected-label').textContent = name;
   document.getElementById('geo-dropdown').style.display = 'none';
+  document.getElementById('export-bar').style.display = 'flex';
   renderGeoList(filteredGeoList);
   renderContent();
 }
@@ -596,6 +641,82 @@ function renderContent() {
             callback:v=>formatValue(v,selectedMetric.format)} }
       }
     }
+  });
+}
+
+
+// ── Export ─────────────────────────────────────────────────────────────────
+function getLatestRow() {
+  const data = curData().get(selectedGeoKey) || [];
+  // data is already sorted ascending, so last item is most recent
+  return data[data.length - 1] || null;
+}
+
+function getLatestValues() {
+  const row = getLatestRow();
+  if (!row) return [];
+  return METRICS.map(m => ({
+    label: m.label,
+    key: m.key,
+    format: m.format,
+    value: row[m.key] !== undefined && row[m.key] !== null && row[m.key] !== '' ? row[m.key] : null
+  }));
+}
+
+function exportCSV() {
+  const vals = getLatestValues();
+  const row = getLatestRow();
+  const displayName = curMap().get(selectedGeoKey) || selectedGeoKey;
+  const date = row ? formatDate(row.month_date_yyyymm) : '';
+  const lines = ['Location,Date,Metric,Value'];
+  vals.forEach(v => {
+    const raw = v.value !== null ? v.value : '';
+    lines.push(['"'+displayName+'"', date, '"'+v.label+'"', raw].join(','));
+  });
+  const blob = new Blob([lines.join('\n')], { type: 'text/csv' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = (displayName + '_' + date + '_latest.csv').replace(/[^a-zA-Z0-9_-]/g,'_');
+  a.click();
+}
+
+function exportJPEG() {
+  const vals = getLatestValues();
+  const row = getLatestRow();
+  const displayName = curMap().get(selectedGeoKey) || selectedGeoKey;
+  const date = row ? formatDate(row.month_date_yyyymm) : '';
+
+  // Build summary card HTML
+  const cells = vals.map(v => {
+    const formatted = v.value !== null ? formatValue(v.value, v.format) : 'N/A';
+    return '<div class="sc-cell"><div class="sc-cell-label">'+v.label+'</div><div class="sc-cell-value">'+formatted+'</div></div>';
+  }).join('');
+
+  const card = document.getElementById('summary-card');
+  card.innerHTML =
+    '<div class="sc-header">' +
+      '<div class="sc-title">'+displayName+'</div>' +
+      '<div class="sc-sub">REAL ESTATE MARKET SUMMARY &nbsp;&middot;&nbsp; REALTOR.COM INVENTORY DATA</div>' +
+      '<div class="sc-date">MOST RECENT DATA: '+date+'</div>' +
+    '</div>' +
+    '<div class="sc-grid">'+cells+'</div>' +
+    '<div class="sc-footer">Generated '+new Date().toUTCString()+' &nbsp;&middot;&nbsp; Source: Realtor.com Research Data</div>';
+
+  // Render off-screen card to canvas
+  card.style.left = '-9999px';
+  card.style.display = 'block';
+
+  html2canvas(card, {
+    backgroundColor: '#080b12',
+    scale: 2,
+    useCORS: true,
+    logging: false
+  }).then(canvas => {
+    card.style.display = 'none';
+    const a = document.createElement('a');
+    a.href = canvas.toDataURL('image/jpeg', 0.95);
+    a.download = (displayName + '_' + date + '_summary.jpg').replace(/[^a-zA-Z0-9_-]/g,'_');
+    a.click();
   });
 }
 
