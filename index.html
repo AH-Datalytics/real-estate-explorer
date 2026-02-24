@@ -86,7 +86,7 @@
   .select-box.placeholder { color: var(--subtle); }
   .select-arrow { color: var(--subtle); font-size: 10px; flex-shrink: 0; margin-left: 8px; }
   .select-wrapper { position: relative; }
-  .dropdown { position: absolute; top: calc(100% + 4px); left: 0; right: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; z-index: 300; max-height: 320px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 12px 40px rgba(0,0,0,0.6); }
+  .dropdown { position: absolute; top: calc(100% + 4px); left: 0; right: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; z-index: 1000; max-height: 320px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 12px 40px rgba(0,0,0,0.6); }
   .dropdown-search { background: var(--surface2); border: none; border-bottom: 1px solid var(--border); padding: 10px 14px; color: var(--text); font-size: 12px; font-family: inherit; outline: none; }
   .dropdown-list { overflow-y: auto; flex: 1; }
   .dropdown-item { padding: 9px 14px; cursor: pointer; font-size: 12px; color: var(--text-dim); transition: background 0.1s,color 0.1s; display: flex; justify-content: space-between; align-items: center; }
@@ -96,8 +96,7 @@
   .dropdown-empty { padding: 14px; color: var(--muted); font-size: 12px; text-align: center; }
 
   /* Content */
-  .content-grid { display: grid; grid-template-columns: 340px 1fr; gap: 16px; align-items: start; }
-  @media (max-width: 860px) { .content-grid { grid-template-columns: 1fr; } }
+  .content-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
 
   .map-card { background: #0a0d16; border: 1px solid var(--surface2); border-radius: 12px; overflow: hidden; }
   .map-label { padding: 12px 16px; font-size: 10px; color: var(--subtle); letter-spacing: 0.12em; border-bottom: 1px solid var(--surface2); }
@@ -663,17 +662,17 @@ function loadCountyBoundary(fips) {
 
 function loadZipBoundary(zip) {
   const pad = String(zip).padStart(5,'0');
-  fetch('https://nominatim.openstreetmap.org/search?postalcode='+pad+'&country=US&format=json&limit=1&polygon_geojson=1',
-    { headers:{'Accept-Language':'en'} })
-    .then(r=>r.json())
+  // Use Census Bureau TIGER ZCTA boundary via public ArcGIS REST API
+  const url = 'https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/2/query' +
+    '?where=ZCTA5CE%3D%27' + pad + '%27' +
+    '&outFields=ZCTA5CE&outSR=4326&f=geojson';
+  fetch(url)
+    .then(r => r.json())
     .then(data => {
-      if (!data||!data[0]) { geocodeFallback(curMap().get(zip)||zip, 11); return; }
-      const item = data[0];
-      if (item.geojson) applyBoundary(item.geojson);
-      else {
-        mapInstance.setView([+item.lat,+item.lon], 11);
-        mapLayer = L.circleMarker([+item.lat,+item.lon],
-          {radius:14,color:'#38bdf8',fillColor:'#38bdf8',fillOpacity:0.25,weight:2}).addTo(mapInstance);
+      if (data.features && data.features.length > 0) {
+        applyBoundary(data.features[0].geometry);
+      } else {
+        geocodeFallback(curMap().get(zip)||zip, 11);
       }
     })
     .catch(() => geocodeFallback(curMap().get(zip)||zip, 11));
