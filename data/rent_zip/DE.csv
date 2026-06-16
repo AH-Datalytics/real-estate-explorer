@@ -1,692 +1,716 @@
 RegionID,RegionName,State,month_date_yyyymm,zori,zori_mm,zori_yy,City,Metro,CountyName
-66027,19701,DE,202012,1638.85,,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202101,1637.15,-0.001,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202102,1672.21,0.0214,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202103,1705.89,0.0201,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202104,1744.32,0.0225,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202105,1759.34,0.0086,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202106,1777.42,0.0103,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202107,1788.76,0.0064,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202108,1815.72,0.0151,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202109,1845.27,0.0163,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202110,1878.64,0.0181,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202111,1908.52,0.0159,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202112,1916.68,0.0043,0.1695,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202201,1947.41,0.016,0.1895,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202202,1977.75,0.0156,0.1827,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202203,2027.36,0.0251,0.1884,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202204,2062.6,0.0174,0.1825,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202205,2096.93,0.0166,0.1919,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202206,2123.16,0.0125,0.1945,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202207,2154.82,0.0149,0.2046,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202208,2160.85,0.0028,0.1901,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202209,2177.58,0.0077,0.1801,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202210,2148.46,-0.0134,0.1436,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202211,2136.68,-0.0055,0.1195,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202212,2115.53,-0.0099,0.1037,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202301,2122.53,0.0033,0.0899,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202302,2118.61,-0.0018,0.0712,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202303,2116.53,-0.001,0.044,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202304,2110.81,-0.0027,0.0234,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202305,2141.82,0.0147,0.0214,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202306,2151.68,0.0046,0.0134,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202307,2177.25,0.0119,0.0104,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202308,2150.72,-0.0122,-0.0047,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202309,2121.23,-0.0137,-0.0259,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202310,2074.05,-0.0222,-0.0346,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202311,2075.19,0.0006,-0.0288,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202312,2089.37,0.0068,-0.0124,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202401,2123.28,0.0162,0.0004,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202402,2159.73,0.0172,0.0194,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202403,2175.46,0.0073,0.0278,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202404,2174.95,-0.0002,0.0304,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202405,2160.43,-0.0067,0.0087,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202406,2147.55,-0.006,-0.0019,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202407,2138.77,-0.0041,-0.0177,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202408,2136.07,-0.0013,-0.0068,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202409,2132.42,-0.0017,0.0053,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202410,2146.9,0.0068,0.0351,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202411,2161.51,0.0068,0.0416,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202412,2169.28,0.0036,0.0382,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202501,2162.14,-0.0033,0.0183,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202502,2141.34,-0.0096,-0.0085,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202503,2191.38,0.0234,0.0073,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202504,2231.59,0.0184,0.026,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202505,2262.15,0.0137,0.0471,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202506,2265.48,0.0015,0.0549,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202507,2269.65,0.0018,0.0612,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202508,2268.75,-0.0004,0.0621,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202509,2256.76,-0.0053,0.0583,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202510,2264.13,0.0033,0.0546,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202511,2272.81,0.0038,0.0515,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202512,2258.89,-0.0061,0.0413,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202601,2266.21,0.0032,0.0481,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202602,2352.83,0.0382,0.0988,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202603,2390.3,0.0159,0.0908,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66027,19701,DE,202604,2395.64,0.0022,0.0735,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202405,1785.42,,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202406,1820.52,0.0197,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202407,1854.5,0.0187,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202408,1862.05,0.0041,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202410,1890.07,0.015,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202411,1888.79,-0.0007,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202412,1868.32,-0.0108,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202501,1862.58,-0.0031,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202502,1866.1,0.0019,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202503,1862.25,-0.0021,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202504,1875.95,0.0074,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202505,1881.66,0.003,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202506,1892.58,0.0058,0.06,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202507,1902.35,0.0052,0.045,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202508,1925.96,0.0124,0.0385,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202509,1944.47,0.0096,0.0443,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202510,1941.73,-0.0014,0.0273,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202511,1931.45,-0.0053,0.0226,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202512,1909.9,-0.0112,0.0223,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202601,1908.26,-0.0009,0.0245,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202602,1899.76,-0.0045,0.018,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202603,1907.14,0.0039,0.0241,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66028,19702,DE,202604,1916.25,0.0048,0.0215,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202410,1512.22,,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202501,1561.76,0.0328,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202502,1560.02,-0.0011,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202503,1569.89,0.0063,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202504,1562.23,-0.0049,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202505,1542.96,-0.0123,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202506,1559.24,0.0105,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202507,1552.81,-0.0041,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202508,1579.09,0.0169,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202509,1539.35,-0.0252,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202510,1557.39,0.0117,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202511,1579.36,0.0141,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202512,1637.34,0.0367,0.0827,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202601,1635.85,-0.0009,0.0474,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202602,1627.39,-0.0052,0.0432,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202603,1615.21,-0.0075,0.0289,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66029,19703,DE,202604,1615.71,0.0003,0.0342,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66031,19707,DE,202604,2900.0,,,Hockessin,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202404,2558.66,,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202405,2590.57,0.0125,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202406,2557.34,-0.0128,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202407,2591.93,0.0135,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202408,2605.25,0.0051,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202410,2620.96,0.006,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202411,2573.1,-0.0183,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202412,2587.97,0.0058,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202501,2602.84,0.0057,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202502,2716.69,0.0437,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202503,2729.59,0.0047,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202504,2744.92,0.0056,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202505,2723.38,-0.0078,0.0644,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202506,2736.85,0.0049,0.0565,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202507,2755.27,0.0067,0.0774,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202508,2776.42,0.0077,0.0712,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202509,2755.82,-0.0074,0.0578,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202510,2742.52,-0.0048,0.0464,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202511,2698.11,-0.0162,0.0486,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202512,2713.86,0.0058,0.0486,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202601,2739.74,0.0095,0.0526,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202602,2740.5,0.0003,0.0088,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202603,2756.26,0.0057,0.0098,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66033,19709,DE,202604,2756.42,0.0001,0.0042,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201802,1402.56,,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201803,1407.01,0.0032,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201804,1383.25,-0.0169,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201805,1359.83,-0.0169,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201806,1348.46,-0.0084,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201807,1378.63,0.0224,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201808,1376.54,-0.0015,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201809,1419.55,0.0313,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201810,1427.67,0.0057,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201811,1454.55,0.0188,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201812,1446.7,-0.0054,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201901,1437.86,-0.0061,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201902,1441.82,0.0028,0.028,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201903,1418.2,-0.0164,0.008,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201904,1417.83,-0.0003,0.025,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201905,1419.56,0.0012,0.0439,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201906,1430.22,0.0075,0.0606,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201907,1443.7,0.0094,0.0472,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201908,1465.01,0.0148,0.0643,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201909,1487.49,0.0153,0.0479,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201910,1504.22,0.0112,0.0536,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201911,1511.8,0.005,0.0394,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,201912,1520.25,0.0056,0.0508,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202001,1516.96,-0.0022,0.055,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202002,1496.66,-0.0134,0.038,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202003,1485.64,-0.0074,0.0475,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202004,1450.67,-0.0235,0.0232,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202005,1420.64,-0.0207,0.0008,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202006,1443.19,0.0159,0.0091,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202007,1494.19,0.0353,0.035,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202008,1538.5,0.0297,0.0502,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202009,1547.69,0.006,0.0405,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202010,1542.65,-0.0033,0.0256,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202011,1529.61,-0.0085,0.0118,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202012,1552.8,0.0152,0.0214,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202101,1575.97,0.0149,0.0389,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202102,1615.81,0.0253,0.0796,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202103,1627.51,0.0072,0.0955,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202104,1646.16,0.0115,0.1348,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202105,1700.14,0.0328,0.1967,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202106,1707.24,0.0042,0.183,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202107,1706.89,-0.0002,0.1424,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202108,1736.74,0.0175,0.1289,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202109,1746.73,0.0058,0.1286,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202110,1794.62,0.0274,0.1633,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202111,1812.06,0.0097,0.1847,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202112,1874.06,0.0342,0.2069,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202201,1907.37,0.0178,0.2103,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202202,1886.75,-0.0108,0.1677,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202203,1851.99,-0.0184,0.1379,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202204,1864.38,0.0067,0.1326,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202205,1885.89,0.0115,0.1093,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202206,1932.1,0.0245,0.1317,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202207,1952.17,0.0104,0.1437,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202208,1983.34,0.016,0.142,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202209,1974.67,-0.0044,0.1305,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202210,1957.16,-0.0089,0.0906,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202211,1979.51,0.0114,0.0924,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202212,2017.46,0.0192,0.0765,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202301,2049.29,0.0158,0.0744,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202302,2020.39,-0.0141,0.0708,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202303,1984.48,-0.0178,0.0715,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202304,2011.2,0.0135,0.0788,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202305,2023.79,0.0063,0.0731,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202306,2055.88,0.0159,0.0641,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202307,2047.4,-0.0041,0.0488,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202308,2109.38,0.0303,0.0635,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202309,2129.09,0.0093,0.0782,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202310,2130.01,0.0004,0.0883,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202311,2094.48,-0.0167,0.0581,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202312,2097.1,0.0013,0.0395,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202401,2103.2,0.0029,0.0263,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202402,2070.68,-0.0155,0.0249,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202403,2067.46,-0.0016,0.0418,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202404,2086.61,0.0093,0.0375,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202405,2136.36,0.0238,0.0556,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202406,2160.97,0.0115,0.0511,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202407,2172.83,0.0055,0.0613,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202408,2179.99,0.0033,0.0335,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202409,2229.68,0.0228,0.0472,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202410,2232.67,0.0013,0.0482,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202411,2251.61,0.0085,0.075,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202412,2214.17,-0.0166,0.0558,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202501,2209.83,-0.002,0.0507,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202502,2181.73,-0.0127,0.0536,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202503,2164.68,-0.0078,0.047,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202504,2157.54,-0.0033,0.034,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202505,2188.79,0.0145,0.0245,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202506,2221.31,0.0149,0.0279,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202507,2242.89,0.0097,0.0322,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202508,2244.01,0.0005,0.0294,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202509,2256.55,0.0056,0.0121,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202510,2292.72,0.016,0.0269,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202511,2289.38,-0.0015,0.0168,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202512,2272.56,-0.0073,0.0264,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202601,2241.54,-0.0137,0.0143,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202602,2260.9,0.0086,0.0363,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202603,2276.37,0.0068,0.0516,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66035,19711,DE,202604,2298.3,0.0096,0.0652,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66037,19713,DE,202504,1766.75,,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66037,19713,DE,202505,1764.44,-0.0013,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66037,19713,DE,202506,1795.62,0.0177,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66037,19713,DE,202508,1833.69,0.0212,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66037,19713,DE,202509,1800.16,-0.0183,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66037,19713,DE,202510,1777.65,-0.0125,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66037,19713,DE,202511,1781.3,0.0021,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66037,19713,DE,202512,1756.62,-0.0139,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66037,19713,DE,202601,1759.62,0.0017,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66037,19713,DE,202602,1777.07,0.0099,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66037,19713,DE,202603,1826.32,0.0277,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66037,19713,DE,202604,1824.08,-0.0012,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66043,19720,DE,202512,1700.14,,,New Castle,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66043,19720,DE,202601,1687.63,-0.0074,,New Castle,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66043,19720,DE,202602,1692.76,0.003,,New Castle,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66043,19720,DE,202603,1728.34,0.021,,New Castle,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66043,19720,DE,202604,1726.31,-0.0012,,New Castle,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201705,1161.29,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201706,1181.47,0.0174,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201707,1167.29,-0.012,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201708,1156.66,-0.0091,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201709,1151.12,-0.0048,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201710,1130.26,-0.0181,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201711,1132.82,0.0023,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201712,1137.66,0.0043,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201801,1156.2,0.0163,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201802,1187.97,0.0275,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201803,1206.94,0.016,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201804,1215.54,0.0071,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201805,1205.08,-0.0086,0.0377,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201806,1228.85,0.0197,0.0401,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201807,1244.14,0.0124,0.0658,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201808,1226.17,-0.0144,0.0601,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201809,1205.81,-0.0166,0.0475,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201810,1192.74,-0.0108,0.0553,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201811,1199.25,0.0055,0.0586,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201812,1236.25,0.0309,0.0867,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201901,1264.04,0.0225,0.0933,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201902,1294.97,0.0245,0.0901,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201903,1270.46,-0.0189,0.0526,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201904,1252.91,-0.0138,0.0307,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201905,1229.48,-0.0187,0.0202,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201906,1240.8,0.0092,0.0097,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201907,1258.7,0.0144,0.0117,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201908,1276.58,0.0142,0.0411,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201909,1273.49,-0.0024,0.0561,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201910,1259.03,-0.0114,0.0556,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201911,1239.32,-0.0157,0.0334,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,201912,1237.19,-0.0017,0.0008,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202001,1231.54,-0.0046,-0.0257,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202002,1232.09,0.0004,-0.0486,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202003,1242.38,0.0084,-0.0221,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202004,1252.01,0.0077,-0.0007,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202005,1256.97,0.004,0.0224,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202006,1257.38,0.0003,0.0134,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202007,1260.73,0.0027,0.0016,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202008,1291.79,0.0246,0.0119,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202009,1302.37,0.0082,0.0227,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202010,1304.81,0.0019,0.0364,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202011,1284.18,-0.0158,0.0362,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202012,1272.01,-0.0095,0.0281,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202101,1295.18,0.0182,0.0517,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202102,1318.89,0.0183,0.0705,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202103,1353.34,0.0261,0.0893,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202104,1373.52,0.0149,0.0971,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202105,1417.18,0.0318,0.1275,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202106,1475.3,0.041,0.1733,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202107,1514.6,0.0266,0.2014,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202108,1550.29,0.0236,0.2001,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202109,1537.06,-0.0085,0.1802,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202110,1543.44,0.0042,0.1829,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202111,1533.65,-0.0063,0.1943,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202112,1542.93,0.0061,0.213,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202201,1566.06,0.015,0.2091,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202202,1603.63,0.024,0.2159,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202203,1629.61,0.0162,0.2041,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202204,1660.61,0.019,0.209,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202205,1668.39,0.0047,0.1773,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202206,1698.39,0.018,0.1512,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202207,1699.01,0.0004,0.1218,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202208,1686.71,-0.0072,0.088,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202209,1655.54,-0.0185,0.0771,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202210,1616.55,-0.0235,0.0474,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202211,1615.13,-0.0009,0.0531,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202212,1620.18,0.0031,0.0501,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202301,1638.25,0.0112,0.0461,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202302,1637.43,-0.0005,0.0211,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202303,1667.2,0.0182,0.0231,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202304,1684.98,0.0107,0.0147,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202305,1731.15,0.0274,0.0376,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202306,1750.61,0.0112,0.0307,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202307,1771.2,0.0118,0.0425,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202308,1767.7,-0.002,0.048,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202309,1758.61,-0.0051,0.0623,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202310,1760.24,0.0009,0.0889,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202311,1746.14,-0.008,0.0811,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202312,1733.82,-0.0071,0.0701,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202401,1701.28,-0.0188,0.0385,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202402,1712.04,0.0063,0.0456,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202403,1732.18,0.0118,0.039,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202404,1779.53,0.0273,0.0561,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202405,1803.83,0.0137,0.042,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202406,1824.36,0.0114,0.0421,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202407,1846.69,0.0122,0.0426,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202408,1847.86,0.0006,0.0453,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202409,1842.87,-0.0027,0.0479,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202410,1825.07,-0.0097,0.0368,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202411,1809.82,-0.0084,0.0365,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202412,1811.83,0.0011,0.045,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202501,1827.35,0.0086,0.0741,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202502,1856.18,0.0158,0.0842,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202503,1876.95,0.0112,0.0836,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202504,1890.06,0.007,0.0621,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202505,1887.48,-0.0014,0.0464,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202506,1884.83,-0.0014,0.0331,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202507,1899.61,0.0078,0.0287,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202508,1928.5,0.0152,0.0436,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202509,1947.97,0.0101,0.057,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202510,1929.64,-0.0094,0.0573,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202511,1918.28,-0.0059,0.0599,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202512,1917.11,-0.0006,0.0581,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202601,1922.66,0.0029,0.0522,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202602,1916.4,-0.0033,0.0324,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202603,1907.85,-0.0045,0.0165,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66054,19801,DE,202604,1912.87,0.0026,0.0121,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202503,1397.6,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202504,1417.08,0.0139,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202505,1427.35,0.0072,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202506,1405.95,-0.015,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202507,1396.58,-0.0067,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202508,1379.46,-0.0123,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202509,1398.29,0.0137,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202510,1412.71,0.0103,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202511,1420.14,0.0053,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202512,1429.76,0.0068,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202601,1421.97,-0.0055,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202602,1449.46,0.0193,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202603,1480.12,0.0212,0.059,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66055,19802,DE,202604,1508.5,0.0192,0.0645,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66056,19803,DE,202604,1975.0,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66057,19804,DE,202604,1712.0,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202207,1233.49,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202208,1260.11,0.0216,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202209,1248.18,-0.0095,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202210,1235.95,-0.0098,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202211,1250.96,0.0121,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202212,1271.49,0.0164,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202301,1320.21,0.0383,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202302,1350.88,0.0232,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202303,1341.82,-0.0067,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202304,1350.7,0.0066,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202305,1328.4,-0.0165,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202306,1341.53,0.0099,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202307,1337.11,-0.0033,0.084,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202308,1337.65,0.0004,0.0615,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202309,1366.26,0.0214,0.0946,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202310,1376.65,0.0076,0.1138,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202311,1378.34,0.0012,0.1018,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202312,1380.56,0.0016,0.0858,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202401,1347.73,-0.0238,0.0208,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202402,1389.76,0.0312,0.0288,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202403,1387.73,-0.0015,0.0342,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202404,1439.83,0.0375,0.066,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202405,1434.36,-0.0038,0.0798,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202406,1449.58,0.0106,0.0805,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202407,1444.58,-0.0034,0.0804,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202408,1446.3,0.0012,0.0812,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202409,1457.17,0.0075,0.0665,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202410,1492.12,0.024,0.0839,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202411,1501.46,0.0063,0.0893,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202412,1514.73,0.0088,0.0972,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202501,1519.23,0.003,0.1273,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202502,1533.61,0.0095,0.1035,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202503,1519.93,-0.0089,0.0953,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202504,1525.98,0.004,0.0598,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202505,1524.14,-0.0012,0.0626,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202506,1541.69,0.0115,0.0635,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202507,1545.14,0.0022,0.0696,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202508,1556.07,0.0071,0.0759,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202509,1537.03,-0.0122,0.0548,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202510,1542.05,0.0033,0.0335,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202511,1523.42,-0.0121,0.0146,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202512,1556.8,0.0219,0.0278,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202601,1582.69,0.0166,0.0418,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202602,1623.12,0.0255,0.0584,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202603,1617.81,-0.0033,0.0644,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66058,19805,DE,202604,1603.46,-0.0089,0.0508,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202212,1533.5,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202301,1556.58,0.0151,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202302,1568.45,0.0076,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202303,1572.54,0.0026,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202304,1577.09,0.0029,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202305,1614.01,0.0234,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202306,1623.52,0.0059,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202307,1637.89,0.0088,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202308,1631.87,-0.0037,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202309,1645.41,0.0083,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202310,1643.0,-0.0015,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202311,1651.75,0.0053,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202312,1668.21,0.01,0.0878,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202401,1680.41,0.0073,0.0795,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202402,1684.59,0.0025,0.074,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202403,1677.18,-0.0044,0.0665,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202404,1687.89,0.0064,0.0703,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202405,1674.89,-0.0077,0.0377,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202406,1668.47,-0.0038,0.0277,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202407,1699.19,0.0184,0.0374,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202408,1710.77,0.0068,0.0483,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202409,1750.05,0.023,0.0636,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202410,1757.15,0.0041,0.0695,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202411,1770.47,0.0076,0.0719,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202412,1754.07,-0.0093,0.0515,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202501,1755.19,0.0006,0.0445,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202502,1775.55,0.0116,0.054,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202503,1789.25,0.0077,0.0668,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202504,1787.28,-0.0011,0.0589,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202505,1802.94,0.0088,0.0765,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202506,1828.02,0.0139,0.0956,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202507,1836.85,0.0048,0.081,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202508,1827.84,-0.0049,0.0684,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202509,1806.44,-0.0117,0.0322,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202510,1803.59,-0.0016,0.0264,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202511,1817.67,0.0078,0.0267,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202512,1801.1,-0.0091,0.0268,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202601,1807.18,0.0034,0.0296,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202602,1826.38,0.0106,0.0286,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202603,1876.86,0.0276,0.049,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66059,19806,DE,202604,1889.99,0.007,0.0575,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202404,2020.35,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202405,2000.98,-0.0096,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202406,2029.66,0.0143,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202407,2033.36,0.0018,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202408,2038.61,0.0026,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202409,2027.61,-0.0054,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202410,2075.12,0.0234,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202411,2075.04,-0.0,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202412,2062.68,-0.006,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202501,2039.89,-0.011,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202502,2068.24,0.0139,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202503,2085.06,0.0081,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202504,2096.3,0.0054,0.0376,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202505,2080.44,-0.0076,0.0397,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202506,2091.0,0.0051,0.0302,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202507,2071.94,-0.0091,0.019,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202508,2061.86,-0.0049,0.0114,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202509,2091.11,0.0142,0.0313,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202510,2113.96,0.0109,0.0187,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202511,2123.58,0.0046,0.0234,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202512,2112.2,-0.0054,0.024,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202601,2119.87,0.0036,0.0392,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202602,2123.9,0.0019,0.0269,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202603,2124.85,0.0004,0.0191,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66061,19808,DE,202604,2128.28,0.0016,0.0153,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202207,1425.09,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202208,1399.18,-0.0182,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202209,1400.57,0.001,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202210,1402.76,0.0016,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202211,1409.91,0.0051,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202212,1433.64,0.0168,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202301,1411.06,-0.0158,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202302,1428.8,0.0126,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202303,1439.96,0.0078,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202304,1493.13,0.0369,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202305,1517.9,0.0166,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202306,1512.28,-0.0037,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202307,1549.53,0.0246,0.0873,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202308,1540.03,-0.0061,0.1007,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202309,1541.99,0.0013,0.101,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202310,1503.2,-0.0252,0.0716,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202311,1484.53,-0.0124,0.0529,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202312,1494.7,0.0069,0.0426,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202401,1487.02,-0.0051,0.0538,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202402,1489.83,0.0019,0.0427,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202403,1477.18,-0.0085,0.0258,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202404,1507.74,0.0207,0.0098,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202405,1529.46,0.0144,0.0076,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202406,1551.13,0.0142,0.0257,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202407,1563.92,0.0082,0.0093,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202408,1556.07,-0.005,0.0104,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202409,1569.49,0.0086,0.0178,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202410,1577.97,0.0054,0.0497,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202412,1622.97,0.0285,0.0933,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202501,1622.72,-0.0002,0.0857,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202502,1606.05,-0.0103,0.08,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202503,1592.35,-0.0085,0.0688,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202504,1604.54,0.0077,0.0862,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202505,1628.65,0.015,0.0802,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202506,1661.11,0.0199,0.0861,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202507,1657.9,-0.0019,0.0688,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202508,1643.13,-0.0089,0.0507,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202509,1677.63,0.021,0.0781,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202510,1693.32,0.0094,0.0789,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202511,1706.53,0.0078,0.0815,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202512,1692.95,-0.008,0.0431,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202601,1717.97,0.0148,0.0587,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202602,1706.42,-0.0067,0.0625,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202603,1691.63,-0.0087,0.0624,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66062,19809,DE,202604,1669.58,-0.013,0.0405,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202401,2008.74,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202402,2025.82,0.0085,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202403,1949.57,-0.0376,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202404,1966.21,0.0085,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202405,2009.66,0.0221,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202406,2113.14,0.0515,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202407,2142.2,0.0138,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202408,2148.25,0.0028,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202409,2140.63,-0.0035,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202410,2111.29,-0.0137,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202411,2109.93,-0.0006,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202412,2100.74,-0.0044,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202501,2139.31,0.0184,0.065,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202502,2133.74,-0.0026,0.0533,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202503,2121.61,-0.0057,0.0882,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202504,2110.63,-0.0052,0.0735,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202505,2135.86,0.012,0.0628,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202506,2142.79,0.0032,0.014,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202507,2146.48,0.0017,0.002,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202508,2149.78,0.0015,0.0007,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202509,2145.2,-0.0021,0.0021,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202510,2159.85,0.0068,0.023,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202511,2145.02,-0.0069,0.0166,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202512,2160.97,0.0074,0.0287,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202601,2157.99,-0.0014,0.0087,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202602,2212.61,0.0253,0.037,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202603,2215.28,0.0012,0.0441,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66063,19810,DE,202604,2274.27,0.0266,0.0775,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
-66081,19901,DE,202210,1409.82,,,Dover,"Dover, DE",Kent County
-66081,19901,DE,202211,1429.37,0.0139,,Dover,"Dover, DE",Kent County
-66081,19901,DE,202212,1452.49,0.0162,,Dover,"Dover, DE",Kent County
-66081,19901,DE,202301,1444.04,-0.0058,,Dover,"Dover, DE",Kent County
-66081,19901,DE,202302,1433.12,-0.0076,,Dover,"Dover, DE",Kent County
-66081,19901,DE,202303,1424.55,-0.006,,Dover,"Dover, DE",Kent County
-66081,19901,DE,202304,1399.62,-0.0175,,Dover,"Dover, DE",Kent County
-66081,19901,DE,202305,1373.8,-0.0184,,Dover,"Dover, DE",Kent County
-66081,19901,DE,202306,1400.29,0.0193,,Dover,"Dover, DE",Kent County
-66081,19901,DE,202307,1443.42,0.0308,,Dover,"Dover, DE",Kent County
-66081,19901,DE,202308,1481.97,0.0267,,Dover,"Dover, DE",Kent County
-66081,19901,DE,202309,1466.01,-0.0108,,Dover,"Dover, DE",Kent County
-66081,19901,DE,202310,1450.03,-0.0109,0.0285,Dover,"Dover, DE",Kent County
-66081,19901,DE,202311,1468.18,0.0125,0.0272,Dover,"Dover, DE",Kent County
-66081,19901,DE,202312,1460.98,-0.0049,0.0058,Dover,"Dover, DE",Kent County
-66081,19901,DE,202401,1474.17,0.009,0.0209,Dover,"Dover, DE",Kent County
-66081,19901,DE,202402,1463.08,-0.0075,0.0209,Dover,"Dover, DE",Kent County
-66081,19901,DE,202403,1478.45,0.0105,0.0378,Dover,"Dover, DE",Kent County
-66081,19901,DE,202404,1484.36,0.004,0.0605,Dover,"Dover, DE",Kent County
-66081,19901,DE,202405,1483.42,-0.0006,0.0798,Dover,"Dover, DE",Kent County
-66081,19901,DE,202406,1488.76,0.0036,0.0632,Dover,"Dover, DE",Kent County
-66081,19901,DE,202407,1482.78,-0.004,0.0273,Dover,"Dover, DE",Kent County
-66081,19901,DE,202408,1484.93,0.0014,0.002,Dover,"Dover, DE",Kent County
-66081,19901,DE,202409,1498.28,0.009,0.022,Dover,"Dover, DE",Kent County
-66081,19901,DE,202410,1512.22,0.0093,0.0429,Dover,"Dover, DE",Kent County
-66081,19901,DE,202411,1515.42,0.0021,0.0322,Dover,"Dover, DE",Kent County
-66081,19901,DE,202412,1513.78,-0.0011,0.0361,Dover,"Dover, DE",Kent County
-66081,19901,DE,202501,1514.04,0.0002,0.027,Dover,"Dover, DE",Kent County
-66081,19901,DE,202502,1527.17,0.0087,0.0438,Dover,"Dover, DE",Kent County
-66081,19901,DE,202503,1533.08,0.0039,0.037,Dover,"Dover, DE",Kent County
-66081,19901,DE,202504,1526.99,-0.004,0.0287,Dover,"Dover, DE",Kent County
-66081,19901,DE,202505,1531.6,0.003,0.0325,Dover,"Dover, DE",Kent County
-66081,19901,DE,202506,1525.17,-0.0042,0.0245,Dover,"Dover, DE",Kent County
-66081,19901,DE,202507,1527.34,0.0014,0.0301,Dover,"Dover, DE",Kent County
-66081,19901,DE,202508,1513.78,-0.0089,0.0194,Dover,"Dover, DE",Kent County
-66081,19901,DE,202509,1543.43,0.0196,0.0301,Dover,"Dover, DE",Kent County
-66081,19901,DE,202510,1562.43,0.0123,0.0332,Dover,"Dover, DE",Kent County
-66081,19901,DE,202511,1612.12,0.0318,0.0638,Dover,"Dover, DE",Kent County
-66081,19901,DE,202512,1604.24,-0.0049,0.0598,Dover,"Dover, DE",Kent County
-66081,19901,DE,202601,1596.55,-0.0048,0.0545,Dover,"Dover, DE",Kent County
-66081,19901,DE,202602,1577.14,-0.0122,0.0327,Dover,"Dover, DE",Kent County
-66081,19901,DE,202603,1568.53,-0.0055,0.0231,Dover,"Dover, DE",Kent County
-66081,19901,DE,202604,1570.97,0.0016,0.0288,Dover,"Dover, DE",Kent County
-66084,19904,DE,202212,1653.53,,,Dover,"Dover, DE",Kent County
-66084,19904,DE,202301,1640.36,-0.008,,Dover,"Dover, DE",Kent County
-66084,19904,DE,202302,1619.15,-0.0129,,Dover,"Dover, DE",Kent County
-66084,19904,DE,202303,1604.06,-0.0093,,Dover,"Dover, DE",Kent County
-66084,19904,DE,202304,1605.34,0.0008,,Dover,"Dover, DE",Kent County
-66084,19904,DE,202305,1614.67,0.0058,,Dover,"Dover, DE",Kent County
-66084,19904,DE,202306,1621.1,0.004,,Dover,"Dover, DE",Kent County
-66084,19904,DE,202307,1647.68,0.0164,,Dover,"Dover, DE",Kent County
-66084,19904,DE,202308,1671.32,0.0143,,Dover,"Dover, DE",Kent County
-66084,19904,DE,202309,1662.61,-0.0052,,Dover,"Dover, DE",Kent County
-66084,19904,DE,202310,1669.77,0.0043,,Dover,"Dover, DE",Kent County
-66084,19904,DE,202311,1670.86,0.0006,,Dover,"Dover, DE",Kent County
-66084,19904,DE,202312,1694.49,0.0141,0.0248,Dover,"Dover, DE",Kent County
-66084,19904,DE,202401,1691.86,-0.0016,0.0314,Dover,"Dover, DE",Kent County
-66084,19904,DE,202402,1701.99,0.006,0.0512,Dover,"Dover, DE",Kent County
-66084,19904,DE,202403,1729.34,0.0161,0.0781,Dover,"Dover, DE",Kent County
-66084,19904,DE,202404,1736.59,0.0042,0.0818,Dover,"Dover, DE",Kent County
-66084,19904,DE,202405,1735.53,-0.0006,0.0749,Dover,"Dover, DE",Kent County
-66084,19904,DE,202406,1705.7,-0.0172,0.0522,Dover,"Dover, DE",Kent County
-66084,19904,DE,202407,1694.8,-0.0064,0.0286,Dover,"Dover, DE",Kent County
-66084,19904,DE,202408,1681.44,-0.0079,0.0061,Dover,"Dover, DE",Kent County
-66084,19904,DE,202409,1686.07,0.0028,0.0141,Dover,"Dover, DE",Kent County
-66084,19904,DE,202410,1707.34,0.0126,0.0225,Dover,"Dover, DE",Kent County
-66084,19904,DE,202411,1703.72,-0.0021,0.0197,Dover,"Dover, DE",Kent County
-66084,19904,DE,202412,1698.84,-0.0029,0.0026,Dover,"Dover, DE",Kent County
-66084,19904,DE,202501,1704.1,0.0031,0.0072,Dover,"Dover, DE",Kent County
-66084,19904,DE,202502,1740.19,0.0212,0.0224,Dover,"Dover, DE",Kent County
-66084,19904,DE,202503,1755.51,0.0088,0.0151,Dover,"Dover, DE",Kent County
-66084,19904,DE,202504,1746.23,-0.0053,0.0055,Dover,"Dover, DE",Kent County
-66084,19904,DE,202505,1736.29,-0.0057,0.0004,Dover,"Dover, DE",Kent County
-66084,19904,DE,202506,1761.76,0.0147,0.0329,Dover,"Dover, DE",Kent County
-66084,19904,DE,202507,1773.84,0.0069,0.0466,Dover,"Dover, DE",Kent County
-66084,19904,DE,202508,1777.72,0.0022,0.0573,Dover,"Dover, DE",Kent County
-66084,19904,DE,202509,1773.12,-0.0026,0.0516,Dover,"Dover, DE",Kent County
-66084,19904,DE,202510,1773.78,0.0004,0.0389,Dover,"Dover, DE",Kent County
-66084,19904,DE,202511,1758.3,-0.0087,0.032,Dover,"Dover, DE",Kent County
-66084,19904,DE,202512,1747.9,-0.0059,0.0289,Dover,"Dover, DE",Kent County
-66084,19904,DE,202601,1761.15,0.0076,0.0335,Dover,"Dover, DE",Kent County
-66084,19904,DE,202602,1777.5,0.0093,0.0214,Dover,"Dover, DE",Kent County
-66084,19904,DE,202603,1809.35,0.0179,0.0307,Dover,"Dover, DE",Kent County
-66084,19904,DE,202604,1814.38,0.0028,0.039,Dover,"Dover, DE",Kent County
-66090,19934,DE,202604,2000.0,,,Camden,"Dover, DE",Kent County
-66108,19958,DE,202206,2170.57,,,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202207,2169.08,-0.0007,,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202208,2195.53,0.0122,,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202209,2115.95,-0.0362,,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202210,2054.21,-0.0292,,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202211,1972.82,-0.0396,,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202212,1937.31,-0.018,,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202301,1930.59,-0.0035,,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202302,1943.54,0.0067,,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202303,2020.43,0.0396,,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202304,2067.02,0.0231,,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202305,2112.65,0.0221,,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202306,2077.2,-0.0168,-0.043,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202307,2071.18,-0.0029,-0.0451,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202308,2059.07,-0.0058,-0.0622,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202309,2030.41,-0.0139,-0.0404,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202310,2027.35,-0.0015,-0.0131,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202311,2014.35,-0.0064,0.0211,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202312,2039.04,0.0123,0.0525,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202401,2045.57,0.0032,0.0596,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202402,2030.69,-0.0073,0.0448,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202403,2040.05,0.0046,0.0097,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202404,2015.09,-0.0122,-0.0251,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202405,2011.26,-0.0019,-0.048,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202406,1987.29,-0.0119,-0.0433,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202407,2020.92,0.0169,-0.0243,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202408,2049.97,0.0144,-0.0044,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202409,2068.97,0.0093,0.019,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202410,2026.78,-0.0204,-0.0003,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202411,1995.37,-0.0155,-0.0094,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202412,1999.65,0.0021,-0.0193,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202501,2038.69,0.0195,-0.0034,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202502,2053.17,0.0071,0.0111,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202503,2054.16,0.0005,0.0069,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202504,2017.12,-0.018,0.001,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202505,2021.63,0.0022,0.0052,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202506,2026.51,0.0024,0.0197,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202507,2048.58,0.0109,0.0137,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202508,2036.28,-0.006,-0.0067,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202509,2030.08,-0.003,-0.0188,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202510,2033.94,0.0019,0.0035,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202511,2048.71,0.0073,0.0267,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202512,2048.7,-0.0,0.0245,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202601,2039.18,-0.0046,0.0002,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202602,2048.81,0.0047,-0.0021,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202603,2077.07,0.0138,0.0112,Lewes,"Salisbury, MD-DE",Sussex County
-66108,19958,DE,202604,2123.5,0.0224,0.0527,Lewes,"Salisbury, MD-DE",Sussex County
-66112,19963,DE,202604,2200.0,,,Milford,"Salisbury, MD-DE",Sussex County
-66114,19966,DE,202603,2165.91,,,Millsboro,"Salisbury, MD-DE",Sussex County
-66114,19966,DE,202604,2183.33,0.008,,Millsboro,"Salisbury, MD-DE",Sussex County
-66122,19977,DE,202604,1752.5,,,Smyrna,"Dover, DE",Kent County
+66027,19701,DE,202012,1688.87,,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202101,1687.16,-0.001,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202102,1723.81,0.0217,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202103,1758.28,0.02,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202104,1790.43,0.0183,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202105,1805.13,0.0082,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202106,1823.21,0.01,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202107,1841.55,0.0101,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202108,1869.75,0.0153,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202109,1900.58,0.0165,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202110,1935.51,0.0184,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202111,1965.67,0.0156,,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202112,1978.41,0.0065,0.1714,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202201,2008.59,0.0153,0.1905,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202202,2039.29,0.0153,0.183,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202203,2085.73,0.0228,0.1862,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202204,2122.77,0.0178,0.1856,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202205,2158.74,0.0169,0.1959,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202206,2185.61,0.0124,0.1988,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202207,2218.01,0.0148,0.2044,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202208,2223.74,0.0026,0.1893,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202209,2240.57,0.0076,0.1789,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202210,2210.92,-0.0132,0.1423,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202211,2199.09,-0.0053,0.1187,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202212,2180.16,-0.0086,0.102,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202301,2185.27,0.0023,0.088,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202302,2181.12,-0.0019,0.0695,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202303,2176.47,-0.0021,0.0435,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202304,2172.73,-0.0017,0.0235,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202305,2206.42,0.0155,0.0221,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202306,2216.35,0.0045,0.0141,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202307,2242.52,0.0118,0.0111,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202308,2213.47,-0.013,-0.0046,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202309,2183.34,-0.0136,-0.0255,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202310,2132.37,-0.0233,-0.0355,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202311,2132.83,0.0002,-0.0301,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202312,2147.29,0.0068,-0.0151,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202401,2184.12,0.0172,-0.0005,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202402,2219.23,0.0161,0.0175,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202403,2234.94,0.0071,0.0269,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202404,2235.23,0.0001,0.0288,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202405,2222.82,-0.0056,0.0074,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202406,2209.58,-0.006,-0.0031,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202407,2202.4,-0.0032,-0.0179,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202408,2199.52,-0.0013,-0.0063,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202409,2191.17,-0.0038,0.0036,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202410,2203.33,0.0056,0.0333,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202411,2217.72,0.0065,0.0398,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202412,2230.86,0.0059,0.0389,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202501,2221.95,-0.004,0.0173,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202502,2202.85,-0.0086,-0.0074,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202503,2251.63,0.0221,0.0075,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202504,2295.66,0.0196,0.027,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202505,2326.04,0.0132,0.0464,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202506,2330.66,0.002,0.0548,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202507,2336.22,0.0024,0.0608,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202508,2336.91,0.0003,0.0625,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202509,2324.65,-0.0052,0.0609,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202510,2329.01,0.0019,0.057,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202511,2334.7,0.0024,0.0528,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202512,2320.27,-0.0062,0.0401,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202601,2328.01,0.0033,0.0477,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202602,2419.85,0.0395,0.0985,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202603,2459.28,0.0163,0.0922,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202604,2468.96,0.0039,0.0755,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66027,19701,DE,202605,2411.11,-0.0234,0.0366,Bear,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202405,1675.04,,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202406,1708.58,0.02,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202407,1736.75,0.0165,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202408,1744.48,0.0044,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202410,1776.68,0.0185,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202411,1775.57,-0.0006,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202412,1754.51,-0.0119,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202501,1744.44,-0.0057,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202502,1743.23,-0.0007,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202503,1736.15,-0.0041,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202504,1747.61,0.0066,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202505,1753.7,0.0035,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202506,1765.84,0.0069,0.0542,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202507,1776.25,0.0059,0.0396,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202508,1797.27,0.0118,0.0348,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202509,1816.31,0.0106,0.0412,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202510,1815.15,-0.0006,0.0217,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202511,1808.56,-0.0036,0.0186,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202512,1786.44,-0.0122,0.0182,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202601,1785.93,-0.0003,0.0238,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202602,1778.1,-0.0044,0.02,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202603,1784.48,0.0036,0.0278,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202604,1793.73,0.0052,0.0264,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66028,19702,DE,202605,1792.58,-0.0006,0.0222,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202410,1521.47,,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202501,1561.79,0.0265,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202502,1560.78,-0.0006,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202503,1580.42,0.0126,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202504,1572.67,-0.0049,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202505,1561.86,-0.0069,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202506,1583.54,0.0139,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202507,1580.01,-0.0022,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202508,1600.82,0.0132,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202509,1555.79,-0.0281,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202510,1570.41,0.0094,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202511,1591.63,0.0135,,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202512,1650.41,0.0369,0.0847,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202601,1649.68,-0.0004,0.0563,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202602,1641.08,-0.0052,0.0514,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202603,1629.14,-0.0073,0.0308,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202604,1631.8,0.0016,0.0376,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66029,19703,DE,202605,1623.8,-0.0049,0.0397,Claymont,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66031,19707,DE,202604,2758.34,,,Hockessin,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66031,19707,DE,202605,2850.0,0.0332,,Hockessin,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202404,2497.13,,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202405,2529.44,0.0129,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202406,2498.82,-0.0121,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202407,2531.84,0.0132,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202408,2542.37,0.0042,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202410,2556.03,0.0054,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202411,2511.38,-0.0175,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202412,2529.53,0.0072,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202501,2545.91,0.0065,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202502,2656.27,0.0433,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202503,2668.47,0.0046,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202504,2683.41,0.0056,,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202505,2662.4,-0.0078,0.0662,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202506,2671.45,0.0034,0.0561,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202507,2688.62,0.0064,0.076,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202508,2708.75,0.0075,0.0699,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202509,2690.13,-0.0069,0.0581,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202510,2677.06,-0.0049,0.0474,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202511,2634.4,-0.0159,0.049,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202512,2650.11,0.006,0.0477,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202601,2676.27,0.0099,0.0512,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202602,2677.39,0.0004,0.008,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202603,2693.18,0.0059,0.0093,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202604,2692.2,-0.0004,0.0033,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66033,19709,DE,202605,2722.5,0.0113,0.0226,Middletown,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201802,1390.3,,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201803,1398.73,0.0061,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201804,1375.35,-0.0167,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201805,1351.59,-0.0173,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201806,1340.38,-0.0083,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201807,1370.38,0.0224,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201808,1368.41,-0.0014,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201809,1411.33,0.0314,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201810,1419.29,0.0056,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201811,1448.05,0.0203,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201812,1441.26,-0.0047,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201901,1432.48,-0.0061,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201902,1434.38,0.0013,0.0317,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201903,1409.94,-0.017,0.008,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201904,1409.94,0.0,0.0252,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201905,1412.04,0.0015,0.0447,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201906,1422.42,0.0074,0.0612,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201907,1433.16,0.0075,0.0458,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201908,1454.43,0.0148,0.0629,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201909,1478.41,0.0165,0.0475,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201910,1497.95,0.0132,0.0554,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201911,1506.05,0.0054,0.0401,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,201912,1513.39,0.0049,0.05,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202001,1510.32,-0.002,0.0543,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202002,1489.73,-0.0136,0.0386,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202003,1478.81,-0.0073,0.0488,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202004,1443.97,-0.0236,0.0241,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202005,1414.0,-0.0208,0.0014,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202006,1436.52,0.0159,0.0099,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202007,1487.72,0.0356,0.0381,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202008,1531.65,0.0295,0.0531,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202009,1540.29,0.0056,0.0419,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202010,1535.98,-0.0028,0.0254,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202011,1522.96,-0.0085,0.0112,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202012,1546.61,0.0155,0.022,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202101,1568.94,0.0144,0.0388,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202102,1608.77,0.0254,0.0799,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202103,1620.71,0.0074,0.096,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202104,1640.93,0.0125,0.1364,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202105,1694.86,0.0329,0.1986,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202106,1703.46,0.0051,0.1858,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202107,1704.27,0.0005,0.1456,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202108,1734.01,0.0174,0.1321,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202109,1740.11,0.0035,0.1297,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202110,1784.24,0.0254,0.1616,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202111,1803.88,0.011,0.1845,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202112,1873.28,0.0385,0.2112,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202201,1907.4,0.0182,0.2157,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202202,1885.42,-0.0115,0.172,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202203,1844.37,-0.0218,0.138,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202204,1857.63,0.0072,0.1321,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202205,1878.54,0.0113,0.1084,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202206,1925.89,0.0252,0.1306,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202207,1944.46,0.0096,0.1409,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202208,1975.46,0.0159,0.1392,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202209,1969.51,-0.003,0.1318,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202210,1952.31,-0.0087,0.0942,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202211,1976.17,0.0122,0.0955,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202212,2008.86,0.0165,0.0724,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202301,2039.19,0.0151,0.0691,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202302,2010.79,-0.0139,0.0665,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202303,1978.05,-0.0163,0.0725,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202304,2007.06,0.0147,0.0804,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202305,2019.49,0.0062,0.075,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202306,2051.05,0.0156,0.065,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202307,2041.33,-0.0047,0.0498,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202308,2101.62,0.0295,0.0639,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202309,2120.23,0.0089,0.0765,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202310,2121.68,0.0007,0.0868,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202311,2087.06,-0.0163,0.0561,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202312,2085.29,-0.0008,0.038,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202401,2090.43,0.0025,0.0251,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202402,2070.99,-0.0093,0.0299,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202403,2076.35,0.0026,0.0497,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202404,2096.97,0.0099,0.0448,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202405,2132.37,0.0169,0.0559,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202406,2148.92,0.0078,0.0477,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202407,2158.96,0.0047,0.0576,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202408,2166.09,0.0033,0.0307,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202409,2217.33,0.0237,0.0458,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202410,2222.53,0.0023,0.0475,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202411,2241.87,0.0087,0.0742,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202412,2205.44,-0.0163,0.0576,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202501,2200.78,-0.0021,0.0528,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202502,2173.34,-0.0125,0.0494,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202503,2157.25,-0.0074,0.039,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202504,2150.75,-0.003,0.0256,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202505,2176.07,0.0118,0.0205,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202506,2204.51,0.0131,0.0259,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202507,2224.57,0.0091,0.0304,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202508,2231.48,0.0031,0.0302,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202509,2246.28,0.0066,0.0131,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202510,2282.14,0.016,0.0268,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202511,2278.9,-0.0014,0.0165,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202512,2264.36,-0.0064,0.0267,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202601,2233.56,-0.0136,0.0149,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202602,2252.71,0.0086,0.0365,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202603,2267.66,0.0066,0.0512,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202604,2289.49,0.0096,0.0645,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66035,19711,DE,202605,2282.33,-0.0031,0.0488,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202504,1663.44,,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202505,1669.58,0.0037,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202506,1697.85,0.0169,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202508,1713.93,0.0095,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202509,1684.97,-0.0169,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202510,1680.49,-0.0027,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202511,1690.48,0.0059,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202512,1667.81,-0.0134,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202601,1669.54,0.001,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202602,1682.15,0.0076,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202603,1727.75,0.0271,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202604,1726.34,-0.0008,,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66037,19713,DE,202605,1741.23,0.0086,0.0468,Newark,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66043,19720,DE,202512,1694.15,,,New Castle,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66043,19720,DE,202601,1680.59,-0.008,,New Castle,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66043,19720,DE,202602,1685.4,0.0029,,New Castle,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66043,19720,DE,202603,1720.75,0.021,,New Castle,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66043,19720,DE,202604,1724.89,0.0024,,New Castle,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66043,19720,DE,202605,1719.19,-0.0033,,New Castle,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201705,1111.52,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201706,1130.24,0.0168,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201707,1117.27,-0.0115,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201708,1111.61,-0.0051,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201709,1106.96,-0.0042,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201710,1084.88,-0.0199,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201711,1087.86,0.0027,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201712,1092.41,0.0042,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201801,1112.51,0.0184,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201802,1143.62,0.028,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201803,1161.53,0.0157,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201804,1170.2,0.0075,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201805,1158.87,-0.0097,0.0426,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201806,1181.04,0.0191,0.045,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201807,1195.27,0.012,0.0698,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201808,1178.2,-0.0143,0.0599,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201809,1160.06,-0.0154,0.048,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201810,1147.44,-0.0109,0.0577,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201811,1154.69,0.0063,0.0614,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201812,1191.69,0.032,0.0909,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201901,1219.54,0.0234,0.0962,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201902,1249.59,0.0246,0.0927,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201903,1225.16,-0.0195,0.0548,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201904,1208.34,-0.0137,0.0326,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201905,1184.28,-0.0199,0.0219,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201906,1194.9,0.009,0.0117,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201907,1210.68,0.0132,0.0129,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201908,1228.98,0.0151,0.0431,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201909,1225.32,-0.003,0.0563,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201910,1212.94,-0.0101,0.0571,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201911,1194.63,-0.0151,0.0346,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,201912,1193.87,-0.0006,0.0018,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202001,1189.92,-0.0033,-0.0243,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202002,1189.98,0.0,-0.0477,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202003,1200.18,0.0086,-0.0204,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202004,1207.56,0.0061,-0.0006,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202005,1195.29,-0.0102,0.0093,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202006,1197.19,0.0016,0.0019,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202007,1202.81,0.0047,-0.0065,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202008,1251.99,0.0409,0.0187,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202009,1262.27,0.0082,0.0302,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202010,1264.42,0.0017,0.0424,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202011,1245.02,-0.0153,0.0422,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202012,1233.29,-0.0094,0.033,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202101,1256.09,0.0185,0.0556,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202102,1278.58,0.0179,0.0745,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202103,1312.71,0.0267,0.0938,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202104,1332.87,0.0154,0.1038,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202105,1374.84,0.0315,0.1502,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202106,1430.23,0.0403,0.1947,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202107,1467.65,0.0262,0.2202,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202108,1501.75,0.0232,0.1995,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202109,1488.52,-0.0088,0.1792,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202110,1494.57,0.0041,0.182,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202111,1485.65,-0.006,0.1933,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202112,1494.37,0.0059,0.2117,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202201,1517.63,0.0156,0.2082,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202202,1556.21,0.0254,0.2171,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202203,1583.98,0.0178,0.2066,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202204,1613.6,0.0187,0.2106,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202205,1622.51,0.0055,0.1801,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202206,1650.73,0.0174,0.1542,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202207,1651.35,0.0004,0.1252,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202208,1636.61,-0.0089,0.0898,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202209,1606.49,-0.0184,0.0793,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202210,1569.16,-0.0232,0.0499,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202211,1568.29,-0.0006,0.0556,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202212,1575.42,0.0045,0.0542,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202301,1593.57,0.0115,0.05,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202302,1592.91,-0.0004,0.0236,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202303,1620.54,0.0174,0.0231,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202304,1638.51,0.0111,0.0154,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202305,1683.15,0.0272,0.0374,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202306,1701.85,0.0111,0.031,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202307,1720.17,0.0108,0.0417,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202308,1717.19,-0.0017,0.0492,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202309,1708.69,-0.0049,0.0636,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202310,1711.38,0.0016,0.0906,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202311,1697.45,-0.0081,0.0824,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202312,1685.14,-0.0073,0.0696,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202401,1653.32,-0.0189,0.0375,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202402,1664.78,0.0069,0.0451,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202403,1686.47,0.013,0.0407,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202404,1733.73,0.028,0.0581,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202405,1757.28,0.0136,0.044,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202406,1775.99,0.0106,0.0436,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202407,1797.01,0.0118,0.0447,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202408,1799.26,0.0013,0.0478,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202409,1794.88,-0.0024,0.0504,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202410,1773.87,-0.0117,0.0365,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202411,1758.9,-0.0084,0.0362,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202412,1765.01,0.0035,0.0474,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202501,1785.0,0.0113,0.0796,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202502,1812.23,0.0153,0.0886,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202503,1828.61,0.009,0.0843,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202504,1840.9,0.0067,0.0618,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202505,1840.62,-0.0002,0.0474,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202506,1837.84,-0.0015,0.0348,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202507,1849.82,0.0065,0.0294,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202508,1875.74,0.014,0.0425,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202509,1895.96,0.0108,0.0563,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202510,1900.44,0.0024,0.0714,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202511,1890.25,-0.0054,0.0747,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202512,1889.15,-0.0006,0.0703,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202601,1875.43,-0.0073,0.0507,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202602,1869.53,-0.0031,0.0316,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202603,1860.4,-0.0049,0.0174,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202604,1865.94,0.003,0.0136,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66054,19801,DE,202605,1895.18,0.0157,0.0296,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202503,1410.73,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202504,1430.28,0.0139,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202505,1443.55,0.0093,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202506,1423.61,-0.0138,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202507,1414.2,-0.0066,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202508,1398.41,-0.0112,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202509,1417.05,0.0133,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202510,1431.12,0.0099,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202511,1437.28,0.0043,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202512,1446.67,0.0065,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202601,1439.14,-0.0052,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202602,1464.88,0.0179,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202603,1492.78,0.019,0.0582,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202604,1520.7,0.0187,0.0632,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66055,19802,DE,202605,1508.5,-0.008,0.045,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66056,19803,DE,202604,2138.13,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66056,19803,DE,202605,2287.5,0.0699,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66057,19804,DE,202604,1667.05,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66057,19804,DE,202605,1756.0,0.0534,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202207,1231.65,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202208,1224.27,-0.006,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202209,1212.77,-0.0094,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202210,1202.68,-0.0083,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202211,1249.27,0.0387,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202212,1268.71,0.0156,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202301,1316.47,0.0376,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202302,1344.14,0.021,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202303,1336.01,-0.006,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202304,1343.94,0.0059,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202305,1325.86,-0.0134,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202306,1339.94,0.0106,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202307,1335.38,-0.0034,0.0842,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202308,1337.6,0.0017,0.0926,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202309,1363.91,0.0197,0.1246,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202310,1374.57,0.0078,0.1429,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202311,1373.37,-0.0009,0.0993,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202312,1375.69,0.0017,0.0843,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202401,1342.53,-0.0241,0.0198,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202402,1383.92,0.0308,0.0296,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202403,1381.47,-0.0018,0.034,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202404,1433.63,0.0378,0.0667,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202405,1428.97,-0.0033,0.0778,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202406,1442.78,0.0097,0.0767,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202407,1457.04,0.0099,0.0911,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202408,1458.3,0.0009,0.0902,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202409,1471.23,0.0089,0.0787,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202410,1486.27,0.0102,0.0813,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202411,1495.91,0.0065,0.0892,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202412,1506.86,0.0073,0.0953,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202501,1510.02,0.0021,0.1248,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202502,1532.19,0.0147,0.1071,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202503,1524.69,-0.0049,0.1037,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202504,1531.04,0.0042,0.0679,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202505,1519.9,-0.0073,0.0636,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202506,1533.6,0.009,0.063,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202507,1540.61,0.0046,0.0574,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202508,1555.62,0.0097,0.0667,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202509,1537.92,-0.0114,0.0453,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202510,1538.97,0.0007,0.0355,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202511,1518.92,-0.013,0.0154,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202512,1550.64,0.0209,0.0291,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202601,1577.37,0.0172,0.0446,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202602,1616.62,0.0249,0.0551,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202603,1609.95,-0.0041,0.0559,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202604,1594.47,-0.0096,0.0414,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66058,19805,DE,202605,1572.93,-0.0135,0.0349,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202212,1495.92,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202301,1518.77,0.0153,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202302,1530.36,0.0076,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202303,1532.61,0.0015,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202304,1535.87,0.0021,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202305,1571.96,0.0235,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202306,1583.53,0.0074,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202307,1597.75,0.009,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202308,1591.06,-0.0042,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202309,1602.59,0.0072,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202310,1601.09,-0.0009,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202311,1610.97,0.0062,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202312,1626.21,0.0095,0.0871,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202401,1636.83,0.0065,0.0777,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202402,1639.91,0.0019,0.0716,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202403,1633.4,-0.004,0.0658,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202404,1644.36,0.0067,0.0706,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202405,1633.82,-0.0064,0.0394,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202406,1627.1,-0.0041,0.0275,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202407,1657.97,0.019,0.0377,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202408,1667.03,0.0055,0.0477,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202409,1705.7,0.0232,0.0643,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202410,1711.58,0.0034,0.069,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202411,1725.72,0.0083,0.0712,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202412,1714.69,-0.0064,0.0544,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202501,1716.9,0.0013,0.0489,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202502,1737.43,0.012,0.0595,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202503,1743.91,0.0037,0.0677,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202504,1741.88,-0.0012,0.0593,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202505,1755.19,0.0076,0.0743,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202506,1774.68,0.0111,0.0907,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202507,1783.14,0.0048,0.0755,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202508,1774.46,-0.0049,0.0644,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202509,1759.68,-0.0083,0.0316,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202510,1756.49,-0.0018,0.0262,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202511,1770.39,0.0079,0.0259,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202512,1755.0,-0.0087,0.0235,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202601,1761.54,0.0037,0.026,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202602,1779.78,0.0104,0.0244,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202603,1830.25,0.0284,0.0495,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202604,1840.77,0.0057,0.0568,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66059,19806,DE,202605,1854.94,0.0077,0.0568,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202404,2053.42,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202405,2029.3,-0.0117,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202406,2057.26,0.0138,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202407,2059.5,0.0011,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202408,2064.7,0.0025,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202409,2053.3,-0.0055,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202410,2099.15,0.0223,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202411,2099.6,0.0002,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202412,2088.9,-0.0051,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202501,2090.81,0.0009,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202502,2120.93,0.0144,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202503,2138.28,0.0082,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202504,2114.84,-0.011,0.0299,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202505,2091.56,-0.011,0.0307,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202506,2099.38,0.0037,0.0205,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202507,2092.2,-0.0034,0.0159,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202508,2088.14,-0.0019,0.0114,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202509,2119.62,0.0151,0.0323,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202510,2143.35,0.0112,0.0211,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202511,2153.52,0.0047,0.0257,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202512,2148.23,-0.0025,0.0284,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202601,2158.03,0.0046,0.0321,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202602,2165.07,0.0033,0.0208,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202603,2161.14,-0.0018,0.0107,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202604,2160.58,-0.0003,0.0216,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66061,19808,DE,202605,2152.88,-0.0036,0.0293,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202207,1372.34,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202208,1347.83,-0.0179,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202209,1349.76,0.0014,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202210,1353.12,0.0025,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202211,1359.47,0.0047,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202212,1382.49,0.0169,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202301,1360.65,-0.0158,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202302,1378.77,0.0133,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202303,1389.33,0.0077,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202304,1439.66,0.0362,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202305,1463.1,0.0163,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202306,1457.62,-0.0037,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202307,1494.68,0.0254,0.0891,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202308,1484.94,-0.0065,0.1017,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202309,1486.23,0.0009,0.1011,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202310,1449.58,-0.0247,0.0713,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202311,1432.72,-0.0116,0.0539,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202312,1442.24,0.0066,0.0432,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202401,1434.14,-0.0056,0.054,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202402,1436.72,0.0018,0.042,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202403,1425.38,-0.0079,0.0259,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202404,1456.17,0.0216,0.0115,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202405,1476.52,0.014,0.0092,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202406,1496.39,0.0135,0.0266,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202407,1507.3,0.0073,0.0084,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202408,1499.92,-0.0049,0.0101,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202409,1513.34,0.0089,0.0182,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202410,1521.93,0.0057,0.0499,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202412,1560.6,0.0254,0.0893,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202501,1557.91,-0.0017,0.0802,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202502,1542.48,-0.0099,0.0755,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202503,1534.34,-0.0053,0.0679,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202504,1551.8,0.0114,0.0887,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202505,1573.88,0.0142,0.0808,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202506,1602.71,0.0183,0.0855,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202507,1595.15,-0.0047,0.066,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202509,1616.47,0.0134,0.0724,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202510,1631.63,0.0094,0.0878,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202511,1643.32,0.0072,0.0859,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202512,1629.5,-0.0084,0.0707,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202601,1653.71,0.0149,0.0597,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202602,1646.59,-0.0043,0.0569,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202603,1633.44,-0.008,0.059,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202604,1611.86,-0.0132,0.0505,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66062,19809,DE,202605,1640.31,0.0176,0.057,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202401,1941.2,,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202402,1956.34,0.0078,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202403,1880.43,-0.0388,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202404,1898.2,0.0094,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202405,1941.92,0.023,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202406,2043.15,0.0521,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202407,2069.49,0.0129,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202408,2071.93,0.0012,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202409,2068.12,-0.0018,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202410,2040.35,-0.0134,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202411,2041.4,0.0005,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202412,2031.09,-0.005,,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202501,2067.05,0.0177,0.0648,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202502,2064.9,-0.001,0.0555,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202503,2051.4,-0.0065,0.0909,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202504,2041.61,-0.0048,0.0755,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202505,2062.09,0.01,0.0619,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202506,2070.59,0.0041,0.0134,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202507,2075.44,0.0023,0.0029,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202508,2079.4,0.0019,0.0036,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202509,2074.07,-0.0026,0.0029,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202510,2088.77,0.0071,0.0237,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202511,2074.86,-0.0067,0.0164,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202512,2090.67,0.0076,0.0293,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202601,2086.81,-0.0018,0.0096,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202602,2139.72,0.0254,0.0362,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202603,2142.28,0.0012,0.0443,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202604,2194.87,0.0246,0.0751,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66063,19810,DE,202605,2174.37,-0.0093,0.0544,Wilmington,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",New Castle County
+66081,19901,DE,202210,1398.84,,,Dover,"Dover, DE",Kent County
+66081,19901,DE,202211,1417.88,0.0136,,Dover,"Dover, DE",Kent County
+66081,19901,DE,202212,1440.71,0.0161,,Dover,"Dover, DE",Kent County
+66081,19901,DE,202301,1434.27,-0.0045,,Dover,"Dover, DE",Kent County
+66081,19901,DE,202302,1428.01,-0.0044,,Dover,"Dover, DE",Kent County
+66081,19901,DE,202303,1418.2,-0.0069,,Dover,"Dover, DE",Kent County
+66081,19901,DE,202304,1392.1,-0.0184,,Dover,"Dover, DE",Kent County
+66081,19901,DE,202305,1361.97,-0.0216,,Dover,"Dover, DE",Kent County
+66081,19901,DE,202306,1389.42,0.0201,,Dover,"Dover, DE",Kent County
+66081,19901,DE,202307,1431.23,0.0301,,Dover,"Dover, DE",Kent County
+66081,19901,DE,202308,1467.91,0.0256,,Dover,"Dover, DE",Kent County
+66081,19901,DE,202309,1452.18,-0.0107,,Dover,"Dover, DE",Kent County
+66081,19901,DE,202310,1433.83,-0.0126,0.025,Dover,"Dover, DE",Kent County
+66081,19901,DE,202311,1456.27,0.0157,0.0271,Dover,"Dover, DE",Kent County
+66081,19901,DE,202312,1449.44,-0.0047,0.0061,Dover,"Dover, DE",Kent County
+66081,19901,DE,202401,1466.89,0.012,0.0227,Dover,"Dover, DE",Kent County
+66081,19901,DE,202402,1455.06,-0.0081,0.0189,Dover,"Dover, DE",Kent County
+66081,19901,DE,202403,1468.86,0.0095,0.0357,Dover,"Dover, DE",Kent County
+66081,19901,DE,202404,1474.53,0.0039,0.0592,Dover,"Dover, DE",Kent County
+66081,19901,DE,202405,1471.99,-0.0017,0.0808,Dover,"Dover, DE",Kent County
+66081,19901,DE,202406,1477.6,0.0038,0.0635,Dover,"Dover, DE",Kent County
+66081,19901,DE,202407,1471.8,-0.0039,0.0283,Dover,"Dover, DE",Kent County
+66081,19901,DE,202408,1475.91,0.0028,0.0055,Dover,"Dover, DE",Kent County
+66081,19901,DE,202409,1488.63,0.0086,0.0251,Dover,"Dover, DE",Kent County
+66081,19901,DE,202410,1502.6,0.0094,0.048,Dover,"Dover, DE",Kent County
+66081,19901,DE,202411,1503.11,0.0003,0.0322,Dover,"Dover, DE",Kent County
+66081,19901,DE,202412,1502.69,-0.0003,0.0367,Dover,"Dover, DE",Kent County
+66081,19901,DE,202501,1503.5,0.0005,0.025,Dover,"Dover, DE",Kent County
+66081,19901,DE,202502,1518.96,0.0103,0.0439,Dover,"Dover, DE",Kent County
+66081,19901,DE,202503,1528.42,0.0062,0.0405,Dover,"Dover, DE",Kent County
+66081,19901,DE,202504,1520.18,-0.0054,0.031,Dover,"Dover, DE",Kent County
+66081,19901,DE,202505,1523.35,0.0021,0.0349,Dover,"Dover, DE",Kent County
+66081,19901,DE,202506,1514.85,-0.0056,0.0252,Dover,"Dover, DE",Kent County
+66081,19901,DE,202507,1518.28,0.0023,0.0316,Dover,"Dover, DE",Kent County
+66081,19901,DE,202508,1504.3,-0.0092,0.0192,Dover,"Dover, DE",Kent County
+66081,19901,DE,202509,1532.36,0.0187,0.0294,Dover,"Dover, DE",Kent County
+66081,19901,DE,202510,1550.93,0.0121,0.0322,Dover,"Dover, DE",Kent County
+66081,19901,DE,202511,1600.55,0.032,0.0648,Dover,"Dover, DE",Kent County
+66081,19901,DE,202512,1593.75,-0.0042,0.0606,Dover,"Dover, DE",Kent County
+66081,19901,DE,202601,1585.99,-0.0049,0.0549,Dover,"Dover, DE",Kent County
+66081,19901,DE,202602,1567.28,-0.0118,0.0318,Dover,"Dover, DE",Kent County
+66081,19901,DE,202603,1558.47,-0.0056,0.0197,Dover,"Dover, DE",Kent County
+66081,19901,DE,202604,1564.31,0.0037,0.029,Dover,"Dover, DE",Kent County
+66081,19901,DE,202605,1546.59,-0.0113,0.0153,Dover,"Dover, DE",Kent County
+66084,19904,DE,202212,1538.13,,,Dover,"Dover, DE",Kent County
+66084,19904,DE,202301,1525.25,-0.0084,,Dover,"Dover, DE",Kent County
+66084,19904,DE,202302,1505.94,-0.0127,,Dover,"Dover, DE",Kent County
+66084,19904,DE,202303,1493.01,-0.0086,,Dover,"Dover, DE",Kent County
+66084,19904,DE,202304,1494.98,0.0013,,Dover,"Dover, DE",Kent County
+66084,19904,DE,202305,1503.55,0.0057,,Dover,"Dover, DE",Kent County
+66084,19904,DE,202306,1508.55,0.0033,,Dover,"Dover, DE",Kent County
+66084,19904,DE,202307,1533.4,0.0165,,Dover,"Dover, DE",Kent County
+66084,19904,DE,202308,1555.35,0.0143,,Dover,"Dover, DE",Kent County
+66084,19904,DE,202309,1546.84,-0.0055,,Dover,"Dover, DE",Kent County
+66084,19904,DE,202310,1551.32,0.0029,,Dover,"Dover, DE",Kent County
+66084,19904,DE,202311,1552.59,0.0008,,Dover,"Dover, DE",Kent County
+66084,19904,DE,202312,1575.86,0.015,0.0245,Dover,"Dover, DE",Kent County
+66084,19904,DE,202401,1575.44,-0.0003,0.0329,Dover,"Dover, DE",Kent County
+66084,19904,DE,202402,1584.79,0.0059,0.0524,Dover,"Dover, DE",Kent County
+66084,19904,DE,202403,1608.45,0.0149,0.0773,Dover,"Dover, DE",Kent County
+66084,19904,DE,202404,1613.55,0.0032,0.0793,Dover,"Dover, DE",Kent County
+66084,19904,DE,202405,1610.8,-0.0017,0.0713,Dover,"Dover, DE",Kent County
+66084,19904,DE,202406,1584.01,-0.0166,0.05,Dover,"Dover, DE",Kent County
+66084,19904,DE,202407,1577.51,-0.0041,0.0288,Dover,"Dover, DE",Kent County
+66084,19904,DE,202408,1566.77,-0.0068,0.0073,Dover,"Dover, DE",Kent County
+66084,19904,DE,202409,1571.46,0.003,0.0159,Dover,"Dover, DE",Kent County
+66084,19904,DE,202410,1588.89,0.0111,0.0242,Dover,"Dover, DE",Kent County
+66084,19904,DE,202411,1585.23,-0.0023,0.021,Dover,"Dover, DE",Kent County
+66084,19904,DE,202412,1580.54,-0.003,0.003,Dover,"Dover, DE",Kent County
+66084,19904,DE,202501,1585.91,0.0034,0.0066,Dover,"Dover, DE",Kent County
+66084,19904,DE,202502,1620.35,0.0217,0.0224,Dover,"Dover, DE",Kent County
+66084,19904,DE,202503,1635.66,0.0095,0.0169,Dover,"Dover, DE",Kent County
+66084,19904,DE,202504,1627.4,-0.0051,0.0086,Dover,"Dover, DE",Kent County
+66084,19904,DE,202505,1618.52,-0.0055,0.0048,Dover,"Dover, DE",Kent County
+66084,19904,DE,202506,1641.29,0.0141,0.0362,Dover,"Dover, DE",Kent County
+66084,19904,DE,202507,1653.4,0.0074,0.0481,Dover,"Dover, DE",Kent County
+66084,19904,DE,202508,1652.03,-0.0008,0.0544,Dover,"Dover, DE",Kent County
+66084,19904,DE,202509,1647.47,-0.0028,0.0484,Dover,"Dover, DE",Kent County
+66084,19904,DE,202510,1647.54,0.0,0.0369,Dover,"Dover, DE",Kent County
+66084,19904,DE,202511,1637.18,-0.0063,0.0328,Dover,"Dover, DE",Kent County
+66084,19904,DE,202512,1627.04,-0.0062,0.0294,Dover,"Dover, DE",Kent County
+66084,19904,DE,202601,1639.08,0.0074,0.0335,Dover,"Dover, DE",Kent County
+66084,19904,DE,202602,1654.03,0.0091,0.0208,Dover,"Dover, DE",Kent County
+66084,19904,DE,202603,1684.8,0.0186,0.03,Dover,"Dover, DE",Kent County
+66084,19904,DE,202604,1691.9,0.0042,0.0396,Dover,"Dover, DE",Kent County
+66084,19904,DE,202605,1715.9,0.0142,0.0602,Dover,"Dover, DE",Kent County
+66089,19933,DE,202605,3064.75,,,Bridgeville,"Salisbury, MD-DE",Sussex County
+66090,19934,DE,202604,2198.22,,,Camden,"Dover, DE",Kent County
+66090,19934,DE,202605,2200.0,0.0008,,Camden,"Dover, DE",Kent County
+66098,19945,DE,202605,2000.0,,,Frankford,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202206,2137.14,,,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202207,2131.91,-0.0024,,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202208,2157.4,0.012,,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202209,2081.08,-0.0354,,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202210,2022.69,-0.0281,,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202211,1943.17,-0.0393,,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202212,1908.0,-0.0181,,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202301,1903.27,-0.0025,,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202302,1916.03,0.0067,,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202303,1992.05,0.0397,,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202304,2037.62,0.0229,,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202305,2082.44,0.022,,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202306,2047.18,-0.0169,-0.0421,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202307,2039.91,-0.0036,-0.0432,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202308,2027.32,-0.0062,-0.0603,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202309,1997.81,-0.0146,-0.04,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202310,1996.18,-0.0008,-0.0131,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202311,1984.8,-0.0057,0.0214,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202312,2010.13,0.0128,0.0535,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202401,2013.64,0.0017,0.058,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202402,2000.28,-0.0066,0.044,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202403,2009.44,0.0046,0.0087,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202404,1990.77,-0.0093,-0.023,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202405,1983.4,-0.0037,-0.0476,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202406,1962.93,-0.0103,-0.0412,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202407,1991.57,0.0146,-0.0237,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202408,2017.72,0.0131,-0.0047,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202409,2032.85,0.0075,0.0175,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202410,1995.29,-0.0185,-0.0004,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202411,1966.74,-0.0143,-0.0091,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202412,1971.87,0.0026,-0.019,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202501,2007.45,0.018,-0.0031,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202502,2022.14,0.0073,0.0109,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202503,2022.8,0.0003,0.0066,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202504,1986.6,-0.0179,-0.0021,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202505,1986.21,-0.0002,0.0014,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202506,1990.66,0.0022,0.0141,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202507,2009.83,0.0096,0.0092,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202508,2008.01,-0.0009,-0.0048,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202509,2002.36,-0.0028,-0.015,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202510,2007.32,0.0025,0.006,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202511,2019.65,0.0061,0.0269,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202512,2018.33,-0.0007,0.0236,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202601,2009.1,-0.0046,0.0008,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202602,2013.46,0.0022,-0.0043,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202603,2041.45,0.0139,0.0092,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202604,2086.16,0.0219,0.0501,Lewes,"Salisbury, MD-DE",Sussex County
+66108,19958,DE,202605,2095.8,0.0046,0.0552,Lewes,"Salisbury, MD-DE",Sussex County
+66112,19963,DE,202604,2274.55,,,Milford,"Salisbury, MD-DE",Sussex County
+66112,19963,DE,202605,2225.0,-0.0218,,Milford,"Salisbury, MD-DE",Sussex County
+66114,19966,DE,202603,2115.49,,,Millsboro,"Salisbury, MD-DE",Sussex County
+66114,19966,DE,202604,2128.56,0.0062,,Millsboro,"Salisbury, MD-DE",Sussex County
+66114,19966,DE,202605,2205.56,0.0362,,Millsboro,"Salisbury, MD-DE",Sussex County
+66118,19970,DE,202605,2331.67,,,Ocean View,"Salisbury, MD-DE",Sussex County
