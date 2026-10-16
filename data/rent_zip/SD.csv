@@ -1,713 +1,725 @@
 RegionID,RegionName,State,month_date_yyyymm,zori,zori_mm,zori_yy,City,Metro,CountyName
-83068,57005,SD,202607,1404.7,,,Brandon,"Sioux Falls, SD",Minnehaha County
-83068,57005,SD,202608,1393.75,-0.0078,,Brandon,"Sioux Falls, SD",Minnehaha County
-83069,57006,SD,202210,963.89,,,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202211,965.18,0.0013,,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202212,964.4,-0.0008,,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202301,967.28,0.003,,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202302,979.64,0.0128,,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202303,979.0,-0.0007,,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202304,1005.26,0.0268,,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202305,989.5,-0.0157,,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202306,1011.48,0.0222,,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202307,1006.42,-0.005,,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202308,1034.81,0.0282,,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202309,1025.88,-0.0086,,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202310,1041.82,0.0155,0.0809,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202311,1030.07,-0.0113,0.0672,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202312,1039.76,0.0094,0.0781,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202401,1048.11,0.008,0.0836,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202402,1084.67,0.0349,0.1072,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202403,1092.77,0.0075,0.1162,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202404,1091.8,-0.0009,0.0861,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202405,1088.62,-0.0029,0.1002,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202406,1085.52,-0.0028,0.0732,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202407,1078.44,-0.0065,0.0716,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202408,1097.61,0.0178,0.0607,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202409,1119.02,0.0195,0.0908,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202410,1146.0,0.0241,0.1,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202411,1128.5,-0.0153,0.0956,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202412,1118.88,-0.0085,0.0761,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202501,1129.33,0.0093,0.0775,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202502,1146.47,0.0152,0.057,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202503,1169.39,0.02,0.0701,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202504,1165.95,-0.0029,0.0679,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202505,1169.64,0.0032,0.0744,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202506,1165.01,-0.004,0.0732,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202507,1164.74,-0.0002,0.08,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202508,1151.68,-0.0112,0.0493,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202509,1148.52,-0.0027,0.0264,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202510,1149.11,0.0005,0.0027,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202511,1153.08,0.0034,0.0218,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202512,1162.07,0.0078,0.0386,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202601,1183.11,0.0181,0.0476,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202602,1205.6,0.019,0.0516,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202603,1208.59,0.0025,0.0335,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202604,1208.01,-0.0005,0.0361,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202605,1205.51,-0.0021,0.0307,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202606,1203.55,-0.0016,0.0331,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202607,1196.47,-0.0059,0.0272,Brookings,"Brookings, SD",Brookings County
-83069,57006,SD,202608,1194.29,-0.0018,0.037,Brookings,"Brookings, SD",Brookings County
-83090,57032,SD,202507,1153.96,,,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202508,1178.8,0.0215,,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202509,1199.77,0.0178,,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202510,1101.1,-0.0822,,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202511,1122.84,0.0197,,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202512,1152.01,0.026,,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202601,1247.69,0.0831,,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202602,1229.78,-0.0144,,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202603,1231.6,0.0015,,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202604,1246.43,0.012,,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202605,1262.81,0.0131,,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202606,1255.42,-0.0058,,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202607,1273.03,0.014,0.1032,Harrisburg,"Sioux Falls, SD",Lincoln County
-83090,57032,SD,202608,1271.82,-0.0009,0.0789,Harrisburg,"Sioux Falls, SD",Lincoln County
-83120,57064,SD,202603,1281.53,,,Tea,"Sioux Falls, SD",Lincoln County
-83120,57064,SD,202604,1276.05,-0.0043,,Tea,"Sioux Falls, SD",Lincoln County
-83120,57064,SD,202605,1291.87,0.0124,,Tea,"Sioux Falls, SD",Lincoln County
-83120,57064,SD,202606,1294.36,0.0019,,Tea,"Sioux Falls, SD",Lincoln County
-83120,57064,SD,202607,1287.63,-0.0052,,Tea,"Sioux Falls, SD",Lincoln County
-83120,57064,SD,202608,1266.1,-0.0167,,Tea,"Sioux Falls, SD",Lincoln County
-83136,57103,SD,202108,1114.16,,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202109,1122.99,0.0079,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202110,1129.28,0.0056,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202111,1141.03,0.0104,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202112,1158.31,0.0151,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202201,1216.37,0.0501,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202202,1240.9,0.0202,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202203,1258.91,0.0145,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202204,1242.16,-0.0133,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202205,1257.43,0.0123,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202206,1259.93,0.002,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202207,1255.51,-0.0035,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202208,1251.86,-0.0029,0.1236,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202209,1264.11,0.0098,0.1257,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202210,1279.46,0.0121,0.133,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202211,1288.47,0.007,0.1292,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202212,1280.01,-0.0066,0.1051,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202301,1269.84,-0.0079,0.044,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202302,1290.86,0.0166,0.0403,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202303,1276.81,-0.0109,0.0142,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202304,1294.19,0.0136,0.0419,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202305,1297.73,0.0027,0.032,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202306,1330.78,0.0255,0.0562,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202307,1342.97,0.0092,0.0697,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202308,1348.34,0.004,0.0771,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202309,1347.56,-0.0006,0.066,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202310,1345.76,-0.0013,0.0518,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202311,1344.83,-0.0007,0.0437,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202312,1349.24,0.0033,0.0541,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202401,1362.72,0.01,0.0731,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202402,1349.76,-0.0095,0.0456,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202403,1366.59,0.0125,0.0703,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202404,1357.83,-0.0064,0.0492,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202405,1369.26,0.0084,0.0551,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202406,1357.81,-0.0084,0.0203,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202407,1366.29,0.0062,0.0174,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202408,1378.98,0.0093,0.0227,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202409,1377.46,-0.0011,0.0222,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202410,1386.65,0.0067,0.0304,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202411,1377.48,-0.0066,0.0243,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202412,1376.45,-0.0007,0.0202,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202501,1363.4,-0.0095,0.0005,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202502,1381.62,0.0134,0.0236,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202503,1371.8,-0.0071,0.0038,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202504,1370.82,-0.0007,0.0096,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202505,1349.83,-0.0153,-0.0142,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202506,1366.46,0.0123,0.0064,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202507,1379.98,0.0099,0.01,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202508,1371.85,-0.0059,-0.0052,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202509,1365.47,-0.0046,-0.0087,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202510,1357.01,-0.0062,-0.0214,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202511,1377.58,0.0152,0.0001,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202512,1369.89,-0.0056,-0.0048,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202601,1366.37,-0.0026,0.0022,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202602,1373.36,0.0051,-0.006,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202603,1402.77,0.0214,0.0226,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202604,1415.08,0.0088,0.0323,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202605,1423.47,0.0059,0.0546,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202606,1430.98,0.0053,0.0472,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202607,1449.52,0.013,0.0504,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83136,57103,SD,202608,1441.69,-0.0054,0.0509,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201801,801.62,,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201802,817.8,0.0202,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201803,845.97,0.0344,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201804,859.33,0.0158,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201805,840.72,-0.0217,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201806,845.54,0.0057,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201807,843.21,-0.0028,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201808,855.08,0.0141,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201809,843.83,-0.0132,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201810,833.42,-0.0123,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201811,829.3,-0.005,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201812,823.63,-0.0068,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201901,832.75,0.0111,0.0388,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201902,832.03,-0.0009,0.0174,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201903,840.48,0.0101,-0.0065,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201904,841.62,0.0014,-0.0206,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201905,837.98,-0.0043,-0.0033,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201906,835.1,-0.0034,-0.0123,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201907,842.73,0.0091,-0.0006,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201908,852.47,0.0116,-0.0031,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201909,863.58,0.013,0.0234,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201910,873.83,0.0119,0.0485,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201911,881.5,0.0088,0.063,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,201912,882.51,0.0011,0.0715,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202001,854.42,-0.0318,0.026,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202002,861.12,0.0078,0.035,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202003,866.66,0.0064,0.0312,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202004,889.6,0.0265,0.057,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202005,893.51,0.0044,0.0663,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202006,892.57,-0.001,0.0688,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202007,890.28,-0.0026,0.0564,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202008,877.47,-0.0144,0.0293,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202009,888.85,0.013,0.0293,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202010,891.96,0.0035,0.0207,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202011,908.95,0.0191,0.0311,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202012,892.97,-0.0176,0.0118,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202101,904.21,0.0126,0.0583,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202102,901.36,-0.0031,0.0467,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202103,922.42,0.0234,0.0643,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202104,937.72,0.0166,0.0541,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202105,962.59,0.0265,0.0773,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202106,984.07,0.0223,0.1025,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202107,993.1,0.0092,0.1155,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202108,1001.37,0.0083,0.1412,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202109,1019.57,0.0182,0.1471,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202110,1021.3,0.0017,0.145,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202111,1027.02,0.0056,0.1299,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202112,1022.22,-0.0047,0.1447,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202201,1036.57,0.014,0.1464,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202202,1033.15,-0.0033,0.1462,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202203,1020.54,-0.0122,0.1064,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202204,1038.2,0.0173,0.1072,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202205,1054.16,0.0154,0.0951,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202206,1089.57,0.0336,0.1072,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202207,1094.5,0.0045,0.1021,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202208,1114.63,0.0184,0.1131,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202209,1128.74,0.0127,0.1071,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202210,1115.88,-0.0114,0.0926,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202211,1110.53,-0.0048,0.0813,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202212,1111.94,0.0013,0.0878,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202301,1119.39,0.0067,0.0799,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202302,1129.86,0.0093,0.0936,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202303,1152.08,0.0197,0.1289,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202304,1165.14,0.0113,0.1223,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202305,1162.7,-0.0021,0.103,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202306,1149.82,-0.0111,0.0553,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202307,1157.77,0.0069,0.0578,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202308,1168.37,0.0092,0.0482,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202309,1170.45,0.0018,0.037,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202310,1167.35,-0.0027,0.0461,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202311,1165.19,-0.0018,0.0492,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202312,1167.3,0.0018,0.0498,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202401,1173.66,0.0055,0.0485,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202402,1181.22,0.0064,0.0455,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202403,1181.83,0.0005,0.0258,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202404,1179.07,-0.0023,0.012,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202405,1187.21,0.0069,0.0211,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202406,1198.17,0.0092,0.042,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202407,1210.7,0.0105,0.0457,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202408,1207.04,-0.003,0.0331,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202409,1199.91,-0.0059,0.0252,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202410,1195.07,-0.004,0.0238,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202411,1190.62,-0.0037,0.0218,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202412,1186.32,-0.0036,0.0163,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202501,1192.78,0.0054,0.0163,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202502,1190.34,-0.002,0.0077,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202503,1177.68,-0.0106,-0.0035,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202504,1171.35,-0.0054,-0.0065,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202505,1174.89,0.003,-0.0104,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202506,1190.95,0.0137,-0.006,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202507,1227.41,0.0306,0.0138,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202508,1240.24,0.0105,0.0275,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202509,1245.36,0.0041,0.0379,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202510,1211.76,-0.027,0.014,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202511,1209.42,-0.0019,0.0158,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202512,1205.27,-0.0034,0.016,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202601,1222.71,0.0145,0.0251,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202602,1228.25,0.0045,0.0318,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202603,1244.61,0.0133,0.0568,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202604,1242.85,-0.0014,0.061,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202605,1245.91,0.0025,0.0604,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202606,1256.81,0.0087,0.0553,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202607,1273.06,0.0129,0.0372,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83137,57104,SD,202608,1287.34,0.0112,0.038,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202110,953.88,,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202111,972.68,0.0197,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202112,981.58,0.0092,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202201,980.86,-0.0007,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202202,979.33,-0.0016,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202203,995.07,0.0161,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202204,1026.74,0.0318,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202205,1033.45,0.0065,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202206,1040.29,0.0066,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202207,1036.62,-0.0035,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202208,1035.98,-0.0006,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202209,1050.92,0.0144,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202211,1099.06,0.0458,0.1522,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202212,1096.53,-0.0023,0.1273,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202301,1100.83,0.0039,0.1215,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202302,1074.74,-0.0237,0.0957,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202303,1070.55,-0.0039,0.0931,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202304,1079.66,0.0085,0.085,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202305,1091.31,0.0108,0.0629,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202306,1104.64,0.0122,0.0689,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202307,1113.65,0.0082,0.0705,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202308,1112.46,-0.0011,0.0732,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202309,1114.46,0.0018,0.0758,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202310,1095.66,-0.0169,0.0426,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202311,1100.85,0.0047,0.0016,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202312,1114.79,0.0127,0.0166,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202401,1124.35,0.0086,0.0214,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202402,1129.69,0.0047,0.0511,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202403,1103.53,-0.0232,0.0308,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202404,1107.23,0.0034,0.0255,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202405,1111.38,0.0037,0.0184,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202406,1147.4,0.0324,0.0387,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202407,1157.82,0.0091,0.0397,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202408,1164.29,0.0056,0.0466,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202409,1147.73,-0.0142,0.0298,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202410,1149.68,0.0017,0.0493,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202411,1148.55,-0.001,0.0433,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202412,1151.74,0.0028,0.0332,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202501,1150.57,-0.001,0.0233,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202502,1143.81,-0.0059,0.0125,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202503,1141.32,-0.0022,0.0342,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202504,1147.29,0.0052,0.0362,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202505,1160.38,0.0114,0.0441,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202506,1175.43,0.013,0.0244,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202507,1179.34,0.0033,0.0186,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202508,1180.22,0.0008,0.0137,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202509,1185.06,0.0041,0.0325,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202510,1177.98,-0.006,0.0246,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202511,1150.37,-0.0234,0.0016,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202512,1152.23,0.0016,0.0004,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202601,1159.74,0.0065,0.008,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202602,1204.98,0.039,0.0535,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202603,1211.23,0.0052,0.0613,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202604,1202.96,-0.0068,0.0485,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202605,1192.92,-0.0083,0.028,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202606,1190.37,-0.0021,0.0127,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202607,1201.54,0.0094,0.0188,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83138,57105,SD,202608,1205.21,0.003,0.0212,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202004,974.96,,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202005,975.86,0.0009,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202006,973.59,-0.0023,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202007,964.86,-0.009,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202008,966.21,0.0014,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202009,972.68,0.0067,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202010,977.49,0.0049,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202011,972.33,-0.0053,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202012,962.94,-0.0097,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202101,970.26,0.0076,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202102,973.67,0.0035,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202103,980.58,0.0071,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202104,984.84,0.0043,0.0101,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202105,998.84,0.0142,0.0235,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202106,1017.37,0.0185,0.045,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202107,1029.86,0.0123,0.0674,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202108,1038.73,0.0086,0.0751,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202109,1050.77,0.0116,0.0803,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202110,1064.0,0.0126,0.0885,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202111,1078.66,0.0138,0.1094,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202112,1084.87,0.0058,0.1266,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202201,1084.56,-0.0003,0.1178,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202202,1091.18,0.0061,0.1207,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202203,1098.32,0.0066,0.1201,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202204,1121.17,0.0208,0.1384,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202205,1131.14,0.0089,0.1325,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202206,1159.13,0.0247,0.1393,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202207,1165.73,0.0057,0.1319,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202208,1178.65,0.0111,0.1347,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202209,1157.95,-0.0176,0.102,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202210,1155.71,-0.0019,0.0862,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202211,1155.55,-0.0001,0.0713,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202212,1164.95,0.0081,0.0738,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202301,1158.35,-0.0057,0.068,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202302,1148.17,-0.0088,0.0522,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202303,1158.62,0.0091,0.0549,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202304,1172.17,0.0117,0.0455,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202305,1195.39,0.0198,0.0568,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202306,1195.07,-0.0003,0.031,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202307,1196.19,0.0009,0.0261,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202308,1191.12,-0.0042,0.0106,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202309,1198.37,0.0061,0.0349,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202310,1186.52,-0.0099,0.0267,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202311,1198.25,0.0099,0.037,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202312,1188.4,-0.0082,0.0201,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202401,1186.66,-0.0015,0.0244,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202402,1181.06,-0.0047,0.0286,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202403,1186.48,0.0046,0.024,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202404,1207.35,0.0176,0.03,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202405,1204.73,-0.0022,0.0078,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202406,1211.91,0.006,0.0141,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202407,1224.53,0.0104,0.0237,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202408,1232.49,0.0065,0.0347,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202409,1230.28,-0.0018,0.0266,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202410,1215.17,-0.0123,0.0241,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202411,1220.22,0.0041,0.0183,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202412,1236.64,0.0135,0.0406,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202501,1228.82,-0.0063,0.0355,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202502,1221.25,-0.0062,0.034,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202503,1207.51,-0.0113,0.0177,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202504,1226.21,0.0155,0.0156,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202505,1220.44,-0.0047,0.013,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202506,1209.49,-0.009,-0.002,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202507,1192.65,-0.0139,-0.026,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202508,1187.49,-0.0043,-0.0365,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202509,1199.22,0.0099,-0.0252,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202510,1224.81,0.0213,0.0079,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202511,1239.69,0.0122,0.016,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202512,1231.24,-0.0068,-0.0044,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202601,1215.05,-0.0131,-0.0112,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202602,1219.65,0.0038,-0.0013,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202603,1230.73,0.0091,0.0192,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202604,1245.69,0.0122,0.0159,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202605,1239.01,-0.0054,0.0152,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202606,1233.25,-0.0046,0.0196,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202607,1226.28,-0.0057,0.0282,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83139,57106,SD,202608,1235.97,0.0079,0.0408,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83140,57107,SD,202509,1250.47,,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83140,57107,SD,202510,1243.96,-0.0052,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83140,57107,SD,202511,1245.87,0.0015,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83140,57107,SD,202512,1248.29,0.0019,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83140,57107,SD,202601,1255.58,0.0058,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83140,57107,SD,202602,1259.64,0.0032,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83140,57107,SD,202603,1261.57,0.0015,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83140,57107,SD,202604,1271.55,0.0079,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83140,57107,SD,202605,1260.07,-0.009,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83140,57107,SD,202606,1254.76,-0.0042,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83140,57107,SD,202607,1257.54,0.0022,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83140,57107,SD,202608,1266.51,0.0071,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83141,57108,SD,202101,1031.42,,,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202102,1036.41,0.0048,,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202103,1047.24,0.0104,,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202104,1064.42,0.0164,,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202105,1083.38,0.0178,,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202106,1097.27,0.0128,,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202107,1103.12,0.0053,,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202108,1111.96,0.008,,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202109,1116.69,0.0043,,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202110,1124.89,0.0073,,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202111,1133.92,0.008,,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202112,1151.55,0.0156,,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202201,1167.51,0.0139,0.132,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202202,1190.24,0.0195,0.1484,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202203,1208.4,0.0153,0.1539,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202204,1224.17,0.013,0.1501,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202205,1226.01,0.0015,0.1316,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202206,1250.41,0.0199,0.1396,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202207,1271.42,0.0168,0.1526,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202208,1300.52,0.0229,0.1696,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202209,1294.92,-0.0043,0.1596,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202210,1275.44,-0.015,0.1338,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202211,1263.87,-0.0091,0.1146,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202212,1261.42,-0.0019,0.0954,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202301,1263.09,0.0013,0.0819,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202302,1268.22,0.0041,0.0655,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202303,1270.93,0.0021,0.0517,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202304,1273.81,0.0023,0.0406,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202305,1280.19,0.005,0.0442,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202306,1291.31,0.0087,0.0327,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202307,1298.91,0.0059,0.0216,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202308,1288.46,-0.0081,-0.0093,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202309,1278.84,-0.0075,-0.0124,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202310,1264.21,-0.0114,-0.0088,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202311,1259.01,-0.0041,-0.0038,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202312,1253.37,-0.0045,-0.0064,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202401,1259.6,0.005,-0.0028,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202402,1269.29,0.0077,0.0008,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202403,1286.86,0.0138,0.0125,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202404,1302.17,0.0119,0.0223,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202405,1308.19,0.0046,0.0219,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202406,1301.46,-0.0051,0.0079,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202407,1294.75,-0.0052,-0.0032,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202408,1289.42,-0.0041,0.0007,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202409,1286.7,-0.0021,0.0061,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202410,1281.16,-0.0043,0.0134,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202411,1281.95,0.0006,0.0182,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202412,1287.98,0.0047,0.0276,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202501,1277.35,-0.0083,0.0141,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202502,1270.03,-0.0057,0.0006,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202503,1262.8,-0.0057,-0.0187,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202504,1283.06,0.0161,-0.0147,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202505,1285.57,0.002,-0.0173,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202506,1285.17,-0.0003,-0.0125,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202507,1288.6,0.0027,-0.0047,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202508,1302.84,0.0111,0.0104,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202509,1319.72,0.013,0.0257,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202510,1316.62,-0.0023,0.0277,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202511,1311.94,-0.0036,0.0234,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202512,1318.22,0.0048,0.0235,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202601,1333.41,0.0115,0.0439,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202602,1347.2,0.0103,0.0608,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202603,1344.81,-0.0018,0.0649,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202604,1349.18,0.0032,0.0515,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202605,1356.07,0.0051,0.0548,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202606,1357.24,0.0009,0.0561,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202607,1356.26,-0.0007,0.0525,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83141,57108,SD,202608,1363.5,0.0053,0.0466,Sioux Falls,"Sioux Falls, SD",Lincoln County
-83143,57110,SD,202012,1031.7,,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202101,1031.39,-0.0003,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202102,1055.14,0.023,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202103,1053.85,-0.0012,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202104,1067.29,0.0128,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202105,1076.43,0.0086,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202106,1084.28,0.0073,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202107,1092.08,0.0072,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202108,1102.11,0.0092,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202109,1114.55,0.0113,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202110,1143.1,0.0256,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202111,1164.54,0.0188,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202112,1176.89,0.0106,0.1407,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202201,1166.62,-0.0087,0.1311,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202202,1173.62,0.006,0.1123,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202203,1201.01,0.0233,0.1396,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202204,1247.18,0.0384,0.1685,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202205,1285.78,0.031,0.1945,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202206,1307.75,0.0171,0.2061,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202207,1315.17,0.0057,0.2043,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202208,1333.23,0.0137,0.2097,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202209,1328.21,-0.0038,0.1917,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202210,1320.72,-0.0056,0.1554,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202211,1295.63,-0.019,0.1126,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202212,1285.28,-0.008,0.0921,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202301,1260.93,-0.0189,0.0808,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202302,1260.66,-0.0002,0.0742,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202303,1277.4,0.0133,0.0636,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202304,1301.4,0.0188,0.0435,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202305,1306.48,0.0039,0.0161,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202306,1304.46,-0.0015,-0.0025,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202307,1300.42,-0.0031,-0.0112,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202308,1309.09,0.0067,-0.0181,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202309,1309.57,0.0004,-0.014,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202310,1301.97,-0.0058,-0.0142,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202311,1285.94,-0.0123,-0.0075,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202312,1277.1,-0.0069,-0.0064,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202401,1267.65,-0.0074,0.0053,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202402,1261.55,-0.0048,0.0007,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202403,1257.79,-0.003,-0.0153,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202404,1265.77,0.0063,-0.0274,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202405,1267.51,0.0014,-0.0298,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202406,1281.65,0.0112,-0.0175,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202407,1289.3,0.006,-0.0086,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202408,1294.51,0.004,-0.0111,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202409,1278.88,-0.0121,-0.0234,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202410,1273.92,-0.0039,-0.0215,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202411,1270.35,-0.0028,-0.0121,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202412,1272.28,0.0015,-0.0038,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202501,1271.84,-0.0003,0.0033,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202502,1270.23,-0.0013,0.0069,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202503,1272.37,0.0017,0.0116,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202504,1283.93,0.0091,0.0143,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202505,1291.66,0.006,0.0191,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202506,1299.55,0.0061,0.014,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202507,1302.28,0.0021,0.0101,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202508,1298.67,-0.0028,0.0032,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202509,1294.03,-0.0036,0.0119,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202510,1289.54,-0.0035,0.0123,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202511,1291.2,0.0013,0.0164,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202512,1286.8,-0.0034,0.0114,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202601,1291.99,0.004,0.0158,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202602,1304.44,0.0096,0.0269,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202603,1320.5,0.0123,0.0378,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202604,1317.11,-0.0026,0.0258,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202605,1314.79,-0.0018,0.0179,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202606,1321.27,0.0049,0.0167,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202607,1330.03,0.0066,0.0213,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83143,57110,SD,202608,1332.35,0.0017,0.0259,Sioux Falls,"Sioux Falls, SD",Minnehaha County
-83156,57201,SD,202602,1122.25,,,Watertown,"Watertown, SD",Codington County
-83156,57201,SD,202603,1119.45,-0.0025,,Watertown,"Watertown, SD",Codington County
-83156,57201,SD,202604,1133.34,0.0124,,Watertown,"Watertown, SD",Codington County
-83156,57201,SD,202605,1115.74,-0.0155,,Watertown,"Watertown, SD",Codington County
-83156,57201,SD,202606,1114.03,-0.0015,,Watertown,"Watertown, SD",Codington County
-83156,57201,SD,202607,1119.3,0.0047,,Watertown,"Watertown, SD",Codington County
-83156,57201,SD,202608,1114.67,-0.0041,,Watertown,"Watertown, SD",Codington County
-83213,57301,SD,202512,961.06,,,Mitchell,"Mitchell, SD",Davison County
-83213,57301,SD,202601,963.89,0.0029,,Mitchell,"Mitchell, SD",Davison County
-83213,57301,SD,202602,918.39,-0.0472,,Mitchell,"Mitchell, SD",Davison County
-83213,57301,SD,202603,938.2,0.0216,,Mitchell,"Mitchell, SD",Davison County
-83213,57301,SD,202604,941.55,0.0036,,Mitchell,"Mitchell, SD",Davison County
-83213,57301,SD,202605,942.31,0.0008,,Mitchell,"Mitchell, SD",Davison County
-83213,57301,SD,202606,932.67,-0.0102,,Mitchell,"Mitchell, SD",Davison County
-83213,57301,SD,202607,954.08,0.023,,Mitchell,"Mitchell, SD",Davison County
-83213,57301,SD,202608,959.5,0.0057,,Mitchell,"Mitchell, SD",Davison County
-83275,57401,SD,202507,967.35,,,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202508,981.17,0.0143,,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202509,975.25,-0.006,,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202510,964.08,-0.0115,,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202511,1011.18,0.0489,,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202512,1060.45,0.0487,,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202601,1116.42,0.0528,,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202602,1080.34,-0.0323,,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202603,1084.2,0.0036,,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202604,1065.78,-0.017,,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202605,1082.25,0.0155,,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202606,1078.37,-0.0036,,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202607,1071.02,-0.0068,0.1072,Aberdeen,"Aberdeen, SD",Brown County
-83275,57401,SD,202608,1097.18,0.0244,0.1182,Aberdeen,"Aberdeen, SD",Brown County
-83325,57501,SD,202603,1273.32,,,Pierre,"Pierre, SD",Hughes County
-83325,57501,SD,202604,1394.88,0.0955,,Pierre,"Pierre, SD",Hughes County
-83325,57501,SD,202605,1411.36,0.0118,,Pierre,"Pierre, SD",Hughes County
-83325,57501,SD,202606,1409.42,-0.0014,,Pierre,"Pierre, SD",Hughes County
-83325,57501,SD,202607,1378.05,-0.0223,,Pierre,"Pierre, SD",Hughes County
-83325,57501,SD,202608,1354.17,-0.0173,,Pierre,"Pierre, SD",Hughes County
-83400,57701,SD,202010,968.52,,,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202011,963.98,-0.0047,,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202012,965.21,0.0013,,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202101,1000.06,0.0361,,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202102,1012.25,0.0122,,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202103,1019.48,0.0071,,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202104,1021.27,0.0018,,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202105,1029.17,0.0077,,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202106,1033.87,0.0046,,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202107,1064.92,0.03,,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202108,1074.78,0.0093,,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202109,1093.79,0.0177,,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202110,1092.96,-0.0008,0.1285,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202111,1110.75,0.0163,0.1523,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202112,1127.0,0.0146,0.1676,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202201,1154.07,0.024,0.154,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202202,1173.47,0.0168,0.1593,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202203,1201.79,0.0241,0.1788,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202204,1219.34,0.0146,0.1939,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202205,1245.55,0.0215,0.2103,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202206,1278.43,0.0264,0.2365,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202207,1275.17,-0.0025,0.1974,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202208,1296.81,0.017,0.2066,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202209,1298.0,0.0009,0.1867,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202210,1310.73,0.0098,0.1992,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202211,1255.35,-0.0423,0.1302,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202212,1251.85,-0.0028,0.1108,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202301,1249.08,-0.0022,0.0823,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202302,1273.34,0.0194,0.0851,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202303,1259.17,-0.0111,0.0477,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202304,1258.33,-0.0007,0.032,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202305,1276.71,0.0146,0.025,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202306,1285.2,0.0066,0.0053,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202307,1280.12,-0.004,0.0039,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202308,1280.44,0.0003,-0.0126,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202309,1283.76,0.0026,-0.011,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202310,1290.07,0.0049,-0.0158,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202311,1300.16,0.0078,0.0357,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202312,1299.93,-0.0002,0.0384,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202401,1300.76,0.0006,0.0414,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202402,1295.86,-0.0038,0.0177,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202403,1293.25,-0.002,0.0271,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202404,1302.16,0.0069,0.0348,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202405,1309.07,0.0053,0.0253,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202406,1333.1,0.0184,0.0373,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202407,1345.76,0.0095,0.0513,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202408,1347.23,0.0011,0.0522,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202409,1347.94,0.0005,0.05,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202410,1350.3,0.0018,0.0467,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202411,1362.95,0.0094,0.0483,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202412,1352.23,-0.0079,0.0402,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202501,1356.12,0.0029,0.0426,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202502,1351.97,-0.0031,0.0433,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202503,1364.06,0.0089,0.0548,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202504,1353.21,-0.008,0.0392,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202505,1348.12,-0.0038,0.0298,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202506,1343.02,-0.0038,0.0074,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202507,1346.22,0.0024,0.0003,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202508,1350.36,0.0031,0.0023,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202509,1357.9,0.0056,0.0074,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202510,1374.11,0.0119,0.0176,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202511,1381.46,0.0054,0.0136,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202512,1374.75,-0.0049,0.0167,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202601,1377.71,0.0022,0.0159,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202602,1373.74,-0.0029,0.0161,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202603,1386.18,0.0091,0.0162,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202604,1381.47,-0.0034,0.0209,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202605,1391.95,0.0076,0.0325,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202606,1396.77,0.0035,0.04,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202607,1402.07,0.0038,0.0415,Rapid City,"Rapid City, SD",Pennington County
-83400,57701,SD,202608,1428.52,0.0189,0.0579,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202212,1351.17,,,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202301,1347.78,-0.0025,,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202302,1333.43,-0.0107,,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202303,1285.22,-0.0362,,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202304,1267.82,-0.0135,,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202305,1269.61,0.0014,,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202306,1273.54,0.0031,,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202307,1304.29,0.0241,,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202308,1316.62,0.0095,,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202309,1331.41,0.0112,,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202310,1318.66,-0.0096,,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202311,1307.79,-0.0082,,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202312,1315.85,0.0062,-0.0261,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202401,1308.39,-0.0057,-0.0292,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202402,1317.06,0.0066,-0.0123,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202403,1309.46,-0.0058,0.0189,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202404,1337.88,0.0217,0.0553,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202405,1354.19,0.0122,0.0666,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202406,1367.68,0.01,0.0739,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202407,1371.13,0.0025,0.0512,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202408,1378.53,0.0054,0.047,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202409,1360.61,-0.013,0.0219,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202410,1347.94,-0.0093,0.0222,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202411,1337.55,-0.0077,0.0228,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202412,1361.57,0.018,0.0347,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202501,1353.59,-0.0059,0.0346,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202502,1358.26,0.0035,0.0313,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202503,1364.01,0.0042,0.0417,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202504,1391.99,0.0205,0.0404,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202505,1407.11,0.0109,0.0391,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202506,1409.19,0.0015,0.0303,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202507,1419.58,0.0074,0.0353,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202508,1431.85,0.0086,0.0387,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202509,1435.66,0.0027,0.0552,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202510,1424.01,-0.0081,0.0564,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202511,1395.53,-0.02,0.0433,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202512,1382.43,-0.0094,0.0153,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202601,1391.86,0.0068,0.0283,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202602,1415.01,0.0166,0.0418,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202603,1427.87,0.0091,0.0468,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202604,1431.48,0.0025,0.0284,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202605,1432.66,0.0008,0.0182,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202606,1456.13,0.0164,0.0333,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202607,1482.69,0.0182,0.0445,Rapid City,"Rapid City, SD",Pennington County
-83401,57702,SD,202608,1495.04,0.0083,0.0441,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202411,1406.99,,,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202412,1399.02,-0.0057,,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202501,1404.16,0.0037,,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202502,1399.69,-0.0032,,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202503,1429.05,0.021,,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202504,1455.47,0.0185,,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202505,1487.17,0.0218,,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202506,1506.04,0.0127,,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202507,1500.69,-0.0036,,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202508,1503.6,0.0019,,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202509,1482.53,-0.014,,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202510,1497.88,0.0104,,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202511,1477.93,-0.0133,0.0504,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202512,1485.65,0.0052,0.0619,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202601,1464.57,-0.0142,0.043,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202602,1487.27,0.0155,0.0626,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202603,1504.32,0.0115,0.0527,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202604,1539.98,0.0237,0.0581,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202605,1542.53,0.0017,0.0372,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202606,1547.07,0.0029,0.0272,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202607,1547.18,0.0001,0.031,Rapid City,"Rapid City, SD",Pennington County
-83402,57703,SD,202608,1582.07,0.0226,0.0522,Rapid City,"Rapid City, SD",Pennington County
-83409,57719,SD,202504,1385.26,,,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202505,1413.11,0.0201,,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202506,1452.59,0.0279,,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202507,1468.99,0.0113,,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202508,1467.51,-0.001,,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202509,1480.44,0.0088,,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202510,1469.04,-0.0077,,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202511,1477.22,0.0056,,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202512,1468.36,-0.006,,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202601,1458.23,-0.0069,,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202602,1453.64,-0.0031,,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202603,1462.04,0.0058,,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202604,1490.1,0.0192,0.0757,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202605,1506.44,0.011,0.066,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202606,1506.74,0.0002,0.0373,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202607,1519.55,0.0085,0.0344,Box Elder,"Rapid City, SD",Meade County
-83409,57719,SD,202608,1517.43,-0.0014,0.034,Box Elder,"Rapid City, SD",Meade County
-83448,57783,SD,202606,1624.53,,,Spearfish,"Spearfish, SD",Lawrence County
-83448,57783,SD,202607,1526.82,-0.0601,,Spearfish,"Spearfish, SD",Lawrence County
-83448,57783,SD,202608,1513.72,-0.0086,,Spearfish,"Spearfish, SD",Lawrence County
+83068,57005,SD,202607,1176.21,,,Brandon,"Sioux Falls, SD",Minnehaha County
+83068,57005,SD,202608,1162.9,-0.0113,,Brandon,"Sioux Falls, SD",Minnehaha County
+83068,57005,SD,202609,1166.33,0.003,,Brandon,"Sioux Falls, SD",Minnehaha County
+83069,57006,SD,202210,974.29,,,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202211,975.96,0.0017,,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202212,975.09,-0.0009,,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202301,977.99,0.003,,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202302,990.68,0.013,,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202303,991.17,0.0005,,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202304,1018.57,0.0276,,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202305,1003.39,-0.0149,,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202306,1025.13,0.0217,,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202307,1019.69,-0.0053,,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202308,1047.21,0.027,,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202309,1038.98,-0.0079,,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202310,1057.3,0.0176,0.0852,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202311,1045.09,-0.0116,0.0708,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202312,1056.46,0.0109,0.0834,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202401,1063.09,0.0063,0.087,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202402,1101.76,0.0364,0.1121,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202403,1108.9,0.0065,0.1188,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202404,1108.58,-0.0003,0.0884,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202405,1105.67,-0.0026,0.1019,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202406,1102.57,-0.0028,0.0755,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202407,1094.75,-0.0071,0.0736,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202408,1109.53,0.0135,0.0595,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202409,1131.95,0.0202,0.0895,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202410,1158.65,0.0236,0.0958,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202411,1145.76,-0.0111,0.0963,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202412,1134.69,-0.0097,0.074,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202501,1146.79,0.0107,0.0787,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202502,1164.71,0.0156,0.0571,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202503,1189.77,0.0215,0.0729,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202504,1185.52,-0.0036,0.0694,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202505,1190.66,0.0043,0.0769,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202506,1185.18,-0.0046,0.0749,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202507,1185.13,-0.0,0.0826,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202508,1172.75,-0.0104,0.057,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202509,1171.88,-0.0007,0.0353,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202510,1173.06,0.001,0.0124,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202511,1175.27,0.0019,0.0258,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202512,1186.46,0.0095,0.0456,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202601,1209.06,0.019,0.0543,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202602,1232.92,0.0197,0.0586,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202603,1232.42,-0.0004,0.0358,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202604,1232.29,-0.0001,0.0394,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202605,1230.64,-0.0013,0.0336,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202606,1229.02,-0.0013,0.037,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202607,1221.29,-0.0063,0.0305,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202608,1218.04,-0.0027,0.0386,Brookings,"Brookings, SD",Brookings County
+83069,57006,SD,202609,1285.55,0.0554,0.097,Brookings,"Brookings, SD",Brookings County
+83090,57032,SD,202507,1279.11,,,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202508,1305.27,0.0205,,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202509,1322.82,0.0134,,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202510,1212.8,-0.0832,,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202511,1234.82,0.0182,,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202512,1262.3,0.0223,,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202601,1366.33,0.0824,,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202602,1348.12,-0.0133,,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202603,1354.5,0.0047,,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202604,1370.5,0.0118,,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202605,1388.61,0.0132,,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202606,1380.43,-0.0059,,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202607,1400.15,0.0143,0.0946,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202608,1398.35,-0.0013,0.0713,Harrisburg,"Sioux Falls, SD",Lincoln County
+83090,57032,SD,202609,1399.84,0.0011,0.0582,Harrisburg,"Sioux Falls, SD",Lincoln County
+83106,57049,SD,202609,1273.5,,,North Sioux City,"Sioux City, IA-NE-SD",Union County
+83120,57064,SD,202603,1190.44,,,Tea,"Sioux Falls, SD",Lincoln County
+83120,57064,SD,202604,1183.58,-0.0058,,Tea,"Sioux Falls, SD",Lincoln County
+83120,57064,SD,202605,1198.65,0.0127,,Tea,"Sioux Falls, SD",Lincoln County
+83120,57064,SD,202606,1200.87,0.0019,,Tea,"Sioux Falls, SD",Lincoln County
+83120,57064,SD,202607,1194.79,-0.0051,,Tea,"Sioux Falls, SD",Lincoln County
+83120,57064,SD,202608,1177.69,-0.0143,,Tea,"Sioux Falls, SD",Lincoln County
+83120,57064,SD,202609,1164.67,-0.0111,,Tea,"Sioux Falls, SD",Lincoln County
+83133,57078,SD,202609,1050.0,,,Yankton,"Yankton, SD",Yankton County
+83136,57103,SD,202108,1134.95,,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202109,1144.43,0.0084,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202110,1151.25,0.006,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202111,1163.4,0.0105,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202112,1180.92,0.0151,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202201,1240.14,0.0501,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202202,1265.45,0.0204,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202203,1283.54,0.0143,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202204,1266.2,-0.0135,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202205,1283.25,0.0135,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202206,1286.1,0.0022,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202207,1281.09,-0.0039,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202208,1275.22,-0.0046,0.1236,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202209,1287.18,0.0094,0.1247,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202210,1303.22,0.0125,0.132,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202211,1312.4,0.007,0.1281,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202212,1304.31,-0.0062,0.1045,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202301,1294.08,-0.0078,0.0435,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202302,1316.0,0.0169,0.0399,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202303,1302.71,-0.0101,0.0149,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202304,1320.52,0.0137,0.0429,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202305,1324.38,0.0029,0.0321,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202306,1356.69,0.0244,0.0549,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202307,1369.07,0.0091,0.0687,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202308,1373.76,0.0034,0.0773,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202309,1374.21,0.0003,0.0676,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202310,1370.46,-0.0027,0.0516,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202311,1369.18,-0.0009,0.0433,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202312,1374.45,0.0038,0.0538,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202401,1389.32,0.0108,0.0736,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202402,1376.99,-0.0089,0.0463,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202403,1390.96,0.0101,0.0677,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202404,1382.87,-0.0058,0.0472,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202405,1397.13,0.0103,0.0549,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202406,1387.3,-0.007,0.0226,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202407,1396.34,0.0065,0.0199,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202408,1405.35,0.0065,0.023,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202409,1405.67,0.0002,0.0229,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202410,1412.26,0.0047,0.0305,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202411,1399.36,-0.0091,0.022,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202412,1394.63,-0.0034,0.0147,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202501,1382.11,-0.009,-0.0052,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202502,1403.97,0.0158,0.0196,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202503,1394.19,-0.007,0.0023,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202504,1394.34,0.0001,0.0083,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202505,1373.97,-0.0146,-0.0166,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202506,1393.41,0.0142,0.0044,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202507,1405.45,0.0086,0.0065,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202508,1398.66,-0.0048,-0.0048,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202509,1383.47,-0.0109,-0.0158,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202510,1377.62,-0.0042,-0.0245,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202511,1405.89,0.0205,0.0047,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202512,1397.46,-0.006,0.002,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202601,1393.72,-0.0027,0.0084,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202602,1392.46,-0.0009,-0.0082,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202603,1429.98,0.027,0.0257,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202604,1442.64,0.0089,0.0346,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202605,1451.24,0.006,0.0562,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202606,1459.06,0.0054,0.0471,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202607,1476.67,0.0121,0.0507,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202608,1472.87,-0.0026,0.0531,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83136,57103,SD,202609,1480.93,0.0055,0.0704,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201801,780.33,,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201802,796.18,0.0203,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201803,823.45,0.0342,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201804,836.24,0.0155,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201805,818.0,-0.0218,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201806,822.63,0.0057,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201807,821.04,-0.0019,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201808,832.85,0.0144,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201809,822.48,-0.0124,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201810,811.67,-0.0131,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201811,807.52,-0.0051,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201812,801.35,-0.0076,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201901,810.08,0.0109,0.0381,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201902,809.08,-0.0012,0.0162,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201903,817.25,0.0101,-0.0075,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201904,818.57,0.0016,-0.0211,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201905,815.24,-0.0041,-0.0034,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201906,812.64,-0.0032,-0.0121,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201907,820.01,0.0091,-0.0013,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201908,829.44,0.0115,-0.0041,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201909,840.0,0.0127,0.0213,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201910,850.03,0.0119,0.0473,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201911,857.3,0.0086,0.0616,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,201912,858.11,0.0009,0.0708,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202001,830.49,-0.0322,0.0252,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202002,836.95,0.0078,0.0344,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202003,842.39,0.0065,0.0308,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202004,865.49,0.0274,0.0573,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202005,869.44,0.0046,0.0665,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202006,870.02,0.0007,0.0706,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202007,866.86,-0.0036,0.0571,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202008,854.15,-0.0147,0.0298,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202009,863.74,0.0112,0.0283,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202010,866.62,0.0033,0.0195,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202011,883.07,0.019,0.0301,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202012,867.43,-0.0177,0.0109,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202101,878.45,0.0127,0.0577,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202102,873.66,-0.0054,0.0439,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202103,894.4,0.0237,0.0617,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202104,909.46,0.0168,0.0508,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202105,935.79,0.029,0.0763,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202106,956.76,0.0224,0.0997,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202107,965.51,0.0091,0.1138,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202108,973.41,0.0082,0.1396,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202109,990.78,0.0179,0.1471,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202110,992.29,0.0015,0.145,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202111,997.27,0.005,0.1293,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202112,992.49,-0.0048,0.1442,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202201,1005.55,0.0132,0.1447,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202202,1002.81,-0.0027,0.1478,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202203,990.2,-0.0126,0.1071,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202204,1008.38,0.0184,0.1088,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202205,1025.27,0.0167,0.0956,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202206,1059.98,0.0339,0.1079,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202207,1064.73,0.0045,0.1028,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202208,1082.61,0.0168,0.1122,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202209,1096.14,0.0125,0.1063,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202210,1083.41,-0.0116,0.0918,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202211,1078.55,-0.0045,0.0815,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202212,1080.19,0.0015,0.0884,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202301,1087.12,0.0064,0.0811,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202302,1096.91,0.009,0.0938,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202303,1118.35,0.0195,0.1294,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202304,1131.68,0.0119,0.1223,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202305,1129.37,-0.002,0.1015,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202306,1117.54,-0.0105,0.0543,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202307,1124.69,0.0064,0.0563,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202308,1135.03,0.0092,0.0484,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202309,1136.0,0.0008,0.0364,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202310,1133.28,-0.0024,0.046,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202311,1131.3,-0.0017,0.0489,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202312,1133.5,0.0019,0.0493,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202401,1138.98,0.0048,0.0477,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202402,1145.87,0.006,0.0446,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202403,1146.49,0.0005,0.0252,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202404,1143.97,-0.0022,0.0109,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202405,1151.84,0.0069,0.0199,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202406,1161.76,0.0086,0.0396,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202407,1174.1,0.0106,0.0439,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202408,1170.2,-0.0033,0.031,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202409,1163.37,-0.0058,0.0241,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202410,1157.79,-0.0048,0.0216,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202411,1153.83,-0.0034,0.0199,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202412,1150.03,-0.0033,0.0146,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202501,1157.11,0.0062,0.0159,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202502,1154.77,-0.002,0.0078,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202503,1142.44,-0.0107,-0.0035,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202504,1135.93,-0.0057,-0.007,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202505,1139.86,0.0035,-0.0104,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202506,1155.81,0.014,-0.0051,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202507,1187.87,0.0277,0.0117,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202508,1195.01,0.006,0.0212,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202509,1197.96,0.0025,0.0297,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202510,1168.94,-0.0242,0.0096,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202511,1170.96,0.0017,0.0148,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202512,1168.18,-0.0024,0.0158,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202601,1184.89,0.0143,0.024,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202602,1189.99,0.0043,0.0305,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202603,1205.83,0.0133,0.0555,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202604,1203.96,-0.0016,0.0599,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202605,1206.74,0.0023,0.0587,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202606,1216.42,0.008,0.0524,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202607,1231.61,0.0125,0.0368,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202608,1245.01,0.0109,0.0418,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83137,57104,SD,202609,1246.8,0.0014,0.0408,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202110,860.59,,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202111,875.64,0.0175,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202112,884.01,0.0096,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202201,883.21,-0.0009,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202202,883.9,0.0008,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202203,897.89,0.0158,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202204,926.82,0.0322,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202205,931.93,0.0055,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202206,938.72,0.0073,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202207,935.29,-0.0037,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202208,933.9,-0.0015,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202209,946.41,0.0134,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202211,990.23,0.0463,0.1506,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202212,988.51,-0.0017,0.1289,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202301,992.16,0.0037,0.1224,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202302,969.03,-0.0233,0.0972,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202303,965.63,-0.0035,0.0925,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202304,976.23,0.011,0.0872,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202305,986.92,0.0109,0.0648,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202306,998.64,0.0119,0.0716,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202307,1004.32,0.0057,0.0699,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202308,1002.96,-0.0014,0.0724,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202309,1005.0,0.002,0.0761,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202310,988.19,-0.0167,0.0442,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202311,991.46,0.0033,0.0012,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202312,1003.55,0.0122,0.0152,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202401,1012.29,0.0087,0.0203,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202402,1018.85,0.0065,0.0514,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202403,995.76,-0.0227,0.0312,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202404,1000.15,0.0044,0.0245,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202405,1004.19,0.004,0.0175,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202406,1036.89,0.0326,0.0383,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202407,1044.98,0.0078,0.0405,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202408,1050.2,0.005,0.0471,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202409,1035.01,-0.0145,0.0299,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202410,1036.34,0.0013,0.0487,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202411,1035.69,-0.0006,0.0446,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202412,1038.73,0.0029,0.0351,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202501,1039.77,0.001,0.0271,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202502,1033.42,-0.0061,0.0143,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202503,1031.39,-0.002,0.0358,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202504,1035.73,0.0042,0.0356,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202505,1048.94,0.0128,0.0446,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202506,1062.44,0.0129,0.0246,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202507,1065.58,0.003,0.0197,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202508,1064.43,-0.0011,0.0135,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202509,1069.08,0.0044,0.0329,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202510,1062.88,-0.0058,0.0256,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202511,1036.96,-0.0244,0.0012,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202512,1038.36,0.0014,-0.0004,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202601,1045.27,0.0067,0.0053,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202602,1088.13,0.041,0.0529,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202603,1094.19,0.0056,0.0609,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202604,1087.3,-0.0063,0.0498,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202605,1078.32,-0.0083,0.028,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202606,1075.71,-0.0024,0.0125,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202607,1086.01,0.0096,0.0192,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202608,1089.62,0.0033,0.0237,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83138,57105,SD,202609,1081.47,-0.0075,0.0116,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202004,952.77,,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202005,953.64,0.0009,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202006,951.17,-0.0026,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202007,943.03,-0.0086,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202008,945.34,0.0024,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202009,954.69,0.0099,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202010,959.94,0.0055,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202011,954.52,-0.0056,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202012,943.44,-0.0116,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202101,949.47,0.0064,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202102,952.16,0.0028,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202103,957.82,0.0059,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202104,962.27,0.0046,0.01,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202105,976.57,0.0149,0.024,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202106,995.87,0.0198,0.047,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202107,1008.06,0.0122,0.069,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202108,1015.62,0.0075,0.0743,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202109,1026.5,0.0107,0.0752,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202110,1039.14,0.0123,0.0825,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202111,1054.04,0.0143,0.1043,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202112,1058.95,0.0047,0.1224,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202201,1058.42,-0.0005,0.1147,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202202,1065.0,0.0062,0.1185,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202203,1072.68,0.0072,0.1199,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202204,1095.07,0.0209,0.138,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202205,1104.48,0.0086,0.131,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202206,1130.12,0.0232,0.1348,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202207,1135.22,0.0045,0.1261,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202208,1148.16,0.0114,0.1305,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202209,1130.14,-0.0157,0.101,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202210,1129.43,-0.0006,0.0869,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202211,1129.7,0.0002,0.0718,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202212,1136.3,0.0058,0.073,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202301,1130.35,-0.0052,0.068,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202302,1120.0,-0.0092,0.0516,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202303,1132.38,0.011,0.0556,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202304,1145.38,0.0115,0.0459,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202305,1167.13,0.019,0.0567,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202306,1166.79,-0.0003,0.0325,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202307,1168.12,0.0011,0.029,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202308,1164.96,-0.0027,0.0146,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202309,1171.93,0.006,0.037,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202310,1158.99,-0.011,0.0262,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202311,1169.15,0.0088,0.0349,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202312,1159.82,-0.008,0.0207,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202401,1159.75,-0.0001,0.026,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202402,1154.92,-0.0042,0.0312,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202403,1160.41,0.0047,0.0248,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202404,1180.42,0.0172,0.0306,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202405,1177.81,-0.0022,0.0092,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202406,1184.39,0.0056,0.0151,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202407,1196.71,0.0104,0.0245,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202408,1203.87,0.006,0.0334,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202409,1201.97,-0.0016,0.0256,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202410,1190.66,-0.0094,0.0273,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202411,1194.94,0.0036,0.0221,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202412,1210.74,0.0132,0.0439,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202501,1199.67,-0.0091,0.0344,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202502,1193.24,-0.0054,0.0332,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202503,1180.1,-0.011,0.017,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202504,1199.09,0.0161,0.0158,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202505,1195.04,-0.0034,0.0146,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202506,1185.71,-0.0078,0.0011,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202507,1168.02,-0.0149,-0.024,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202508,1163.9,-0.0035,-0.0332,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202509,1173.62,0.0084,-0.0236,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202510,1198.87,0.0215,0.0069,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202511,1205.82,0.0058,0.0091,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202512,1198.14,-0.0064,-0.0104,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202601,1182.52,-0.013,-0.0143,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202602,1192.02,0.008,-0.001,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202603,1202.74,0.009,0.0192,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202604,1217.47,0.0122,0.0153,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202605,1211.0,-0.0053,0.0134,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202606,1205.76,-0.0043,0.0169,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202607,1200.46,-0.0044,0.0278,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202608,1209.63,0.0076,0.0393,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83139,57106,SD,202609,1210.29,0.0005,0.0312,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202509,1196.38,,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202510,1189.38,-0.0059,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202511,1192.15,0.0023,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202512,1194.18,0.0017,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202601,1201.57,0.0062,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202602,1205.24,0.0031,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202603,1207.54,0.0019,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202604,1216.84,0.0077,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202605,1206.13,-0.0088,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202606,1200.71,-0.0045,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202607,1203.6,0.0024,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202608,1212.25,0.0072,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83140,57107,SD,202609,1220.4,0.0067,0.0201,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83141,57108,SD,202101,1039.28,,,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202102,1045.4,0.0059,,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202103,1056.46,0.0106,,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202104,1073.84,0.0165,,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202105,1093.07,0.0179,,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202106,1106.9,0.0127,,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202107,1112.71,0.0052,,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202108,1121.49,0.0079,,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202109,1125.95,0.004,,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202110,1135.11,0.0081,,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202111,1146.57,0.0101,,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202112,1164.2,0.0154,,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202201,1179.59,0.0132,0.135,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202202,1199.61,0.017,0.1475,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202203,1218.25,0.0155,0.1531,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202204,1234.09,0.013,0.1492,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202205,1236.68,0.0021,0.1314,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202206,1261.59,0.0201,0.1397,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202207,1282.96,0.0169,0.153,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202208,1312.21,0.0228,0.1701,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202209,1302.37,-0.0075,0.1567,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202210,1282.84,-0.015,0.1301,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202211,1271.51,-0.0088,0.109,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202212,1273.07,0.0012,0.0935,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202301,1274.92,0.0015,0.0808,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202302,1280.25,0.0042,0.0672,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202303,1282.97,0.0021,0.0531,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202304,1285.49,0.002,0.0417,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202305,1290.95,0.0042,0.0439,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202306,1302.08,0.0086,0.0321,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202307,1309.86,0.006,0.021,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202308,1300.1,-0.0075,-0.0092,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202309,1290.43,-0.0074,-0.0092,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202310,1275.2,-0.0118,-0.006,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202311,1269.04,-0.0048,-0.0019,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202312,1264.02,-0.004,-0.0071,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202401,1271.36,0.0058,-0.0028,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202402,1282.13,0.0085,0.0015,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202403,1299.2,0.0133,0.0126,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202404,1313.55,0.011,0.0218,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202405,1318.69,0.0039,0.0215,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202406,1311.7,-0.0053,0.0074,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202407,1305.53,-0.0047,-0.0033,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202408,1300.65,-0.0037,0.0004,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202409,1296.83,-0.0029,0.005,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202410,1291.16,-0.0044,0.0125,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202411,1292.43,0.001,0.0184,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202412,1300.24,0.006,0.0287,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202501,1290.09,-0.0078,0.0147,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202502,1282.83,-0.0056,0.0005,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202503,1274.89,-0.0062,-0.0187,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202504,1295.76,0.0164,-0.0135,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202505,1298.53,0.0021,-0.0153,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202506,1297.49,-0.0008,-0.0108,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202507,1299.71,0.0017,-0.0045,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202508,1315.06,0.0118,0.0111,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202509,1332.86,0.0135,0.0278,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202510,1332.95,0.0001,0.0324,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202511,1325.58,-0.0055,0.0256,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202512,1331.28,0.0043,0.0239,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202601,1343.65,0.0093,0.0415,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202602,1358.83,0.0113,0.0592,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202603,1356.93,-0.0014,0.0644,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202604,1361.51,0.0034,0.0507,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202605,1368.25,0.005,0.0537,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202606,1370.72,0.0018,0.0564,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202607,1370.96,0.0002,0.0548,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202608,1378.51,0.0055,0.0482,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83141,57108,SD,202609,1389.92,0.0083,0.0428,Sioux Falls,"Sioux Falls, SD",Lincoln County
+83143,57110,SD,202012,1043.76,,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202101,1042.51,-0.0012,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202102,1059.09,0.0159,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202103,1057.26,-0.0017,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202104,1070.71,0.0127,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202105,1080.19,0.0089,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202106,1089.04,0.0082,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202107,1096.44,0.0068,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202108,1106.14,0.0089,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202109,1117.52,0.0103,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202110,1145.98,0.0255,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202111,1167.31,0.0186,,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202112,1181.72,0.0123,0.1322,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202201,1171.62,-0.0085,0.1238,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202202,1178.41,0.0058,0.1127,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202203,1203.56,0.0213,0.1384,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202204,1250.13,0.0387,0.1676,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202205,1288.9,0.031,0.1932,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202206,1312.5,0.0183,0.2052,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202207,1320.29,0.0059,0.2042,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202208,1338.59,0.0139,0.2101,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202209,1331.64,-0.0052,0.1916,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202210,1324.2,-0.0056,0.1555,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202211,1298.6,-0.0193,0.1125,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202212,1288.31,-0.0079,0.0902,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202301,1263.26,-0.0194,0.0782,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202302,1261.66,-0.0013,0.0706,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202303,1277.64,0.0127,0.0616,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202304,1300.54,0.0179,0.0403,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202305,1305.8,0.004,0.0131,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202306,1304.47,-0.001,-0.0061,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202307,1300.7,-0.0029,-0.0148,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202308,1310.29,0.0074,-0.0211,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202309,1310.75,0.0004,-0.0157,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202310,1303.03,-0.0059,-0.016,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202311,1286.99,-0.0123,-0.0089,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202312,1277.58,-0.0073,-0.0083,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202401,1267.87,-0.0076,0.0037,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202402,1261.02,-0.0054,-0.0005,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202403,1256.9,-0.0033,-0.0162,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202404,1264.26,0.0059,-0.0279,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202405,1263.24,-0.0008,-0.0326,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202406,1277.63,0.0114,-0.0206,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202407,1285.41,0.0061,-0.0118,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202408,1293.85,0.0066,-0.0125,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202409,1278.29,-0.012,-0.0248,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202410,1273.66,-0.0036,-0.0225,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202411,1270.68,-0.0023,-0.0127,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202412,1271.84,0.0009,-0.0045,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202501,1270.74,-0.0009,0.0023,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202502,1267.66,-0.0024,0.0053,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202503,1269.9,0.0018,0.0103,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202504,1281.18,0.0089,0.0134,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202505,1288.79,0.0059,0.0202,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202506,1296.69,0.0061,0.0149,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202507,1300.22,0.0027,0.0115,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202508,1297.21,-0.0023,0.0026,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202509,1293.45,-0.0029,0.0119,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202510,1288.52,-0.0038,0.0117,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202511,1290.67,0.0017,0.0157,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202512,1284.48,-0.0048,0.0099,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202601,1289.47,0.0039,0.0147,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202602,1300.64,0.0087,0.026,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202603,1317.43,0.0129,0.0374,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202604,1313.71,-0.0028,0.0254,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202605,1311.48,-0.0017,0.0176,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202606,1317.8,0.0048,0.0163,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202607,1326.15,0.0063,0.0199,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202608,1328.41,0.0017,0.0241,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83143,57110,SD,202609,1322.11,-0.0047,0.0222,Sioux Falls,"Sioux Falls, SD",Minnehaha County
+83156,57201,SD,202602,1193.92,,,Watertown,"Watertown, SD",Codington County
+83156,57201,SD,202603,1195.01,0.0009,,Watertown,"Watertown, SD",Codington County
+83156,57201,SD,202604,1213.18,0.0152,,Watertown,"Watertown, SD",Codington County
+83156,57201,SD,202605,1196.5,-0.0137,,Watertown,"Watertown, SD",Codington County
+83156,57201,SD,202606,1192.44,-0.0034,,Watertown,"Watertown, SD",Codington County
+83156,57201,SD,202607,1196.64,0.0035,,Watertown,"Watertown, SD",Codington County
+83156,57201,SD,202608,1188.84,-0.0065,,Watertown,"Watertown, SD",Codington County
+83156,57201,SD,202609,1195.61,0.0057,,Watertown,"Watertown, SD",Codington County
+83275,57401,SD,202507,957.3,,,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202508,983.86,0.0277,,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202509,974.87,-0.0091,,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202510,961.53,-0.0137,,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202511,989.52,0.0291,,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202512,1033.87,0.0448,,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202601,1095.18,0.0593,,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202602,1066.95,-0.0258,,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202603,1072.86,0.0055,,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202604,1054.42,-0.0172,,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202605,1071.14,0.0159,,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202606,1068.29,-0.0027,,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202607,1062.93,-0.005,0.1103,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202608,1088.23,0.0238,0.1061,Aberdeen,"Aberdeen, SD",Brown County
+83275,57401,SD,202609,1098.37,0.0093,0.1267,Aberdeen,"Aberdeen, SD",Brown County
+83325,57501,SD,202603,1213.84,,,Pierre,"Pierre, SD",Hughes County
+83325,57501,SD,202604,1320.53,0.0879,,Pierre,"Pierre, SD",Hughes County
+83325,57501,SD,202605,1341.19,0.0156,,Pierre,"Pierre, SD",Hughes County
+83325,57501,SD,202606,1343.91,0.002,,Pierre,"Pierre, SD",Hughes County
+83325,57501,SD,202607,1314.74,-0.0217,,Pierre,"Pierre, SD",Hughes County
+83325,57501,SD,202608,1288.05,-0.0203,,Pierre,"Pierre, SD",Hughes County
+83325,57501,SD,202609,1274.83,-0.0103,,Pierre,"Pierre, SD",Hughes County
+83400,57701,SD,202010,950.54,,,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202011,946.09,-0.0047,,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202012,947.38,0.0014,,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202101,981.25,0.0357,,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202102,993.19,0.0122,,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202103,999.92,0.0068,,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202104,1003.96,0.004,,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202105,1011.8,0.0078,,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202106,1016.59,0.0047,,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202107,1045.15,0.0281,,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202108,1053.25,0.0078,,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202109,1072.79,0.0185,,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202110,1072.91,0.0001,0.1287,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202111,1092.01,0.0178,0.1542,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202112,1107.46,0.0141,0.169,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202201,1133.44,0.0235,0.1551,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202202,1152.21,0.0166,0.1601,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202203,1178.83,0.0231,0.1789,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202204,1196.33,0.0148,0.1916,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202205,1222.61,0.022,0.2083,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202206,1256.42,0.0277,0.2359,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202207,1252.7,-0.003,0.1986,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202208,1274.07,0.0171,0.2097,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202209,1274.27,0.0002,0.1878,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202210,1287.0,0.01,0.1995,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202211,1232.41,-0.0424,0.1286,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202212,1229.36,-0.0025,0.1101,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202301,1226.52,-0.0023,0.0821,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202302,1251.01,0.02,0.0857,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202303,1237.43,-0.0109,0.0497,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202304,1236.49,-0.0008,0.0336,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202305,1253.71,0.0139,0.0254,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202306,1260.91,0.0057,0.0036,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202307,1255.86,-0.004,0.0025,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202308,1256.37,0.0004,-0.0139,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202309,1260.32,0.0032,-0.0109,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202310,1266.25,0.0047,-0.0161,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202311,1276.25,0.0079,0.0356,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202312,1275.9,-0.0003,0.0379,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202401,1276.92,0.0008,0.0411,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202402,1272.35,-0.0036,0.0171,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202403,1274.48,0.0017,0.0299,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202404,1283.81,0.0073,0.0383,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202405,1290.51,0.0052,0.0294,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202406,1309.29,0.0146,0.0384,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202407,1320.99,0.0089,0.0519,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202408,1322.11,0.0008,0.0523,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202409,1321.7,-0.0003,0.0487,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202410,1323.74,0.0015,0.0454,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202411,1335.72,0.009,0.0466,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202412,1326.69,-0.0068,0.0398,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202501,1331.18,0.0034,0.0425,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202502,1326.53,-0.0035,0.0426,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202503,1336.94,0.0078,0.049,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202504,1326.49,-0.0078,0.0332,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202505,1322.54,-0.003,0.0248,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202506,1318.32,-0.0032,0.0069,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202507,1320.85,0.0019,-0.0001,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202508,1323.76,0.0022,0.0013,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202509,1330.8,0.0053,0.0069,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202510,1344.59,0.0104,0.0158,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202511,1352.4,0.0058,0.0125,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202512,1348.87,-0.0026,0.0167,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202601,1353.95,0.0038,0.0171,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202602,1349.94,-0.003,0.0177,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202603,1359.68,0.0072,0.017,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202604,1354.82,-0.0036,0.0214,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202605,1365.02,0.0075,0.0321,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202606,1369.59,0.0033,0.0389,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202607,1374.63,0.0037,0.0407,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202608,1400.51,0.0188,0.058,Rapid City,"Rapid City, SD",Pennington County
+83400,57701,SD,202609,1396.75,-0.0027,0.0496,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202212,1321.16,,,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202301,1316.73,-0.0034,,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202302,1301.52,-0.0116,,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202303,1254.32,-0.0363,,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202304,1237.83,-0.0131,,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202305,1240.27,0.002,,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202306,1243.81,0.0029,,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202307,1273.81,0.0241,,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202308,1285.84,0.0094,,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202309,1300.87,0.0117,,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202310,1289.43,-0.0088,,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202311,1279.01,-0.0081,,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202312,1286.06,0.0055,-0.0266,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202401,1278.41,-0.006,-0.0291,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202402,1286.69,0.0065,-0.0114,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202403,1279.39,-0.0057,0.02,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202404,1306.26,0.021,0.0553,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202405,1322.19,0.0122,0.0661,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202406,1331.88,0.0073,0.0708,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202407,1336.16,0.0032,0.0489,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202408,1344.28,0.0061,0.0454,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202409,1331.24,-0.0097,0.0233,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202410,1318.66,-0.0095,0.0227,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202411,1308.07,-0.008,0.0227,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202412,1329.77,0.0166,0.034,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202501,1320.15,-0.0072,0.0327,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202502,1323.67,0.0027,0.0287,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202503,1330.54,0.0052,0.04,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202504,1356.75,0.0197,0.0387,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202505,1371.89,0.0112,0.0376,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202506,1373.64,0.0013,0.0314,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202507,1387.84,0.0103,0.0387,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202508,1400.43,0.0091,0.0418,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202509,1405.36,0.0035,0.0557,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202510,1393.68,-0.0083,0.0569,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202511,1367.4,-0.0189,0.0454,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202512,1355.5,-0.0087,0.0193,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202601,1362.8,0.0054,0.0323,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202602,1383.48,0.0152,0.0452,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202603,1393.85,0.0075,0.0476,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202604,1397.33,0.0025,0.0299,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202605,1398.15,0.0006,0.0191,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202606,1421.13,0.0164,0.0346,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202607,1447.9,0.0188,0.0433,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202608,1460.91,0.009,0.0432,Rapid City,"Rapid City, SD",Pennington County
+83401,57702,SD,202609,1465.04,0.0028,0.0425,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202411,1357.81,,,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202412,1352.78,-0.0037,,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202501,1357.97,0.0038,,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202502,1354.01,-0.0029,,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202503,1381.13,0.02,,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202504,1408.06,0.0195,,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202505,1438.56,0.0217,,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202506,1457.12,0.0129,,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202507,1451.78,-0.0037,,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202508,1456.19,0.003,,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202509,1436.12,-0.0138,,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202510,1450.26,0.0098,,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202511,1424.37,-0.0179,0.049,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202512,1431.25,0.0048,0.058,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202601,1412.69,-0.013,0.0403,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202602,1439.67,0.0191,0.0633,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202603,1456.23,0.0115,0.0544,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202604,1489.92,0.0231,0.0581,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202605,1492.65,0.0018,0.0376,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202606,1497.7,0.0034,0.0279,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202607,1498.51,0.0005,0.0322,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202608,1530.39,0.0213,0.051,Rapid City,"Rapid City, SD",Pennington County
+83402,57703,SD,202609,1539.44,0.0059,0.0719,Rapid City,"Rapid City, SD",Pennington County
+83409,57719,SD,202504,1310.84,,,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202505,1336.75,0.0198,,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202506,1369.02,0.0241,,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202507,1387.87,0.0138,,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202508,1382.07,-0.0042,,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202509,1404.23,0.016,,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202510,1392.9,-0.0081,,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202511,1404.16,0.0081,,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202512,1398.33,-0.0041,,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202601,1388.61,-0.007,,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202602,1384.75,-0.0028,,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202603,1385.59,0.0006,,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202604,1410.0,0.0176,0.0756,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202605,1425.25,0.0108,0.0662,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202606,1426.38,0.0008,0.0419,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202607,1439.07,0.0089,0.0369,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202608,1436.36,-0.0019,0.0393,Box Elder,"Rapid City, SD",Meade County
+83409,57719,SD,202609,1450.21,0.0096,0.0327,Box Elder,"Rapid City, SD",Meade County
+83448,57783,SD,202606,1623.22,,,Spearfish,"Spearfish, SD",Lawrence County
+83448,57783,SD,202607,1524.33,-0.0609,,Spearfish,"Spearfish, SD",Lawrence County
+83448,57783,SD,202608,1509.46,-0.0098,,Spearfish,"Spearfish, SD",Lawrence County
+83448,57783,SD,202609,1524.67,0.0101,,Spearfish,"Spearfish, SD",Lawrence County
