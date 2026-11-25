@@ -2,7 +2,10 @@ name: Update Real Estate Data
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    # Weekly, Mondays 06:00 UTC. Sources (Realtor.com RDC, Zillow ZORI) publish monthly.
+    # Was daily; changed 2026-11-25 because the daily timestamp commit triggered a
+    # billed Vercel build every day even when no data changed.
+    - cron: '0 6 * * 1'
   workflow_dispatch:
 
 permissions:
@@ -138,13 +141,16 @@ jobs:
           echo "Largest rent_county files:"; ls -lh data/rent_county/ | sort -k5 -rh | head -3
           echo "Largest rent_zip files:"; ls -lh data/rent_zip/ | sort -k5 -rh | head -3
 
-      - name: Update timestamp
-        run: echo "Last refreshed $(date -u +%Y-%m-%dT%H:%M:%SZ)" > data/last_updated.txt
-
-      - name: Commit and push
+      - name: Commit and push (only when the data changed)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "Data refresh $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          if git diff --staged --quiet; then
+            echo "No data changes; skipping commit so Vercel does not rebuild."
+            exit 0
+          fi
+          echo "Last refreshed $(date -u +%Y-%m-%dT%H:%M:%SZ)" > data/last_updated.txt
+          git add data/last_updated.txt
+          git commit -m "Data refresh $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
